@@ -1,22 +1,18 @@
 import React from "react";
 import { css } from "@emotion/core";
 import { Link, graphql } from "gatsby";
-import { rhythm } from "../utils/typography";
+import Helmet from "react-helmet";
+
+// import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
 
 export default ({ data }) => {
   return (
     <Layout>
+      <Helmet>
+        <body className="home blog logged-in admin-bar customize-support" />
+      </Helmet>
       <div>
-        <h1
-          css={css`
-            display: inline-block;
-            border-bottom: 1px solid;
-          `}
-        >
-          Amazing Pandas Eating Things
-        </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
@@ -28,9 +24,9 @@ export default ({ data }) => {
             >
               {" "}
               <h3
-                css={css`
-                  margin-bottom: ${rhythm(1 / 4)};
-                `}
+              // css={css`
+              //   margin-bottom: ${rhythm(1 / 4)};
+              // `}
               >
                 {node.frontmatter.title}{" "}
                 <span
@@ -52,7 +48,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+    ) {
       totalCount
       edges {
         node {

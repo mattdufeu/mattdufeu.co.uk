@@ -4,7 +4,6 @@ author: DuFeu
 type: post
 date: 2014-09-19T12:29:02+00:00
 url: /retrospective-experience-6-thinking-hats/
-extra: winners
 categories:
   - Agile
 tags:
