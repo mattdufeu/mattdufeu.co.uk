@@ -14,7 +14,7 @@ export default ({ data }) => {
       >
         <Helmet>
           <meta charSet="utf-8" /> <title>{post.frontmatter.title}</title>
-          <link rel="canonical" href="http://mysite.com/example" />
+          <link rel="canonical" href="https://mattdufeu.co.uk" />
         </Helmet>
         <header className="entry-header">
           <h1 className="entry-title">{post.frontmatter.title}</h1>

@@ -32,7 +32,7 @@ export default ({ children }) => (
         </header>
         <Helmet>
           <meta charSet="utf-8" /> <title>{data.site.siteMetadata.title}</title>
-          <link rel="canonical" href="http://mysite.com/example" />
+          <link rel="canonical" href="https://mattdufeu.co.uk" />
         </Helmet>
         <div id="main" className="site-main">
           <div id="content-area">

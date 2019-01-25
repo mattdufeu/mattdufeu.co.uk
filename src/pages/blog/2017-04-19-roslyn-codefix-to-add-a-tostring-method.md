@@ -6,16 +6,16 @@ date: 2017-04-19T19:53:08+00:00
 url: /roslyn-codefix-to-add-a-tostring-method/
 categories:
   - .NET
-
 ---
+
 I recently had the opportunity to update the quality of logging in an application. Exceptions were handled well, but it was hard to see the values passed through the layers. I ended up using a _Roslyn CodeFix to add a ToString method_. This is what I did.
 
 ## Setup
 
 Once you&#8217;ve created a new &#8220;Analyzer with Code Fix&#8221; project, there&#8217;s two parts to write:
 
-  1. The Analyzer &#8211; the code that highlights the problem by adding a green squiggly line;
-  2. The CodeFix &#8211; the code that runs to &#8220;fix&#8221; the problem highlighted by the analyzer
+1. The Analyzer &#8211; the code that highlights the problem by adding a green squiggly line;
+2. The CodeFix &#8211; the code that runs to &#8220;fix&#8221; the problem highlighted by the analyzer
 
 ## The Analyzer
 
@@ -34,24 +34,16 @@ My requirement was straight foreward, &#8220;add a ToString method&#8221; to a c
 That&#8217;s it for the analyzer. It passes all Class Declarations to Rosylyn to create a Diagnostic.
 
 If you press F5 now to debug the project, a new instance of Visual Studio will open. This new instance has our analyzer installed. So create a simple console app and you will see all class declarations are decorated with a green squiggly line.
-
-<div id="attachment_640" style="width: 827px" class="wp-caption aligncenter">
-  <img src="http://localhost:8000/empty/wp-content/uploads/2017/04/Roslyn-Green-Squiggly.png" alt="Roslyn Green Squiggly" width="817" height="681" class="size-full wp-image-640" srcset="http://localhost:8000/empty/wp-content/uploads/2017/04/Roslyn-Green-Squiggly.png 817w, http://localhost:8000/empty/wp-content/uploads/2017/04/Roslyn-Green-Squiggly-300x250.png 300w, http://localhost:8000/empty/wp-content/uploads/2017/04/Roslyn-Green-Squiggly-768x640.png 768w, http://localhost:8000/empty/wp-content/uploads/2017/04/Roslyn-Green-Squiggly-250x208.png 250w" sizes="(max-width: 817px) 100vw, 817px" />
-  
-  <p class="wp-caption-text">
-    Roslyn Green Squiggly
-  </p>
-</div>
-
+![Rosylyn Green Squiggly](../../images/2017/04/Roslyn-Green-Squiggly.png "Rosylyn Green Squiggly")
 So far, so good. Now to create the codefix.
 
 ## The CodeFix
 
 This is a bit more involved. I didn&#8217;t know what I was doing and struggled with the documentation. After some trial and error, this is what I ended up doing:
 
-  * Find the class declaration (again, I don&#8217;t think the information from the analyzer gets passed across)
-  * Loop over all the public properties of that class and construct the ToString method
-  * Add the new ToString method
+- Find the class declaration (again, I don&#8217;t think the information from the analyzer gets passed across)
+- Loop over all the public properties of that class and construct the ToString method
+- Add the new ToString method
 
 ### Find the class declaration
 
@@ -169,14 +161,7 @@ private IEnumerable&lt;ParameterSyntax&gt; GetParametersList(string[] parameterT
 </pre>
 
 If you run this code now, and apply the code fix to a class with some properties, it should add a ToString method.
-
-<div id="attachment_641" style="width: 690px" class="wp-caption aligncenter">
-  <img src="http://localhost:8000/empty/wp-content/uploads/2017/04/ToString-Method-Added-1024x786.png" alt="ToString Method Added" width="680" height="522" class="size-large wp-image-641" srcset="http://localhost:8000/empty/wp-content/uploads/2017/04/ToString-Method-Added-1024x786.png 1024w, http://localhost:8000/empty/wp-content/uploads/2017/04/ToString-Method-Added-300x230.png 300w, http://localhost:8000/empty/wp-content/uploads/2017/04/ToString-Method-Added-768x589.png 768w, http://localhost:8000/empty/wp-content/uploads/2017/04/ToString-Method-Added-250x192.png 250w, http://localhost:8000/empty/wp-content/uploads/2017/04/ToString-Method-Added-1000x767.png 1000w, http://localhost:8000/empty/wp-content/uploads/2017/04/ToString-Method-Added.png 1281w" sizes="(max-width: 680px) 100vw, 680px" />
-  
-  <p class="wp-caption-text">
-    ToString Method Added
-  </p>
-</div>
+![ToString Method Added](../../images/2017/04/ToString-Method-Added.png "ToString Method Added")
 
 ## Alternatives
 
@@ -196,14 +181,14 @@ Finally, there&#8217;s always ReSharper!
 
 The solution in this post is far from perfect. There are a number of things that can be improved:
 
-  * It doesn&#8217;t handle classes that already have a ToString method very well;
-  * It doesn&#8217;t add the required &#8220;using&#8221; statements;
-  * It adds an extra semi-colon at the end
-  * Property type is ignored, Collections, Lists etc is not handled
+- It doesn&#8217;t handle classes that already have a ToString method very well;
+- It doesn&#8217;t add the required &#8220;using&#8221; statements;
+- It adds an extra semi-colon at the end
+- Property type is ignored, Collections, Lists etc is not handled
 
 Despite those issues, it&#8217;s already saved me a lot of typing. Also, creating a _Roslyn CodeFix to add a ToString method_ was a good learning experience. Getting started was difficult, but the more I use the features of Roslyn, the more convinced I am that I&#8217;ll be doing a lot more in the future.
 
 Let me know if you spot a mistake or an area I can improve on. I&#8217;ve uploaded the code so far to [GitHub][2]. Feel free to make a PR or raise an issue.
 
- [1]: http://stackoverflow.com/a/37743242
- [2]: https://github.com/mattdufeu/UsefulRoslynCodeFixes
+[1]: http://stackoverflow.com/a/37743242
+[2]: https://github.com/mattdufeu/UsefulRoslynCodeFixes

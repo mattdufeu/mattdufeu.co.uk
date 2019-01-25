@@ -14,7 +14,7 @@ export default ({ data }) => {
       </Helmet>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
+          <article key={node.id}>
             <Link
               to={node.fields.slug}
               css={css`
@@ -22,24 +22,10 @@ export default ({ data }) => {
                 color: inherit;
               `}
             >
-              {" "}
-              <h3
-              // css={css`
-              //   margin-bottom: ${rhythm(1 / 4)};
-              // `}
-              >
-                {node.frontmatter.title}{" "}
-                <span
-                  css={css`
-                    color: #bbb;
-                  `}
-                >
-                  — {node.frontmatter.date}
-                </span>
-              </h3>
-              <p>{node.excerpt}</p>
-            </Link>{" "}
-          </div>
+              <h1>{node.frontmatter.title}</h1>
+            </Link>
+            <div dangerouslySetInnerHTML={{ __html: node.html }} />
+          </article>
         ))}
       </div>
     </Layout>
@@ -51,6 +37,7 @@ export const query = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fileAbsolutePath: { regex: "/blog/" } }
+      limit: 3
     ) {
       totalCount
       edges {
@@ -63,7 +50,7 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
+          html
         }
       }
     }

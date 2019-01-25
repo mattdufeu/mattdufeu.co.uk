@@ -13,14 +13,26 @@ module.exports = {
         start_url: "/",
         background_color: "#6b37bf",
         theme_color: "#6b37bf",
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone"
       }
     },
     "gatsby-plugin-offline",
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-emotion`
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              showCaptions: true,
+              maxWidth: 590
+            }
+          }
+        ]
+      }
+    }
   ]
 };

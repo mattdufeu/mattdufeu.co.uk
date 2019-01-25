@@ -281,7 +281,7 @@ img {
   padding: 0;
   margin: 0;
 }
-body .wp-caption {
+body .gatsby-resp-image-figure {
   max-width: 94%;
   margin: 1em auto;
   padding: 2% 2% 0 2%;
@@ -292,7 +292,7 @@ body .wp-caption {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-.wp-caption p {
+.gatsby-resp-image-figcaption {
   margin: 0.4em 0;
   padding: 0 0.8em;
   font-size: 0.8em;
@@ -309,8 +309,6 @@ body .wp-caption {
   border-bottom: none;
 }
 article {
-  margin: 0 0 2em 0;
-  padding: 0 0 2em 0;
   border-bottom: 1px solid #ddd;
 }
 article.last-post {
