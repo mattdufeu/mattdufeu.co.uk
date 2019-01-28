@@ -6,7 +6,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "now-build": "npm run build"
   },
   "dependencies": {
     "@emotion/core": "^10.0.5",
