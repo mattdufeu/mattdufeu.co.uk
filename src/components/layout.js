@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 // import { rhythm } from "../utils/typography";
 import LayoutSideBar from "./layout_sidebar";
 import "../styles.css";
+import icon from "../images/favicon.ico";
 
 export default ({ children }) => (
   <StaticQuery
@@ -33,6 +34,7 @@ export default ({ children }) => (
         <Helmet>
           <meta charSet="utf-8" /> <title>{data.site.siteMetadata.title}</title>
           <link rel="canonical" href="https://mattdufeu.co.uk" />
+          <link rel="icon" type="image/png" href={icon} sizes="16x16" />
         </Helmet>
         <div id="main" className="site-main">
           <div id="content-area">
