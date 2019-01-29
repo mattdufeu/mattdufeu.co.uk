@@ -20,13 +20,7 @@ The team I&#8217;m currently working with have seen some real benefits from back
 
 I won&#8217;t go into depth as to what backlog grooming is as there are [numerous][2] [guides][3] out there. Instead I&#8217;ll use the classic iceberg metaphor, i.e. the backlog has epics and the bottom, almost ready Product Backlog Items (PBIs or user stories) in the middle and some ready PBIs at the top:
 
-<div id="attachment_421" style="width: 310px" class="wp-caption aligncenter">
-  <a href="../../images/2015/05/Backlog_Iceberg.png"><img src="../../images/2015/05/Backlog_Iceberg-300x225.png" alt="Product Backlog Iceberg Metaphor" width="300" height="225" class="size-medium wp-image-421" /></a>
-  
-  <p class="wp-caption-text">
-    Product Backlog Iceberg Metaphor
-  </p>
-</div>
+![Product Backlog Iceberg Metaphor](../../images/2015/05/Backlog_Iceberg.png "Product Backlog Iceberg Metaphor")
 
 Basically, the meeting is for the team to help the product owner move user stories up the Product Backlog. This raises awareness of the upcoming story and helps the Product Owner break the larger items down into user stories that the team feel could pull them into the next sprint.
 

@@ -14,13 +14,7 @@ What I didn&#8217;t realise when I first started out was that there are many dif
 
 ## Types of Impediment
 
-<div id="attachment_536" style="width: 310px" class="wp-caption aligncenter">
-  <a href="../../images/2016/01/RoadWorks.png" rel="attachment wp-att-536"><img src="../../images/2016/01/RoadWorks-300x258.png" alt="Different Types of Impediment to Identify" width="300" height="258" class="size-medium wp-image-536" /></a>
-  
-  <p class="wp-caption-text">
-    Impediment
-  </p>
-</div>
+![Different Types of Impediment to Identify](../../images/2016/01/RoadWorks.png "Different Types of Impediment to Identify")
 
 In order of smallest scope, all the way out to the whole organisation, here&#8217;s a list of some of the types of impediments you might encounter. Another post will detail who I think should own the impediment and try to resolve it.
 

@@ -116,13 +116,7 @@ Confirming It Works
 
 This is where Swashbuckle comes in handy. Set a breakpoint in the POST action method and press F5. Navigate to http://localhost:<port>/swagger and expand Values and POST. Fill out the message like below
 
-<div id="attachment_632" style="width: 690px" class="wp-caption aligncenter">
-  <img src="../../images/2017/03/MediatR-Swagger-Post--1024x360.png" alt="MediatR Swagger Post" width="680" height="239" class="size-large wp-image-632" />
-  
-  <p class="wp-caption-text">
-    MediatR Swagger Post
-  </p>
-</div>
+![MediatR Swagger Post](../../images/2017/03/MediatR-Swagger-Post.png "MediatR Swagger Post")
 
 Click &#8220;Try it out!&#8221; and you should be able to step through the code. Travelling through your handler. And finally back to the controller to see the value passed in negated:
 

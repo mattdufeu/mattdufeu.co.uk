@@ -12,13 +12,7 @@ I&#8217;ve been getting back into React.js development and was missing the rich 
 
 I thought I had something working as Ctrl+Space opened intellisense with a sensible suggestion, but this turned out to be the IDE using what I&#8217;d typed earlier to make an educated guess. Clever, but I was hoping for more.
 
-<div id="attachment_588" style="width: 310px" class="wp-caption aligncenter">
-  <a href="../../images/2016/05/01_before.png"><img src="../../images/2016/05/01_before-300x142.png" alt="No Intellisense" width="300" height="142" class="size-medium wp-image-588" /></a>
-  
-  <p class="wp-caption-text">
-    Before &#8211; No Intellisense
-  </p>
-</div>
+![No Intellisense](../../images/2016/05/01_before.png "No Intellisense")
 
 ## Dead Ends
 
@@ -32,23 +26,11 @@ After several dead ends and lots of hair pulling I eventually got intellisense w
 
 With a project folder open, look in the bottom right and you should see a lightbulb:
 
-<div id="attachment_589" style="width: 310px" class="wp-caption aligncenter">
-  <a href="../../images/2016/05/02_Lightbulb.png"><img src="../../images/2016/05/02_Lightbulb-300x152.png" alt="VSCode Lightbulb " width="300" height="152" class="size-medium wp-image-589" /></a>
-  
-  <p class="wp-caption-text">
-    VSCode Lightbulb
-  </p>
-</div>
+![VSCode Lightbulb](../../images/2016/05/02_Lightbulb.png "VSCode Lightbulb")
 
 Click the lightbulb, and you should get a popup at the top of the IDE asking if you want to create a jsconfig.json file
 
-<div id="attachment_590" style="width: 310px" class="wp-caption aligncenter">
-  <a href="../../images/2016/05/03_CreateJSConfig.png"><img src="../../images/2016/05/03_CreateJSConfig-300x23.png" alt="Create JSConfig.json" width="300" height="23" class="size-medium wp-image-590" /></a>
-  
-  <p class="wp-caption-text">
-    Create JSConfig.json
-  </p>
-</div>
+![Create JSConfig.json](../../images/2016/05/03_CreateJSConfig.png "Create JSConfig.json")
 
 Click &#8220;Create jsconfig.json&#8221; and vscode should do the rest.
 
@@ -92,13 +74,7 @@ Which vscode detects automatically, so there&#8217;s nothing else to it.
 
 Now you should be able to see some intellisense for react.js.
 
-<div id="attachment_591" style="width: 310px" class="wp-caption aligncenter">
-  <a href="../../images/2016/05/04_Working.png"><img src="../../images/2016/05/04_Working-300x73.png" alt="VSCode With Intellisense" width="300" height="73" class="size-medium wp-image-591" /></a>
-  
-  <p class="wp-caption-text">
-    VSCode With Intellisense
-  </p>
-</div>
+![VSCode With Intellisense](../../images/2016/05/04_Working.png "VSCode With Intellisense")
 
 ## Conclusion
 

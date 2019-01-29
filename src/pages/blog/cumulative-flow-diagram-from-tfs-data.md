@@ -42,13 +42,7 @@ That way, I can calculate the current status of a User Story by the logic in the
 
 Getting the data out of TFS is relative simple. In the web interface, go to Work->Queries, create a new &#8220;My Queries&#8221; called CFD and fill it out as below, where &#8220;Iteration Path&#8221; is your current iteration:
 
-<div id="attachment_435" style="width: 745px" class="wp-caption aligncenter">
-  <a href="../../images/2015/05/CFD-Query.png"><img src="../../images/2015/05/CFD-Query.png" alt="CFD TFS Query Configuration" width="735" height="315" class="size-full wp-image-435" /></a>
-  
-  <p class="wp-caption-text">
-    CFD TFS Query Configuration
-  </p>
-</div>
+![CFD TFS Query Configuration](../../images/2015/05/CFD-Query.png "CFD TFS Query Configuration")
 
 It doesn&#8217;t matter how you configure the column options for this query as we&#8217;ll be extracting things via C# next.
 

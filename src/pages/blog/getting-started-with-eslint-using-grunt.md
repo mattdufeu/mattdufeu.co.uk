@@ -8,7 +8,7 @@ categories:
   - JavaScript
 ---
 
-[<img src="../../images/2015/01/ESLint.png" alt="Getting Started with ESLint using Grunt" width="138" height="45" class="aligncenter size-full wp-image-360" />][1]
+![Getting Started with ESLint using Grunt](../../images/2015/01/ESLint.png "Getting Started with ESLint using Grunt")
 
 I recently had the chance to add [ESLint][2] to our workflow. I considered using it standalone, but as [Grunt is becoming a first class citizen in Visual Studio 2015][3], I wanted to get more familiar with it now.
 
@@ -50,7 +50,7 @@ Config info can be viewed via: npm help config
 
 ## Step 2 &#8211; Install the Grunt Command Line tools (grunt-cli) globally
 
-[<img src="../../images/2015/01/grunt-255x300.png" alt="Getting Started with ESLint using Grunt" width="255" height="300" class="aligncenter size-medium wp-image-333" />][5]
+![Getting Started with ESLint using Grunt](../../images/2015/01/grunt.png "Getting Started with ESLint using Grunt")
 
 The next step is to install the Grunt Command Line tools globally using npm. Thankfully that&#8217;s as simple as typing the following in a command prompt:
 

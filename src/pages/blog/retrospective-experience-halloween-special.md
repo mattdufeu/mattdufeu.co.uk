@@ -42,13 +42,7 @@ _Each member of the team had to come up with 1 treat (something that will help i
 
 This worked really well as it limited everyone to just one idea. As you can see below, I also decorated the board:
 
-<div id="attachment_303" style="width: 237px" class="wp-caption aligncenter">
-  <a href="../../images/2014/11/TrickOrTreatBoard.jpg"><img src="../../images/2014/11/TrickOrTreatBoard-227x300.jpg" alt="Trick Or Treat Board" width="227" height="300" class="size-medium wp-image-303" /></a>
-  
-  <p class="wp-caption-text">
-    Trick Or Treat Board
-  </p>
-</div>
+![Trick Or Treat Board](../../images/2014/11/TrickOrTreatBoard.jpg "Trick Or Treat Board")
 
 ## Stage 4 &#8211; Decide what to do &#8211; Pick a Door
 
@@ -62,13 +56,7 @@ I must admit, we don&#8217;t normally do much for this part of the retrospective
 
 I could tell by the audible groans from the team that they thought the same thing when I introduced the idea, but I&#8217;m pleased to say it was quite a positive thing. What&#8217;s more, we now have a wonderful mascot for the next sprint.
 
-<div id="attachment_302" style="width: 235px" class="wp-caption aligncenter">
-  <a href="../../images/2014/11/SprintMascot.jpg"><img src="../../images/2014/11/SprintMascot-225x300.jpg" alt="Sprint Mascot" width="225" height="300" class="size-medium wp-image-302" /></a>
-  
-  <p class="wp-caption-text">
-    Sprint Mascot
-  </p>
-</div>
+![Sprint Mascot](../../images/2014/11/SprintMascot.jpg "Sprint Mascot")
 
 # Summary
 

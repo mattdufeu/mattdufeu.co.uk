@@ -30,23 +30,11 @@ I&#8217;d previously read about the [Happiness Index][1] technique but was reluc
 
 I don&#8217;t think all of the team were particularly comfortable with analysing their feelings, but I believe it was a very worthwhile exercise to do. At the end of the sprint we ended up with the following chart:
 
-<div id="attachment_393" style="width: 255px" class="wp-caption aligncenter">
-  <a href="../../images/2015/03/NikoNiko.jpg"><img src="../../images/2015/03/NikoNiko-245x300.jpg" alt="Niko Niko Calendar" width="245" height="300" class="size-medium wp-image-393" /></a>
-  
-  <p class="wp-caption-text">
-    Niko Niko Calendar
-  </p>
-</div>
+![Niko Niko Calendar](../../images/2015/03/NikoNiko.jpg "Niko Niko Calendar")
 
 As a team, we then talked through all the events that caused big changes in happiness and plotted the &#8220;average&#8221; happiness on a graph.
 
-<div id="attachment_392" style="width: 310px" class="wp-caption aligncenter">
-  <a href="../../images/2015/03/HappinessIndex.png"><img src="../../images/2015/03/HappinessIndex-300x185.png" alt="Happiness Index Graph" width="300" height="185" class="size-medium wp-image-392" /></a>
-  
-  <p class="wp-caption-text">
-    Happiness Index Graph
-  </p>
-</div>
+![Happiness Index Graph](../../images/2015/03/HappinessIndex.png "Happiness Index Graph")
 
 This really helped the team focus on the major events and led to some really great discussions. One of our team even said afterwards &#8220;that may have been the best [retrospective] yet&#8221;.
 

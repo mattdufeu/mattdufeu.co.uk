@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 class PostFooter extends Component {
   render() {
-    console.log();
     return (
       <footer className="entry-meta">
         Posted on

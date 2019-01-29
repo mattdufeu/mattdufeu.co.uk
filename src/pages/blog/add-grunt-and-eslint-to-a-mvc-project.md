@@ -11,8 +11,7 @@ categories:
 This is part two of getting started with ESLint using Grunt where I will show you how to configure ESLint to analyse a MVC .NET Project. In [part one][1] I set-up our environment with node.js, Grunt-cli and finally Grunt for our project, but you couldn&#8217;t do much with it.
 
 In this post, I&#8217;ll install ESLint, disable all the default ESLint rules, enable one specific some rule and exclude some files from analysis.
-
-[<img src="../../images/2015/01/ESLint.png" alt="Add Grunt and ESLint to a MVC Project" width="138" height="45" class="aligncenter size-full wp-image-360" />][2]
+![Add Grunt and ESLint to a MVC Project](../../images/2015/01/ESLint.png "Add Grunt and ESLint to a MVC Project")
 
 To recap, I have a new ASP.NET MVC project in c:\myproject\WebApplication1 that also contains a **package.json** and **Gruntfile.js**:
 

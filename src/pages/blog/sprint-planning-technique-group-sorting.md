@@ -36,13 +36,7 @@ Once the first team has finished, invite the next team up. Second and subsequent
 
 Repeat this step for each group and &#8211; excuse the hideous use of paint &#8211; something like this:
 
-<div id="attachment_284" style="width: 698px" class="wp-caption aligncenter">
-  <a href="../../images/2014/10/planning_endofstep3.png"><img src="../../images/2014/10/planning_endofstep3.png" alt="End of sorting by size" width="688" height="402" class="size-full wp-image-284" /></a>
-  
-  <p class="wp-caption-text">
-    Fig 1 &#8211; Table after grouping PBIs into story point buckets
-  </p>
-</div>
+![Fig 1 – Table after grouping PBIs into story point buckets](../../images/2014/10/planning_endofstep3.png "Fig 1 – Table after grouping PBIs into story point buckets")
 
 ## Step 4 &#8211; Discuss any significant changes
 
@@ -56,13 +50,7 @@ Once that&#8217;s finished, there should be some sort of agreement to the size o
 
 Ask the whole team (or a subset if you&#8217;re a really large team) to order these by dependencies . We used a column for each chain of dependencies and staggered them if there was some overlap, i.e. shared parents.
 
-<div id="attachment_285" style="width: 496px" class="wp-caption aligncenter">
-  <a href="../../images/2014/10/planning_endofstep6.png"><img src="../../images/2014/10/planning_endofstep6.png" alt="PBIs ordered by dependencies" width="486" height="326" class="size-full wp-image-285" /></a>
-  
-  <p class="wp-caption-text">
-    Fig 2 &#8211; PBIs ordered by dependency
-  </p>
-</div>
+![PBIs ordered by dependencies](../../images/2014/10/planning_endofstep6.png "PBIs ordered by dependencies")
 
 As you can see in the above image:
 
