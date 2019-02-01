@@ -54,7 +54,8 @@ In the folder of the project enter the following commands:
 
 You should end up with a new &#8220;typings&#8221; folder with the following contents:
 
-```csharp│   index.d.ts
+```bash
+│   index.d.ts
 │
 └───globals
     └───react

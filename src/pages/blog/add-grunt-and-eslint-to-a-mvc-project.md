@@ -57,7 +57,8 @@ npm install --save-dev load-grunt-tasks
 
 To make our lives easier to change the configuration of ESLint, we&#8217;re going to use an **eslint.json** file. As you can probably tell from the name, it&#8217;s a text file containing some json that ESLint parses. The [ESLint documentation][3] is pretty good at explaining what all the options are, so I won&#8217;t do that here, but for now just create one containing the following:
 
-<pre class="brush: jscript; title: ; notranslate" title="">{
+```javascript
+{
     "env": {
         "browser": true,
     },
@@ -78,7 +79,8 @@ As you will see in a minute, I personally like to disable \*\*all \*\* the rules
 
 The next file that we need to create is **.eslintignore**. As the name suggests, this is an easy way of telling ESLint to ignore certain files and directories. Again I refer you to the documentation for more details, but for now, create an .eslintignore file containing:
 
-<pre class="brush: plain; title: ; notranslate" title=""># ignore everything in the packages folders
+```bash
+# ignore everything in the packages folders
 **/packages
 
 # ignore everything in Scripts except files beginning with "myapp"
@@ -112,7 +114,7 @@ module.exports = function(grunt) {
 
 	# section 3 - register grunt tasks
 	grunt.registerTask('default', ['eslint']);
- 
+
 };
 ```
 

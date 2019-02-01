@@ -1,6 +1,10 @@
 module.exports = {
-  siteMetadata: { title: `Pandas Eating Lots` },
+  siteMetadata: {
+    siteUrl: `https://www.mattdufeu.co.uk`,
+    title: `Matt DuFeu - Father and .NET enthusiast. Constantly striving to learn`
+  },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: { name: `src`, path: `${__dirname}/src/` }

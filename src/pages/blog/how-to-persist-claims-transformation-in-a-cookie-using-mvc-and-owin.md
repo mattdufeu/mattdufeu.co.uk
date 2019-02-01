@@ -52,4 +52,3 @@ The OnResponseSignIn is the last chance you have to transform the ClaimsIdentity
  [2]: http://dotnetcodr.com/2013/02/25/claims-based-authentication-in-mvc4-with-net4-5-c-part-1-claims-transformation/
  [3]: http://leastprivilege.com/2013/09/18/claims-transformation-middleware-for-katana/
  [4]: https://msdn.microsoft.com/en-us/library/microsoft.owin.security.cookies.cookieauthenticationprovider.onresponsesignin(v=vs.113).aspx
-````

@@ -53,7 +53,8 @@ This is a bit more involved. I didn&#8217;t know what I was doing and struggled 
 The project sample uses `RegisterCodeFixesAsync` in the CodeFixProvider.cs file as the entry point. I changed `RegisterCodeFixesAsync` by first adding:
 
 ```csharp
-var classDeclaration = root.DescendantNodes().FirstOrDefault(node => node is ClassDeclarationSyntax) as ClassDeclarationSyntax;
+var classDeclaration = root.DescendantNodes().FirstOrDefault(
+    node => node is ClassDeclarationSyntax) as ClassDeclarationSyntax;
 if (classDeclaration == null) return;
 ```
 
@@ -62,17 +63,22 @@ And then updating the call to `RegisterCodeFix` to pass this new `classDeclarati
 ```csharp
 public sealed override async Task RegisterCodeFixesAsync(CodeFixContext context)
 {
-    var root = await context.Document.GetSyntaxRootAsync(context.CancellationToken).ConfigureAwait(false);
+    var root = await context.Document
+        .GetSyntaxRootAsync(context.CancellationToken)
+        .ConfigureAwait(false);
     var diagnostic = context.Diagnostics.First();
 
-    var classDeclaration = root.DescendantNodes().FirstOrDefault(node => node is ClassDeclarationSyntax) as ClassDeclarationSyntax;
+    var classDeclaration = root.DescendantNodes()
+        .FirstOrDefault(node => node is ClassDeclarationSyntax)
+         as ClassDeclarationSyntax;
     if (classDeclaration == null) return;
 
     // Register a code action that will invoke the fix.
     context.RegisterCodeFix(
         CodeAction.Create(
             title: title,
-            createChangedSolution: c => MakeUppercaseAsync(context.Document, classDeclaration, c),
+            createChangedSolution: c =>
+                MakeUppercaseAsync(context.Document, classDeclaration, c),
             equivalenceKey: title),
         diagnostic); 
 }
@@ -92,15 +98,17 @@ The innermost layer of the onion is what&#8217;s in the logs. I wanted the log t
 
 The next layer of the onion, is the C# code that you would write to achieve that log format. In this example, it would be something like:
 
-```csharpConsole.WriteLine("{0}: {1}, ", nameof(IntProp1), IntProp1);
-
+```csharp
+Console.WriteLine("{0}: {1}, ", nameof(IntProp1), IntProp1);
 ```
 
 The outer layer of the onion is the code we put in the CodeFix. It&#8217;s output will be added to the class. It needs to create the C# code, that when ran will output the above `Console.WriteLine`.
 
 Rather than using lots of Console.WriteLine statements, I decided to use a StringBuilder, but the outcome is the same. I ended up with the following to construct the body of the ToString method:
 
-```csharpSyntaxNode root = await document.GetSyntaxRootAsync(cancellationToken).ConfigureAwait(false);
+```csharp
+SyntaxNode root = await document.GetSyntaxRootAsync(cancellationToken)
+    .ConfigureAwait(false);
 var props = root.DescendantNodes().Where(x => x is PropertyDeclarationSyntax);
 
 // Construct the contents of the ToString method
@@ -112,7 +120,9 @@ foreach (SyntaxNode currentProp in props)
 {
     var currentSyntax = currentProp as PropertyDeclarationSyntax;
 
-    sb.Append("resultSb.AppendFormat(\"{0}: {1}, \", nameof(" + currentSyntax.Identifier.Value + "), " + currentSyntax.Identifier.Value + ");");
+    sb.Append("resultSb.AppendFormat(\"{0}: {1}, \", nameof(" +
+        currentSyntax.Identifier.Value + "), " +
+        currentSyntax.Identifier.Value + ");");
     sb.Append(Environment.NewLine);
 }
 ```
@@ -123,8 +133,10 @@ As you can see, this loops over all the descendants of the root node (the class 
 
 My final `MakeUppercaseAsync` method looked like:
 
-```csharpprivate async Task<Solution> MakeUppercaseAsync(Document document, ClassDeclarationSyntax classDecl, CancellationToken cancellationToken)
-
+```csharp
+private async Task<Solution> MakeUppercaseAsync(Document document,
+    ClassDeclarationSyntax classDecl,
+    CancellationToken cancellationToken)
 ```
 
 It&#8217;s the code above, with some extra helper methods that I found on stack overflow. For this project, just put them at the end of the class, but a helper library would be a better long term choice.
@@ -199,7 +211,3 @@ Let me know if you spot a mistake or an area I can improve on. I&#8217;ve upload
 
 [1]: http://stackoverflow.com/a/37743242
 [2]: https://github.com/mattdufeu/UsefulRoslynCodeFixes
-
-```
-
-```
