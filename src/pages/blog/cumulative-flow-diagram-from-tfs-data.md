@@ -50,7 +50,8 @@ It doesn&#8217;t matter how you configure the column options for this query as w
 
 Running the above query from C# is also simple. The below code clearly has a lot to be desired, but it was a quick 5 second proof of concept and as it&#8217;s been &#8220;good enough&#8221; I&#8217;ve never tweaked it.
 
-<pre class="brush: csharp; title: ; notranslate" title="">using Microsoft.TeamFoundation.Client;
+```csharp
+using Microsoft.TeamFoundation.Client;
 using Microsoft.TeamFoundation.WorkItemTracking.Client;
 
 using System;
@@ -78,11 +79,11 @@ namespace CFDConsoleApp
 
             var queryResults = workItemStore.Query(query.QueryText);
 
-            for (int i = 0; i &lt; queryResults.Count; i++)
+            for (int i = 0; i < queryResults.Count; i++)
             {
                 Console.WriteLine(
                     "{0},{1},{2}",
-                    queryResults[i].Id, 
+                    queryResults[i].Id,
                     queryResults[i].Fields["Assigned To"].Value,
                     queryResults[i].State);
             }
@@ -91,7 +92,7 @@ namespace CFDConsoleApp
         }
     }
 }
-</pre>
+```
 
 As you can see, I&#8217;ve placed some stuff in the App.config under App.Settings, but otherwise it&#8217;s very simple.
 
@@ -99,8 +100,10 @@ As you can see, I&#8217;ve placed some stuff in the App.config under App.Setting
 
 So I don&#8217;t have to remember to run this every day, I set up a scheduled tasks to run every morning at 8am, running the following command to output to a file called the current days date and time.
 
-<pre class="brush: bash; title: ; notranslate" title="">cfd_console.exe &gt; %date:~10,4%_%date:~4,2%_%date:~7,2%__%time:~0,2%_%time:~3,2%_%time:~6,2%.txt
-</pre>
+```csharp
+cfd_console.exe &gt; %date:~10,4%_%date:~4,2%_%date:~7,2%__%time:~0,2%_%time:~3,2%_%time:~6,2%.txt
+
+```
 
 This way, for whatever time period you want, you just have to use those files. No outlook reminders or alarms!
 

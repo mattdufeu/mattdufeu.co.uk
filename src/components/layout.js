@@ -7,6 +7,7 @@ import Helmet from "react-helmet";
 import LayoutSideBar from "./layout_sidebar";
 import "../styles.css";
 import icon from "../images/favicon.ico";
+require("prismjs/plugins/line-numbers/prism-line-numbers.css");
 
 export default ({ children }) => (
   <StaticQuery

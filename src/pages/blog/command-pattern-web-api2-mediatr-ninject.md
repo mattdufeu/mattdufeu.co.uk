@@ -38,11 +38,12 @@ Step 1 &#8211; Create a IRequest object
 
 Objects that implement the IRequest interface represent _Commands_. Create a simple class called `CommandExample` like:
 
-<pre class="brush: jscript; title: ; notranslate" title="">public class CommandExample : IRequest&lt;bool&gt;
+```csharp
+public class CommandExample : IRequest<bool>
 {
     public bool NotMe { get; set; }
 }
-</pre>
+```
 
 Step 2 &#8211; Create a Handler
 
@@ -50,14 +51,15 @@ Handlers should implement `IRequestHandler<in TRequest, out TResponse>`. Where T
 
 So, for us, TRequest is `CommandExample` and as we&#8217;re negating the bool passed in, TResponse is `bool`. So create a new class called `CommandExampleHandler`:
 
-<pre class="brush: jscript; title: ; notranslate" title="">public class CommandExampleHandler : IRequestHandler&lt;CommandExample, bool&gt;
+```csharp
+public class CommandExampleHandler : IRequestHandler<CommandExample, bool>
 {
     public bool Handle(CommandExample message)
     {
         return !message.NotMe;
     }
 }
-</pre>
+```
 
 And that&#8217;s it for the plumbing of MediatR. We have now implemented with command pattern.
 
@@ -71,14 +73,15 @@ First, take a copy of <https://github.com/jbogard/MediatR/blob/master/samples/Me
 
 Then, in `App_Start/NinjectWebCommon.cs` add the following to `RegisterServices`
 
-<pre class="brush: jscript; highlight: [4]; title: ; notranslate" title="">kernel.Components.Add&lt;IBindingResolver, ContravariantBindingResolver&gt;();
-kernel.Bind&lt;IMediator&gt;().To&lt;Mediator&gt;();
+```csharp{4}
+kernel.Components.Add<IBindingResolver, ContravariantBindingResolver>();
+kernel.Bind<IMediator>().To<Mediator>();
 
-kernel.Bind&lt;IRequestHandler&lt;CommandExample, bool&gt;&gt;().To&lt;CommandExampleHandler&gt;();
+kernel.Bind<IRequestHandler<CommandExample, bool>>().To<CommandExampleHandler>();
 
-kernel.Bind&lt;SingleInstanceFactory&gt;().ToMethod(ctx =&gt; t =&gt; ctx.Kernel.TryGet(t));
-kernel.Bind&lt;MultiInstanceFactory&gt;().ToMethod(ctx =&gt; t =&gt; ctx.Kernel.GetAll(t));
-</pre>
+kernel.Bind<SingleInstanceFactory>().ToMethod(ctx => t => ctx.Kernel.TryGet(t));
+kernel.Bind<MultiInstanceFactory>().ToMethod(ctx => t => ctx.Kernel.GetAll(t));
+```
 
 Note the highlighted line. It is specific to the command and handler classes we created above. Change them for your classes if you&#8217;re not following along.
 
@@ -90,23 +93,25 @@ I intend to call mediator from within my controllers. It doesn&#8217;t have to b
 
 For this example, I updated the `ValuesController`. First, create a constructor that takes `IMediator` as an argument and sets a field.
 
-<pre class="brush: jscript; title: ; notranslate" title="">private IMediator _mediator;
+```csharp
+private IMediator _mediator;
 
 public ValuesController(IMediator mediator)
 {
     _mediator = mediator;
 }
-</pre>
+```
 
 Then, in my case, I updated the POST action method to
 
-<pre class="brush: jscript; title: ; notranslate" title="">// POST api/values
+```csharp
+// POST api/values
 public async void Post(CommandExample message)
 {
     response = await _mediator.Send(message);
     return;
 }
-</pre>
+```
 
 As you can see, we now have a nice thin controller. Note, the use of async and await.
 

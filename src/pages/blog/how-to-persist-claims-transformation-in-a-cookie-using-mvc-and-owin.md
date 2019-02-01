@@ -6,12 +6,13 @@ date: 2016-01-15T07:01:30+00:00
 url: /how-to-persist-claims-transformation-in-a-cookie-using-mvc-and-owin/
 categories:
   - .NET
-
 ---
+
 Claims transformation (or claims augmentation as it&#8217;s sometimes called) in an MVC claims based application is &#8220;easy&#8221;. All you need is a simple piece of code:
 
-<pre class="brush: csharp; title: ; notranslate" title="">Principal.Identity.AddClaim(new Claim(ClaimType, "ClaimValue")); 
-</pre>
+````csharp
+Principal.Identity.AddClaim(new Claim(ClaimType, "ClaimValue"));
+```
 
 Unfortunately, where you add that code isn&#8217;t.
 
@@ -35,14 +36,15 @@ Why would you care about the number of times it&#8217;s called? In all the examp
 
 I eventually hit upon the solution with the thanks to a StackOverflow post which [hinted at using the OnResponseSignIn of the CookieAuthenticationProvider][4]
 
-<pre class="brush: csharp; title: ; notranslate" title="">Provider = new CookieAuthenticationProvider() 
-{ 
-    OnResponseSignIn = async context =&gt; 
-    { 
+```csharp
+Provider = new CookieAuthenticationProvider()
+{
+    OnResponseSignIn = async context =&gt;
+    {
          // Apply Claims Transformation here
-    } 
-}  
-</pre>
+    }
+}
+```
 
 The OnResponseSignIn is the last chance you have to transform the ClaimsIdentity before it is serialized into a cookie during sign in. The code is only executed once, so no need to be concerned about performance when making a call to a lookup service.
 
@@ -50,3 +52,4 @@ The OnResponseSignIn is the last chance you have to transform the ClaimsIdentity
  [2]: http://dotnetcodr.com/2013/02/25/claims-based-authentication-in-mvc4-with-net4-5-c-part-1-claims-transformation/
  [3]: http://leastprivilege.com/2013/09/18/claims-transformation-middleware-for-katana/
  [4]: https://msdn.microsoft.com/en-us/library/microsoft.owin.security.cookies.cookieauthenticationprovider.onresponsesignin(v=vs.113).aspx
+````

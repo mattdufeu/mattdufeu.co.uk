@@ -38,8 +38,9 @@ Click &#8220;Create jsconfig.json&#8221; and vscode should do the rest.
 
 The Typescript Definition Manager [typings][1] should be installed globally with
 
-<pre class="brush: bash; title: ; notranslate" title="">&gt; npm install typings --global
-</pre>
+```csharp> npm install typings --global
+
+```
 
 This will allow you to install typescript definition files which is what we&#8217;ll do next.
 
@@ -47,26 +48,27 @@ This will allow you to install typescript definition files which is what we&#821
 
 In the folder of the project enter the following commands:
 
-<pre class="brush: bash; title: ; notranslate" title="">&gt; typings init
+```csharp> typings init
 &gt; typings install dt~react --global
-</pre>
+```
 
 You should end up with a new &#8220;typings&#8221; folder with the following contents:
 
-<pre class="brush: bash; title: ; notranslate" title="">│   index.d.ts
+```csharp│   index.d.ts
 │
 └───globals
     └───react
             index.d.ts
             typings.json
-</pre>
+```
 
 ### Step 4 &#8211; Install typescript
 
 You can install typescript globally, but I prefer to put it in each project with the following command
 
-<pre class="brush: bash; title: ; notranslate" title="">Npm install typescript@next
-</pre>
+```csharpNpm install typescript@next
+
+```
 
 Which vscode detects automatically, so there&#8217;s nothing else to it.
 

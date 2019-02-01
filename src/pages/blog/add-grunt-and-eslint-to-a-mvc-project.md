@@ -15,15 +15,16 @@ In this post, I&#8217;ll install ESLint, disable all the default ESLint rules, e
 
 To recap, I have a new ASP.NET MVC project in c:\myproject\WebApplication1 that also contains a **package.json** and **Gruntfile.js**:
 
-<pre class="brush: bash; title: ; notranslate" title="">C:\myproject\WebApplication1&gt; dir -name
+```powershell
+C:\myproject\WebApplication1> dir -name
 node_modules
 packages
 WebApplication1
 Gruntfile.js
 package.json
 WebApplication1.sln
-C:\myproject\WebApplication1&gt;
-</pre>
+C:\myproject\WebApplication1>
+```
 
 Let&#8217;s get started.
 
@@ -31,18 +32,24 @@ Let&#8217;s get started.
 
 Like last time, npm makes installing things trivial. First, install ESLint:
 
-<pre class="brush: bash; title: ; notranslate" title="">npm install --save-dev eslint
-</pre>
+```bash
+npm install --save-dev eslint
+
+```
 
 Once that&#8217;s completed, install the ESLint grunt integration:
 
-<pre class="brush: bash; title: ; notranslate" title="">npm install --save-dev grunt-eslint
-</pre>
+```bash
+npm install --save-dev grunt-eslint
+
+```
 
 And finally install load-grunt-tasks, which saves a bit of typing in a minute:
 
-<pre class="brush: bash; title: ; notranslate" title="">npm install --save-dev load-grunt-tasks
-</pre>
+```bash
+npm install --save-dev load-grunt-tasks
+
+```
 
 ## Step 2 &#8211; Configure ESLint
 
@@ -61,7 +68,7 @@ To make our lives easier to change the configuration of ESLint, we&#8217;re goin
         no-undef: 1,
     }
 }
-</pre>
+```
 
 This ensures the browser and jQuery (\$) variables are recognised by ESLint so they don&#8217;t throw false positive. It also enables a single rule &#8220;**no-undef** &#8211; disallow use of undeclared variables unless mentioned in a /\*global \*/ block&#8221;.
 
@@ -77,7 +84,7 @@ The next file that we need to create is **.eslintignore**. As the name suggests,
 # ignore everything in Scripts except files beginning with "myapp"
 **/Scripts
 !**/Scripts/myapp*
-</pre>
+```
 
 This tells ESLint to ignore all files inside the _packages_ directory, i.e. anything you&#8217;ve got from nuget. The last two lines ensures all files except those following your applications naming convention &#8211; you have a naming convention right? &#8211; are also ignored, i.e. jquery.<ver>.min.js etc.
 
@@ -87,7 +94,8 @@ Finally, all that&#8217;s left is to configure Grunt to run ESLint.
 
 Before explaining the syntax, please edit your **Gruntfile.js** file to contain:
 
-<pre class="brush: jscript; title: ; notranslate" title="">module.exports = function(grunt) {
+```javascript
+module.exports = function(grunt) {
 	# section 1 - require modules
 	require('load-grunt-tasks')(grunt);
 
@@ -106,7 +114,7 @@ Before explaining the syntax, please edit your **Gruntfile.js** file to contain:
 	grunt.registerTask('default', ['eslint']);
  
 };
-</pre>
+```
 
 The more you play with Grunt the more familiar this will be, but it&#8217;s basically made up of 3 sections. Section one lists any requirements (&#8220;require&#8221; calls), section 2 is where you initialize Grunt and section 3 where you register tasks.
 
@@ -116,7 +124,8 @@ Finally I register the &#8220;eslint&#8221; target to be the default task. This 
 
 Which if I do that, I get:
 
-<pre class="brush: bash; title: ; notranslate" title="">C:\myproject\WebApplication1&gt; grunt
+```powershell
+C:\myproject\WebApplication1&gt; grunt
 Running "eslint:target" (eslint) task
 
 WebApplication1/Scripts/_references.js
@@ -164,7 +173,7 @@ WebApplication1/Scripts/respond.min.js
 ? 14 problems (0 errors, 14 warnings)
 
 And that's it! ESLint is now analysing the JavaScript files in my MVC project.
-</pre>
+```
 
 ## Step 4 &#8211; Next Steps
 
