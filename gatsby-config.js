@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.mattdufeu.co.uk`,
+    siteUrl: `https://mattdufeu.co.uk`,
     title: `Matt DuFeu - Father and .NET enthusiast. Constantly striving to learn`
   },
   plugins: [
