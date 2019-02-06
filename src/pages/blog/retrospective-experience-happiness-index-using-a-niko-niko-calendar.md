@@ -3,11 +3,13 @@ title: Retrospective Experience – Happiness Index using a Niko Niko Calendar
 author: DuFeu
 type: post
 date: 2015-03-25T19:19:48+00:00
-url: /retrospective-experience-happiness-index-using-a-niko-niko-calendar/
+url: /blog/retrospective-experience-happiness-index-using-a-niko-niko-calendar/
 categories:
   - Agile
 tags:
   - Retrospective
+redirect_from:
+  - /retrospective-experience-happiness-index-using-a-niko-niko-calendar/
 ---
 
 In the last month or so, I&#8217;ve been trying to change tactics for how I approach increasing velocity. I think this all started with a tweet from Luis Gonçalves:

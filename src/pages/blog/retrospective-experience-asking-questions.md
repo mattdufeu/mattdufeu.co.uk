@@ -3,13 +3,15 @@ title: Retrospective Experience – Asking Questions
 author: DuFeu
 type: post
 date: 2015-04-30T20:12:01+00:00
-url: /retrospective-experience-asking-questions/
+url: /blog/retrospective-experience-asking-questions/
 categories:
   - Agile
 tags:
   - Retrospective
-
+redirect_from:
+  - /retrospective-experience-asking-questions/
 ---
+
 We&#8217;re close to a big release and things have been going well &#8211; think 200%+ increase in velocity from when we started the release (and we were good already ) &#8211; but our last couple of retrospectives felt a little flat, possibly because the big wins have already been made. I wanted a technique to really get the team involved.
 
 ## Back to Basic
@@ -40,18 +42,18 @@ I&#8217;d be really interested to hear anyone trying this technique in the comme
 
 ### What went well
 
-  * Adapting the &#8220;beginners&#8221; technique to increase team involvement
-  * Sitting with the team, rather than standing at the front or walking around the room seemed to increase team participation
+- Adapting the &#8220;beginners&#8221; technique to increase team involvement
+- Sitting with the team, rather than standing at the front or walking around the room seemed to increase team participation
 
 ### What could I have done better?
 
-  * Changed the wording of the questions from &#8220;what could _you_&#8221; to &#8220;what could _we_&#8220;
+- Changed the wording of the questions from &#8220;what could _you_&#8221; to &#8220;what could _we_&#8220;
 
 ### What should I not do again?
 
-  * Not spell check the questions
+- Not spell check the questions
 
- [1]: http://www.benlinders.com/getting-value-out-of-agile-retrospectives/
- [2]: http://lmsgoncalves.com/
- [3]: http://www.benlinders.com/contact/
- [4]: https://www.twitter.com/mattdufeu
+[1]: http://www.benlinders.com/getting-value-out-of-agile-retrospectives/
+[2]: http://lmsgoncalves.com/
+[3]: http://www.benlinders.com/contact/
+[4]: https://www.twitter.com/mattdufeu

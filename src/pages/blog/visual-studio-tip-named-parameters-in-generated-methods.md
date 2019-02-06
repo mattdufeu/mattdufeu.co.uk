@@ -3,9 +3,11 @@ title: Visual Studio Tip – Named Parameters in Generated Methods
 author: DuFeu
 type: post
 date: 2015-10-22T18:30:48+00:00
-url: /visual-studio-tip-named-parameters-in-generated-methods/
+url: /blog/visual-studio-tip-named-parameters-in-generated-methods/
 categories:
   - .NET
+redirect_from:
+  - /visual-studio-tip-named-parameters-in-generated-methods/
 ---
 
 Really quick tip that I found recently while refactoring some old code.

@@ -3,9 +3,11 @@ title: The importance of backlog refinement
 author: DuFeu
 type: post
 date: 2015-05-09T19:54:57+00:00
-url: /the-importance-of-backlog-refinement/
+url: /blog/the-importance-of-backlog-refinement/
 categories:
   - Agile
+redirect_from:
+  - /the-importance-of-backlog-refinement/
 ---
 
 Backlog refinement isn&#8217;t a prescribed meeting, instead the [Scrum Guide][1] states:

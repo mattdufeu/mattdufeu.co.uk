@@ -3,9 +3,11 @@ title: Verify WordPress Backups Using Azure
 author: DuFeu
 type: post
 date: 2014-08-06T19:51:01+00:00
-url: /verify-wordpress-backups-using-azure/
+url: /blog/verify-wordpress-backups-using-azure/
 categories:
   - Azure
+redirect_from:
+  - /verify-wordpress-backups-using-azure/
 ---
 
 I suffered some minor data loss today which I managed to restore from backup, but not before a few minutes of &#8220;why can&#8217;t I restore&#8221;. It reminded me of the classic quote:

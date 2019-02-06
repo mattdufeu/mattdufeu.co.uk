@@ -3,9 +3,11 @@ title: Persist Claims Transformation in a cookie with MVC and OWIN
 author: DuFeu
 type: post
 date: 2016-01-15T07:01:30+00:00
-url: /how-to-persist-claims-transformation-in-a-cookie-using-mvc-and-owin/
+url: /blog/how-to-persist-claims-transformation-in-a-cookie-using-mvc-and-owin/
 categories:
   - .NET
+redirect_from:
+  - /how-to-persist-claims-transformation-in-a-cookie-using-mvc-and-owin/
 ---
 
 Claims transformation (or claims augmentation as it&#8217;s sometimes called) in an MVC claims based application is &#8220;easy&#8221;. All you need is a simple piece of code:

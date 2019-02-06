@@ -3,11 +3,13 @@ title: Welcome
 author: DuFeu
 type: post
 date: 2012-07-29T07:02:56+00:00
-url: /welcome/
+url: /blog/welcome/
 categories:
   - Agile
-
+redirect_from:
+  - /welcome/
 ---
+
 Hi and welcome to my blog about all things SharePoint (hence the sp in the url).
 
 I&#8217;m a software engineer working in the South West of  England and have recently discovered SharePoint. I&#8217;ve spent the previous 2-3 years as a Technical Analyst so I&#8217;m really enjoying getting back in touch with my inner code monkey. So far I&#8217;ve taken and passed <a title="Exam 70-573" href="http://www.microsoft.com/learning/en/us/exam.aspx?id=70-573" target="_blank">exam 70-573</a> so have a MCTS in SharePoint 2010, Application Development and hope to pass the MCPD exam soon.

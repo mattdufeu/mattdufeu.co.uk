@@ -3,11 +3,13 @@ title: Retrospective Experience – Halloween Special
 author: DuFeu
 type: post
 date: 2014-11-12T21:37:46+00:00
-url: /retrospective-experience-halloween-special/
+url: /blog/retrospective-experience-halloween-special/
 categories:
   - Agile
 tags:
   - Retrospective
+redirect_from:
+  - /retrospective-experience-halloween-special/
 ---
 
 The end of the sprint was approaching and I was researching which technique to try next, when I saw this tweet from [@aaronjmckenna][1] which I had to try:

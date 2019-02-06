@@ -3,9 +3,11 @@ title: Getting Started with ESLint using Grunt
 author: DuFeu
 type: post
 date: 2015-03-11T18:31:54+00:00
-url: /getting-started-with-eslint-using-grunt/
+url: /blog/getting-started-with-eslint-using-grunt/
 categories:
   - JavaScript
+redirect_from:
+  - /getting-started-with-eslint-using-grunt/
 ---
 
 ![Getting Started with ESLint using Grunt](../../images/2015/01/ESLint.png "Getting Started with ESLint using Grunt")

@@ -3,13 +3,15 @@ title: Scrum Retrospective Experience – ESVP, Sailboat and Constellation
 author: DuFeu
 type: post
 date: 2014-08-02T13:24:46+00:00
-url: /scrum-retrospective-experience-esvp-sailboat-and-constellation/
+url: /blog/scrum-retrospective-experience-esvp-sailboat-and-constellation/
 categories:
   - Agile
 tags:
   - Retrospective
-
+redirect_from:
+  - /scrum-retrospective-experience-esvp-sailboat-and-constellation/
 ---
+
 I recently conducted my first Sprint Retrospective since becoming a Certified ScrumMaster and although I think it went ok, I&#8217;m sure there&#8217;s room for improvement. I&#8217;m hoping that by writing about it I perform a more in-depth personal reflection than I normally would and if someone else finds it useful or can provide feedback, I&#8217;ll be very happy.
 
 ## Brief Background
@@ -22,18 +24,18 @@ When I first joined, <a title="I asked twitter about the various retrospective t
 
 Unsurprisingly, I followed the 5 stage retrospective mentioned in that book and used the techniques within.
 
-  1. Set the Stage
-  2. Gather Data
-  3. Generate Insights
-  4. Decide what to do
-  5. Close the retrospective
+1. Set the Stage
+2. Gather Data
+3. Generate Insights
+4. Decide what to do
+5. Close the retrospective
 
 ### Stage 1 &#8211; Set the stage.
 
 The aim/context of this Retrospective was two-fold:
 
-  1. Understand the teams opinion of our sprint retrospectives
-  2. Discover the biggest issue/worry that we currently have
+1. Understand the teams opinion of our sprint retrospectives
+2. Discover the biggest issue/worry that we currently have
 
 We used <a title="ESVP Check-In" href="http://www.funretrospectives.com/esvp-explorer-shopper-vacationer-prisoner/" target="_blank">ESVP Check-In</a> to discover the first, which resulted in 4 E, 2 S, 2 SP, 1 ESV and 1 P. I&#8217;m reading that as I was partially correct in my fear that the team were beginning to lose faith in retrospectives, but it wasn&#8217;t as bad as I thought.
 

@@ -3,9 +3,11 @@ title: "Convert unix epoch time to DateTime in C#"
 author: DuFeu
 type: post
 date: 2016-02-21T17:22:34+00:00
-url: /convert-unix-epoch-time-to-datetime-in-csharp/
+url: /blog/convert-unix-epoch-time-to-datetime-in-csharp/
 categories:
   - .NET
+redirect_from:
+  - /convert-unix-epoch-time-to-datetime-in-csharp/
 ---
 
 I recently had to convert unix epoch time to DateTime and like the rest of the world turned to stackoverflow. The top answer is a very simple solution of adding the unix time, which is in milliseconds, to a DateTime of 1/1/1970.

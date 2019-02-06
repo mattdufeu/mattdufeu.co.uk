@@ -44,6 +44,8 @@ module.exports = {
           `gatsby-remark-prismjs`
         ]
       }
-    }
+    },
+    "gatsby-redirect-from",
+    "gatsby-plugin-meta-redirect"
   ]
 };

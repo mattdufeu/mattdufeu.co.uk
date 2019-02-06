@@ -3,11 +3,13 @@ title: Scrum Master Tip – Team Consensus
 author: DuFeu
 type: post
 date: 2016-03-20T14:41:16+00:00
-url: /scrum-master-tip-team-consensus/
+url: /blog/scrum-master-tip-team-consensus/
 categories:
   - Agile
-
+redirect_from:
+  - /scrum-master-tip-team-consensus/
 ---
+
 In [Scrum Master Tip &#8211; Many Voices][1] I listed a few things to try if your team meetings are dominated by one person and you want to hear from the others in the team.
 
 On a similar note, I&#8217;ve found the following tips useful to Team consensus on decisions.
@@ -38,4 +40,4 @@ Imagine there is a line along one wall where one end is agree and the other is d
 
 Use planning poker cards where a higher number is more agreement.
 
- [1]: http://localhost:8000/empty/scrum-master-tip-many-voices/
+[1]: http://localhost:8000/empty/scrum-master-tip-many-voices/

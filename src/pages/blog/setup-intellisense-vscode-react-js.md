@@ -3,9 +3,11 @@ title: How To Setup Intellisense in VSCode for React.js
 author: DuFeu
 type: post
 date: 2016-05-24T09:30:48+00:00
-url: /setup-intellisense-vscode-react-js/
+url: /blog/setup-intellisense-vscode-react-js/
 categories:
   - React
+redirect_from:
+  - /setup-intellisense-vscode-react-js/
 ---
 
 I&#8217;ve been getting back into React.js development and was missing the rich developer experience visual studio gives you with things like intellisense.

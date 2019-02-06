@@ -3,9 +3,11 @@ title: Add Grunt and ESLint to a MVC Project
 author: DuFeu
 type: post
 date: 2015-03-18T19:32:31+00:00
-url: /add-grunt-and-eslint-to-a-mvc-project/
+url: /blog/add-grunt-and-eslint-to-a-mvc-project/
 categories:
   - JavaScript
+redirect_from:
+  - /add-grunt-and-eslint-to-a-mvc-project/
 ---
 
 This is part two of getting started with ESLint using Grunt where I will show you how to configure ESLint to analyse a MVC .NET Project. In [part one][1] I set-up our environment with node.js, Grunt-cli and finally Grunt for our project, but you couldn&#8217;t do much with it.

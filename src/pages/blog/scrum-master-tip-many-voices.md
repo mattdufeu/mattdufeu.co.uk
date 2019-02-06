@@ -3,11 +3,13 @@ title: Scrum Master Tip – Many Voices
 author: DuFeu
 type: post
 date: 2016-01-20T19:23:34+00:00
-url: /scrum-master-tip-many-voices/
+url: /blog/scrum-master-tip-many-voices/
 categories:
   - Agile
-
+redirect_from:
+  - /scrum-master-tip-many-voices/
 ---
+
 This is a quick tip that I struggled with when I started as a Scrum Master and wish someone told me about.
 
 ## Issue to Avoid
@@ -36,6 +38,6 @@ If after all the above, you&#8217;re still getting little input, it may be becau
 
 Finally:
 
-> Learn the power of silence 
+> Learn the power of silence
 
 Most people hate sitting in a silent meeting. If you keep quiet, someone else will fill the void.

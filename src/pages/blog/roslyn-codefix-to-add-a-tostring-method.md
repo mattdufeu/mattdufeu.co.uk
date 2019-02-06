@@ -3,9 +3,11 @@ title: How To Use Roslyn CodeFix to add a ToString method
 author: DuFeu
 type: post
 date: 2017-04-19T19:53:08+00:00
-url: /roslyn-codefix-to-add-a-tostring-method/
+url: /blog/roslyn-codefix-to-add-a-tostring-method/
 categories:
   - .NET
+redirect_from:
+  - /roslyn-codefix-to-add-a-tostring-method/
 ---
 
 I recently had the opportunity to update the quality of logging in an application. Exceptions were handled well, but it was hard to see the values passed through the layers. I ended up using a _Roslyn CodeFix to add a ToString method_. This is what I did.
