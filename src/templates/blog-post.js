@@ -38,6 +38,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        tags
+        categories
       }
     }
   }

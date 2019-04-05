@@ -23,7 +23,9 @@ module.exports = {
         start_url: "/",
         background_color: "#6b37bf",
         theme_color: "#6b37bf",
-        display: "standalone"
+        display: "standalone",
+        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
+        include_favicon: true // Include favicon
       }
     },
     "gatsby-plugin-offline",
