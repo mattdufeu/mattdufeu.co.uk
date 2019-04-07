@@ -1,11 +1,34 @@
-import React, { Component } from "react";
+import React from "react";
 
-class LayoutSidebar extends Component {
-  render() {
-    return (
+import { Link, StaticQuery } from "gatsby";
+import kebabCase from "lodash/kebabCase";
+
+const LayoutSidebar = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+        tagsGroup: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___tags) {
+            fieldValue
+            totalCount
+          }
+        }
+        categoriesGroup: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___categories) {
+            fieldValue
+            totalCount
+          }
+        }
+      }
+    `}
+    render={data => (
       <div id="sidebar" role="complementary">
         <aside id="pages-3" className="widget_pages">
-          <h1 className="widget-title"> </h1>
           <ul>
             <li className="page_item page-item-26">
               <a href="/about/">About</a>
@@ -37,9 +60,33 @@ class LayoutSidebar extends Component {
             />
           </div>
         </aside>
+        <h2 className="widget-title">Choose a tag:</h2>
+        <div>
+          <ul>
+            {data.tagsGroup.group.map(tag => (
+              <li key={tag.fieldValue}>
+                <Link to={`/blog/tags/${kebabCase(tag.fieldValue)}/`}>
+                  {tag.fieldValue} ({tag.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h2 className="widget-title">Choose a category:</h2>
+          <ul>
+            {data.categoriesGroup.group.map(tag => (
+              <li key={tag.fieldValue}>
+                <Link to={`/blog/categories/${kebabCase(tag.fieldValue)}/`}>
+                  {tag.fieldValue} ({tag.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    );
-  }
-}
+    )}
+  />
+);
 
 export default LayoutSidebar;
