@@ -4,7 +4,7 @@ import kebabCase from "lodash/kebabCase";
 
 class PostFooter extends Component {
   renderTags() {
-    let tags = this.props.doofer.markdownRemark.frontmatter.tags;
+    let tags = this.props.data.markdownRemark.frontmatter.tags;
 
     if (tags) {
       let allTags = tags.map(x => (
@@ -24,7 +24,7 @@ class PostFooter extends Component {
   }
 
   renderCategories() {
-    let categories = this.props.doofer.markdownRemark.frontmatter.categories;
+    let categories = this.props.data.markdownRemark.frontmatter.categories;
 
     if (categories) {
       let allCategories = categories.map(x => (
@@ -42,16 +42,10 @@ class PostFooter extends Component {
   render() {
     return (
       <footer className="entry-meta">
-        Posted on
-        <a
-          href={this.props.doofer.markdownRemark.fields.slug}
-          title="1:29 pm"
-          rel="bookmark"
-        >
-          <time className="entry-date" dateTime="2014-09-15T13:29:02+00:00">
-            15 September, 2014{" "}
-          </time>
-        </a>
+        Posted on{" "}
+        <time className="entry-date" dateTime="2014-09-15T13:29:02+00:00">
+          {this.props.data.markdownRemark.frontmatter.date}
+        </time>{" "}
         <span className="byline">
           by <span className="author vcard">DuFeu</span>{" "}
         </span>

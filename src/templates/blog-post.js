@@ -1,11 +1,12 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import PostFooter from "../components/PostFooter";
 import Helmet from "react-helmet";
 
-export default ({ data }) => {
+export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
+  const { previous, next } = pageContext;
   return (
     <Layout>
       <article
@@ -23,23 +24,41 @@ export default ({ data }) => {
           className="entry-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <PostFooter doofer={data} />
+        <PostFooter data={data} />
       </article>
+      <div
+        style={{
+          display: `flex`,
+          flexWrap: `wrap`,
+          justifyContent: `space-between`,
+          padding: 0
+        }}
+      >
+        {previous && (
+          <Link to={previous.fields.slug} rel="prev">
+            ← (Older) {previous.frontmatter.title}
+          </Link>
+        )}
+        {next && (
+          <Link to={next.fields.slug} rel="next">
+            {next.frontmatter.title} (Newer) →
+          </Link>
+        )}
+      </div>
     </Layout>
   );
 };
 
 export const query = graphql`
-  query($slug: String!) {
+  query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
+      id
       html
       frontmatter {
         title
         tags
         categories
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }
