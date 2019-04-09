@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link, StaticQuery } from "gatsby";
+import { graphql, Link, StaticQuery } from "gatsby";
 import kebabCase from "lodash/kebabCase";
 
 const LayoutSidebar = () => (
