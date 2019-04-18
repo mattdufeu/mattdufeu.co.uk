@@ -33,6 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
                   title
                   tags
                   categories
+                  excerpt
                 }
               }
             }

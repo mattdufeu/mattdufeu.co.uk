@@ -10,11 +10,15 @@ tags:
   - Retrospective
 redirect_from:
   - /4ls-retrospective-and-why-you-would-use-it/
+excerpt:
+  I&#8217;ve just started working on a brand new project as a Scrum Master for a team of 7. There&#8217;s quite a mixed bag of experience,   ranging from other scrum masters to agile first timers.
+  <br>
+  For our first retrospective I wanted something simple to explain, but also simple to take part in. The <a href="http://www.funretrospectives.com/the-4-ls-liked-learned-lacked-longed-for/">4Ls technique</a> leapt out at me.
 ---
 
 ## Background
 
-I&#8217;ve just started working on a brand new project as a Scrum Master for a team of 7. There&#8217;s quite a mixed bag of experience, ranging from scrum masters to complete agile first timers.
+I&#8217;ve just started working on a brand new project as a Scrum Master for a team of 7. There&#8217;s quite a mixed bag of experience, ranging from other scrum masters to agile first timers.
 
 For our first retrospective I wanted something simple to explain, but also simple to take part in. The [4Ls technique][1] leapt out at me.
 

@@ -8,7 +8,6 @@ import Layout from "../components/layout";
 
 export default class BlogIndex extends React.Component {
   render() {
-    debugger;
     const { data } = this.props;
     const { currentPage, numPages } = this.props.pageContext;
     const isFirst = currentPage === 1;
@@ -23,20 +22,26 @@ export default class BlogIndex extends React.Component {
           <body className="home blog logged-in admin-bar customize-support" />
         </Helmet>
         <div>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <article key={node.id}>
-              <Link
-                to={node.fields.slug}
-                css={css`
-                  text-decoration: none;
-                  color: inherit;
-                `}
-              >
-                <h1>{node.frontmatter.title}</h1>
-              </Link>
-              <div dangerouslySetInnerHTML={{ __html: node.html }} />
-            </article>
-          ))}
+          {data.allMarkdownRemark.edges.map(({ node }) => {
+            const content = node.frontmatter.excerpt
+              ? node.frontmatter.excerpt
+              : node.html;
+            return (
+              <article key={node.id}>
+                <Link
+                  to={node.fields.slug}
+                  css={css`
+                    text-decoration: none;
+                    color: inherit;
+                  `}
+                >
+                  <h1>{node.frontmatter.title}</h1>
+                </Link>
+                <div dangerouslySetInnerHTML={{ __html: content }} />
+                <p className="byline">Posted on {node.frontmatter.date}</p>
+              </article>
+            );
+          })}
         </div>
         <ul
           style={{
@@ -81,6 +86,7 @@ export const query = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            excerpt
           }
         }
       }
