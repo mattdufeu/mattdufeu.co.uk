@@ -20,20 +20,25 @@ const Categories = ({ pageContext, data }) => {
       </Helmet>
       <div>
         {categoryHeader}
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <article key={node.id}>
-            <Link
-              to={node.fields.slug}
-              css={css`
-                text-decoration: none;
-                color: inherit;
-              `}
-            >
-              <h1>{node.frontmatter.title}</h1>
-            </Link>
-            <div dangerouslySetInnerHTML={{ __html: node.html }} />
-          </article>
-        ))}
+        {data.allMarkdownRemark.edges.map(({ node }) => {
+          const content = node.frontmatter.excerpt
+            ? node.frontmatter.excerpt
+            : node.html;
+          return (
+            <article key={node.id}>
+              <Link
+                to={node.frontmatter.url}
+                css={css`
+                  text-decoration: none;
+                  color: inherit;
+                `}
+              >
+                <h1>{node.frontmatter.title}</h1>
+              </Link>
+              <div dangerouslySetInnerHTML={{ __html: content }} />
+            </article>
+          );
+        })}
       </div>
       <Link to="/blog/categories">All categories</Link>
     </Layout>
@@ -82,6 +87,8 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            excerpt
+            url
           }
           html
         }

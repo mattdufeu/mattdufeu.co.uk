@@ -35,12 +35,12 @@ export default ({ data, pageContext }) => {
         }}
       >
         {previous && (
-          <Link to={previous.fields.slug} rel="prev">
+          <Link to={previous.frontmatter.url} rel="prev">
             ← (Older) {previous.frontmatter.title}
           </Link>
         )}
         {next && (
-          <Link to={next.fields.slug} rel="next">
+          <Link to={next.frontmatter.url} rel="next">
             {next.frontmatter.title} (Newer) →
           </Link>
         )}
@@ -59,6 +59,7 @@ export const query = graphql`
         tags
         categories
         date(formatString: "MMMM DD, YYYY")
+        url
       }
     }
   }

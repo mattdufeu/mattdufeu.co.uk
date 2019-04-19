@@ -38,7 +38,7 @@ Once the first team has finished, invite the next team up. Second and subsequent
 
 Repeat this step for each group and &#8211; excuse the hideous use of paint &#8211; something like this:
 
-![Fig 1 – Table after grouping PBIs into story point buckets](../../images/2014/10/planning_endofstep3.png "Fig 1 – Table after grouping PBIs into story point buckets")
+![Fig 1 – Table after grouping PBIs into story point buckets](../../../images/2014/10/planning_endofstep3.png "Fig 1 – Table after grouping PBIs into story point buckets")
 
 ## Step 4 &#8211; Discuss any significant changes
 
@@ -52,7 +52,7 @@ Once that&#8217;s finished, there should be some sort of agreement to the size o
 
 Ask the whole team (or a subset if you&#8217;re a really large team) to order these by dependencies . We used a column for each chain of dependencies and staggered them if there was some overlap, i.e. shared parents.
 
-![PBIs ordered by dependencies](../../images/2014/10/planning_endofstep6.png "PBIs ordered by dependencies")
+![PBIs ordered by dependencies](../../../images/2014/10/planning_endofstep6.png "PBIs ordered by dependencies")
 
 As you can see in the above image:
 

@@ -10,7 +10,7 @@ redirect_from:
   - /getting-started-with-eslint-using-grunt/
 ---
 
-![Getting Started with ESLint using Grunt](../../images/2015/01/ESLint.png "Getting Started with ESLint using Grunt")
+![Getting Started with ESLint using Grunt](../../../images/2015/01/ESLint.png "Getting Started with ESLint using Grunt")
 
 I recently had the chance to add [ESLint][2] to our workflow. I considered using it standalone, but as [Grunt is becoming a first class citizen in Visual Studio 2015][3], I wanted to get more familiar with it now.
 
@@ -53,7 +53,7 @@ Config info can be viewed via: npm help config
 
 ## Step 2 &#8211; Install the Grunt Command Line tools (grunt-cli) globally
 
-![Getting Started with ESLint using Grunt](../../images/2015/01/grunt.png "Getting Started with ESLint using Grunt")
+![Getting Started with ESLint using Grunt](../../../images/2015/01/grunt.png "Getting Started with ESLint using Grunt")
 
 The next step is to install the Grunt Command Line tools globally using npm. Thankfully that&#8217;s as simple as typing the following in a command prompt:
 
@@ -148,10 +148,10 @@ Please leave a comment below or catch me on [twitter][6] if you&#8217;re having 
 
 [Update: [part 2][7] is now available.]
 
-[1]: ../../images/2015/01/ESLint.png
+[1]: ../../../images/2015/01/ESLint.png
 [2]: http://eslint.org
 [3]: http://www.asp.net/vnext/overview/aspnet-vnext/grunt-and-bower-in-visual-studio-2015
 [4]: http://nodejs.org/
-[5]: ../../images/2015/01/grunt.png
+[5]: ../../../images/2015/01/grunt.png
 [6]: https://www.twitter.com/mattdufeu
 [7]: http://localhost:8000/empty/add-grunt-and-eslint-to-a-mvc-project/

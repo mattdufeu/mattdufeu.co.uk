@@ -3,6 +3,7 @@ title: About
 author: DuFeu
 type: page
 date: 2012-08-12T08:55:31+00:00
+url: /about
 ---
 
 I’m a contract C# Developer/Architect working in the South West of England.

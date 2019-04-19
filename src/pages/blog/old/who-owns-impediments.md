@@ -14,7 +14,7 @@ In a previous post I listed some of the [different types of impediment to identi
 
 ## Types of Impediment
 
-![Different Types of Impediment to Identify](../../images/2016/01/RoadWorks.png "Different Types of Impediment to Identify")
+![Different Types of Impediment to Identify](../../../images/2016/01/RoadWorks.png "Different Types of Impediment to Identify")
 
 In the same order of smallest scope, all the way out to the whole organisation.
 

@@ -19,10 +19,10 @@ I then realised that although this site is backed up via the excellent [UpdraftP
 So, I did some digging and it seems the [general advice][2] is to see if you can open the zip file the backup process produces. Now call me a skeptic, but that makes me a little uncomfortable. Restoring on top of this site (_shudder_) or [restoring to a sub-domain][3] was also unappealing and then I remembered Azure.
 
 I&#8217;m lucky enough to have a MSDN subscription which gets me some free Azure time, but there always seems to be free trials out there. Once I was logged into the management portal the process was very simple. Click New -> Compute -> Web Site -> From Gallery -> WordPress and fill out the following two dialogs:
-[![Azure Create Website 1](../../images/2014/08/azure_create_site.png "Azure Create Website 1")][4]
+[![Azure Create Website 1](../../../images/2014/08/azure_create_site.png "Azure Create Website 1")][4]
 
 I didn&#8217;t bother filling out the &#8220;Deployment Settings&#8221; section as I would be deleting the site as soon as I was done.
-[![Azure Create Website 1](../../images/2014/08/azure_create_site2.png "Azure Create Website 1")][4]
+[![Azure Create Website 1](../../../images/2014/08/azure_create_site2.png "Azure Create Website 1")][4]
 
 Once Azure has done it&#8217;s thing, go to the websites dashboard and find the URL which will be something like &#8220;restoredsite.azurewebsites.net&#8221;. Go there and WordPress will lead you through the installation steps of setting up an admin account. Once that&#8217;s finished, all that remains is to install your backup plugin of choice, upload your backup file and hit restore.
 
@@ -31,5 +31,5 @@ If all is well, after a little while (depending on how big your site is) you sho
 [1]: http://updraftplus.com/
 [2]: http://codex.wordpress.org/Upgrading_WordPress_Extended#Step_3:_Verify_the_backups
 [3]: http://www.warriorforum.com/main-internet-marketing-discussion-forum/880894-how-do-you-guys-verify-your-wordpress-backups-working.html#post8794155
-[4]: ../../images/2014/08/azure_create_site-e1407260388415.png
-[5]: ../../images/2014/08/azure_create_site2.png
+[4]: ../../../images/2014/08/azure_create_site-e1407260388415.png
+[5]: ../../../images/2014/08/azure_create_site2.png

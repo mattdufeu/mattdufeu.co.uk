@@ -44,7 +44,7 @@ _Each member of the team had to come up with 1 treat (something that will help i
 
 This worked really well as it limited everyone to just one idea. As you can see below, I also decorated the board:
 
-![Trick Or Treat Board](../../images/2014/11/TrickOrTreatBoard.jpg "Trick Or Treat Board")
+![Trick Or Treat Board](../../../images/2014/11/TrickOrTreatBoard.jpg "Trick Or Treat Board")
 
 ## Stage 4 &#8211; Decide what to do &#8211; Pick a Door
 
@@ -58,7 +58,7 @@ I must admit, we don&#8217;t normally do much for this part of the retrospective
 
 I could tell by the audible groans from the team that they thought the same thing when I introduced the idea, but I&#8217;m pleased to say it was quite a positive thing. What&#8217;s more, we now have a wonderful mascot for the next sprint.
 
-![Sprint Mascot](../../images/2014/11/SprintMascot.jpg "Sprint Mascot")
+![Sprint Mascot](../../../images/2014/11/SprintMascot.jpg "Sprint Mascot")
 
 # Summary
 

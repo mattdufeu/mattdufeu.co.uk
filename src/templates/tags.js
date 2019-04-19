@@ -27,7 +27,7 @@ const Tags = ({ pageContext, data }) => {
           return (
             <article key={node.id}>
               <Link
-                to={node.fields.slug}
+                to={node.frontmatter.url}
                 css={css`
                   text-decoration: none;
                   color: inherit;
@@ -88,6 +88,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             excerpt
+            url
           }
           html
         }

@@ -16,7 +16,7 @@ What I didn&#8217;t realise when I first started out was that there are many dif
 
 ## Types of Impediment
 
-![Different Types of Impediment to Identify](../../images/2016/01/RoadWorks.png "Different Types of Impediment to Identify")
+![Different Types of Impediment to Identify](../../../images/2016/01/RoadWorks.png "Different Types of Impediment to Identify")
 
 In order of smallest scope, all the way out to the whole organisation, here&#8217;s a list of some of the types of impediments you might encounter. Another post will detail who I think should own the impediment and try to resolve it.
 

@@ -32,11 +32,11 @@ I&#8217;d previously read about the [Happiness Index][1] technique but was reluc
 
 I don&#8217;t think all of the team were particularly comfortable with analysing their feelings, but I believe it was a very worthwhile exercise to do. At the end of the sprint we ended up with the following chart:
 
-![Niko Niko Calendar](../../images/2015/03/NikoNiko.jpg "Niko Niko Calendar")
+![Niko Niko Calendar](../../../images/2015/03/NikoNiko.jpg "Niko Niko Calendar")
 
 As a team, we then talked through all the events that caused big changes in happiness and plotted the &#8220;average&#8221; happiness on a graph.
 
-![Happiness Index Graph](../../images/2015/03/HappinessIndex.png "Happiness Index Graph")
+![Happiness Index Graph](../../../images/2015/03/HappinessIndex.png "Happiness Index Graph")
 
 This really helped the team focus on the major events and led to some really great discussions. One of our team even said afterwards &#8220;that may have been the best [retrospective] yet&#8221;.
 

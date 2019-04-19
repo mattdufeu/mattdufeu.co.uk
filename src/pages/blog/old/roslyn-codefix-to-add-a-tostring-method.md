@@ -40,7 +40,7 @@ private static void AnalyzeSymbol(SymbolAnalysisContext context)
 That&#8217;s it for the analyzer. It passes all Class Declarations to Rosylyn to create a Diagnostic.
 
 If you press F5 now to debug the project, a new instance of Visual Studio will open. This new instance has our analyzer installed. So create a simple console app and you will see all class declarations are decorated with a green squiggly line.
-![Rosylyn Green Squiggly](../../images/2017/04/Roslyn-Green-Squiggly.png "Rosylyn Green Squiggly")
+![Rosylyn Green Squiggly](../../../images/2017/04/Roslyn-Green-Squiggly.png "Rosylyn Green Squiggly")
 So far, so good. Now to create the codefix.
 
 ## The CodeFix
@@ -183,7 +183,7 @@ private IEnumerable<ParameterSyntax> GetParametersList(string[] parameterTypes, 
 ```
 
 If you run this code now, and apply the code fix to a class with some properties, it should add a ToString method.
-![ToString Method Added](../../images/2017/04/ToString-Method-Added.png "ToString Method Added")
+![ToString Method Added](../../../images/2017/04/ToString-Method-Added.png "ToString Method Added")
 
 ## Alternatives
 

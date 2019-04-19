@@ -29,7 +29,7 @@ export default class BlogIndex extends React.Component {
             return (
               <article key={node.id}>
                 <Link
-                  to={node.fields.slug}
+                  to={node.frontmatter.url}
                   css={css`
                     text-decoration: none;
                     color: inherit;
@@ -87,6 +87,7 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             title
             excerpt
+            url
           }
         }
       }

@@ -34,6 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
                   tags
                   categories
                   excerpt
+                  url
                 }
               }
             }
@@ -49,11 +50,9 @@ exports.createPages = ({ graphql, actions }) => {
         const next = index === 0 ? null : posts[index - 1].node;
 
         createPage({
-          path: post.node.fields.slug,
+          path: post.node.frontmatter.url,
           component: path.resolve(`./src/templates/blog-post.js`),
           context: {
-            // Data passed to context is available
-            // in page queries as GraphQL variables.
             slug: post.node.fields.slug,
             previous,
             next

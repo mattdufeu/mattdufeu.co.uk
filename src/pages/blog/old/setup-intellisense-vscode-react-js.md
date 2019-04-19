@@ -14,7 +14,7 @@ I&#8217;ve been getting back into React.js development and was missing the rich 
 
 I thought I had something working as Ctrl+Space opened intellisense with a sensible suggestion, but this turned out to be the IDE using what I&#8217;d typed earlier to make an educated guess. Clever, but I was hoping for more.
 
-![No Intellisense](../../images/2016/05/01_before.png "No Intellisense")
+![No Intellisense](../../../images/2016/05/01_before.png "No Intellisense")
 
 ## Dead Ends
 
@@ -28,11 +28,11 @@ After several dead ends and lots of hair pulling I eventually got intellisense w
 
 With a project folder open, look in the bottom right and you should see a lightbulb:
 
-![VSCode Lightbulb](../../images/2016/05/02_Lightbulb.png "VSCode Lightbulb")
+![VSCode Lightbulb](../../../images/2016/05/02_Lightbulb.png "VSCode Lightbulb")
 
 Click the lightbulb, and you should get a popup at the top of the IDE asking if you want to create a jsconfig.json file
 
-![Create JSConfig.json](../../images/2016/05/03_CreateJSConfig.png "Create JSConfig.json")
+![Create JSConfig.json](../../../images/2016/05/03_CreateJSConfig.png "Create JSConfig.json")
 
 Click &#8220;Create jsconfig.json&#8221; and vscode should do the rest.
 
@@ -79,7 +79,7 @@ Which vscode detects automatically, so there&#8217;s nothing else to it.
 
 Now you should be able to see some intellisense for react.js.
 
-![VSCode With Intellisense](../../images/2016/05/04_Working.png "VSCode With Intellisense")
+![VSCode With Intellisense](../../../images/2016/05/04_Working.png "VSCode With Intellisense")
 
 ## Conclusion
 
