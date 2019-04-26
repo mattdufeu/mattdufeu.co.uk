@@ -29,7 +29,7 @@ export default ({ children }) => (
                 Matt<span>DuFeu</span>
               </Link>
             </h1>
-            <h2>Father and .NET enthusiast. Constantly striving to learn</h2>
+            <h2>Father and .NET enthusiast. Striving to learn</h2>
           </div>
         </header>
         <Helmet>

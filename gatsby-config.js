@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://mattdufeu.co.uk`,
-    title: `Matt DuFeu - Father and .NET enthusiast. Constantly striving to learn`
+    title: `Matt DuFeu - Father and .NET enthusiast. Striving to learn`
   },
   plugins: [
     `gatsby-plugin-sitemap`,
