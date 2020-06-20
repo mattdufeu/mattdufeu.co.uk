@@ -29,7 +29,7 @@ These files aren't persisted when you stop the container. But they will be if we
 
 The documentation for [Docker Volumes](https://docs.docker.com/storage/volumes/) is good, if a little long. It seems the advice is to use --mount over -v, so I ended up with the following:
 
-```language=powershell
+```powershell
 
 PS C:\> docker run --rm -it --mount source=azurecli, \
 target=/root/.azure microsoft/azure-cli

@@ -40,8 +40,8 @@ Click &#8220;Create jsconfig.json&#8221; and vscode should do the rest.
 
 The Typescript Definition Manager [typings][1] should be installed globally with
 
-```csharp> npm install typings --global
-
+```powershell
+> npm install typings --global
 ```
 
 This will allow you to install typescript definition files which is what we&#8217;ll do next.
@@ -50,8 +50,9 @@ This will allow you to install typescript definition files which is what we&#821
 
 In the folder of the project enter the following commands:
 
-```csharp> typings init
-&gt; typings install dt~react --global
+```powershell
+> typings init
+> typings install dt~react --global
 ```
 
 You should end up with a new &#8220;typings&#8221; folder with the following contents:
@@ -69,8 +70,8 @@ You should end up with a new &#8220;typings&#8221; folder with the following con
 
 You can install typescript globally, but I prefer to put it in each project with the following command
 
-```csharpNpm install typescript@next
-
+```powershell
+> npm install typescript@next
 ```
 
 Which vscode detects automatically, so there&#8217;s nothing else to it.
