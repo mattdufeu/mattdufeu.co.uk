@@ -49,7 +49,7 @@ script file, or operable program.
 
 Thankfully there's a PowerShell script as well, so I stole the PowerShell one liner from <https://chocolatey.org/install> and replaced:
 
-```
+```powershell
 # Get and install the Artifact Credential provider
 RUN wget -O - https://raw.githubusercontent.com/Microsoft/artifacts-credprovider/master/helpers/installcredprovider.sh  | bash
 ```
