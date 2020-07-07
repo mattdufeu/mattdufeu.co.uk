@@ -42,7 +42,7 @@ target=/root/.azure microsoft/azure-cli
 
 I'm not sure how up to date this information is. But there appears to be a preview feature of "Using credentials from Azure CLI Automatically". I found it <https://github.com/Azure/azure-libraries-for-java/blob/master/AUTH.md>, which allows you to initialize the Azure client in code with:
 
-```
+```csharp
 Azure azure = Azure.authenticate(AzureCliCredentials.create())
   .withDefaultSubscription();
 ```
