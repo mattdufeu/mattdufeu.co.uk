@@ -5,7 +5,7 @@ type: post
 date: 2020-07-16T12:00:00+00:00
 url: /blog/docker-user-not-granted-requested-logon-type
 categories:
-  - .NET
+  - Docker
 excerpt: <p>Sometimes when I start working with docker for the day, I get a "Logon failure:the user has not been granted the requested logon type at this computer." error.</p><p>I haven't been able to reliably reproduce this issue, so I don't really know the cause. Thankfully a reboot generally fixed it, but there's also a quicker way.</p>
 ---
 
