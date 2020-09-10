@@ -11,11 +11,11 @@ excerpt: <p>Since upgrading Windows 10 to version 2004 and upgrading docker for 
 
 The problem doesn't happen everytime, but when it does, launching a WSL bash prompt shows a 0xffffffff error:
 
-![WSL bash prompt with error 0xffffffff](../../images/2020/WSL-Port53.jpg "WSL bash prompt with error 0xffffffff")
+![WSL bash prompt with error 0xffffffff](../../../images/2020/WSL-Port53.jpg "WSL bash prompt with error 0xffffffff")
 
 Docker for Windows create a crash report dialog.
 
-![Docker for Windows with error 0xffffffff](../../images/2020/Docker-Port53.jpg "Docker for Windows with error 0xffffffff")
+![Docker for Windows with error 0xffffffff](../../../images/2020/Docker-Port53.jpg "Docker for Windows with error 0xffffffff")
 
 There's [an open issue in the github WSL repo](https://github.com/microsoft/WSL/issues/4364) so hopefully it'll be solved soon. In the mean time, both of them seem to be related to port 53 being used by another program. PowerShell to the rescue:
 

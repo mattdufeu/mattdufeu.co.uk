@@ -21,7 +21,7 @@ However, authenticating with `az login` every time got old quick. Here's how I m
 
 After logging in with `az login`, several files are created in `/root/.azure`:
 
-![Azure-cli files created in /root/.azure](../../images/2019/04/files_created_in_root_azure.png "Azure-cli files created in /root/.azure")
+![Azure-cli files created in /root/.azure](../../../images/2019/04/files_created_in_root_azure.png "Azure-cli files created in /root/.azure")
 
 These files aren't persisted when you stop the container. But they will be if we use [Docker Volumes](https://docs.docker.com/storage/volumes/).
 
