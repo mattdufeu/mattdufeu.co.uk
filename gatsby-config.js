@@ -1,19 +1,19 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://mattdufeu.co.uk`,
-    title: `Matt DuFeu - Father and .NET enthusiast. Striving to learn`
+    title: `Matt DuFeu - Father and .NET enthusiast. Striving to learn`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "UA-33703887-2"
-      }
+        trackingIds: ["UA-33703887-2"],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: { name: `src`, path: `${__dirname}/src/` }
+      options: { name: `src`, path: `${__dirname}/src/` },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -25,8 +25,8 @@ module.exports = {
         theme_color: "#6b37bf",
         display: "standalone",
         icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
-        include_favicon: true // Include favicon
-      }
+        include_favicon: true, // Include favicon
+      },
     },
     "gatsby-plugin-offline",
     `gatsby-plugin-react-helmet`,
@@ -40,14 +40,14 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               showCaptions: true,
-              maxWidth: 590
-            }
+              maxWidth: 590,
+            },
           },
-          `gatsby-remark-prismjs`
-        ]
-      }
+          `gatsby-remark-prismjs`,
+        ],
+      },
     },
     "gatsby-redirect-from",
-    "gatsby-plugin-meta-redirect"
-  ]
+    "gatsby-plugin-meta-redirect",
+  ],
 };
