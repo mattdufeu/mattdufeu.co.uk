@@ -13,7 +13,11 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: { name: `src`, path: `${__dirname}/src/` },
+      options: { name: `posts`, path: `${__dirname}/src/posts` },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: { name: `images`, path: `${__dirname}/src/images` },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -33,9 +37,13 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        defaultLayouts: {
+          default: require.resolve("./src/components/layout.js"),
+        },
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -44,10 +52,10 @@ module.exports = {
             },
           },
           `gatsby-remark-prismjs`,
+          "gatsby-redirect-from",
         ],
       },
     },
-    "gatsby-redirect-from",
     "gatsby-plugin-meta-redirect",
   ],
 };

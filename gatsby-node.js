@@ -4,8 +4,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
+  if (node.internal.type === `Mdx`) {
+    const slug = createFilePath({ node, getNode });
     createNodeField({ node, name: `slug`, value: slug });
   }
 };
@@ -13,14 +13,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const tagTemplate = path.resolve("src/templates/tags.js");
-  const categoryTemplate = path.resolve("src/templates/categories.js");
-
   return new Promise((resolve, reject) => {
     graphql(
       `
         {
-          allMarkdownRemark(
+          allMdx(
             sort: { fields: [frontmatter___date], order: DESC }
             limit: 1000
           ) {
@@ -41,8 +38,8 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       `
-    ).then(result => {
-      const posts = result.data.allMarkdownRemark.edges;
+    ).then((result) => {
+      const posts = result.data.allMdx.edges;
 
       posts.forEach((post, index) => {
         const previous =
@@ -55,15 +52,15 @@ exports.createPages = ({ graphql, actions }) => {
           context: {
             slug: post.node.fields.slug,
             previous,
-            next
-          }
+            next,
+          },
         });
       });
 
       // Tag pages:
       let tags = [];
       // Iterate through each post, putting all found tags into `tags`
-      _.each(posts, edge => {
+      _.each(posts, (edge) => {
         if (_.get(edge, "node.frontmatter.tags")) {
           tags = tags.concat(edge.node.frontmatter.tags);
         }
@@ -72,20 +69,20 @@ exports.createPages = ({ graphql, actions }) => {
       tags = _.uniq(tags);
 
       // Make tag pages
-      tags.forEach(tag => {
+      tags.forEach((tag) => {
         createPage({
           path: `/blog/tags/${_.kebabCase(tag)}/`,
-          component: tagTemplate,
+          component: path.resolve("src/templates/tags.js"),
           context: {
-            tag
-          }
+            tag,
+          },
         });
       });
 
       // Category pages:
       let categories = [];
       // Iterate through each post, putting all found categories into `categories`
-      _.each(posts, edge => {
+      _.each(posts, (edge) => {
         if (_.get(edge, "node.frontmatter.categories")) {
           categories = categories.concat(edge.node.frontmatter.categories);
         }
@@ -94,13 +91,13 @@ exports.createPages = ({ graphql, actions }) => {
       categories = _.uniq(categories);
 
       // Make category pages
-      categories.forEach(category => {
+      categories.forEach((category) => {
         createPage({
           path: `/blog/categories/${_.kebabCase(category)}/`,
-          component: categoryTemplate,
+          component: path.resolve("src/templates/categories.js"),
           context: {
-            category
-          }
+            category,
+          },
         });
       });
 
@@ -114,8 +111,8 @@ exports.createPages = ({ graphql, actions }) => {
             limit: postsPerPage,
             skip: i * postsPerPage,
             numPages,
-            currentPage: i + 1
-          }
+            currentPage: i + 1,
+          },
         });
       });
 

@@ -11,6 +11,8 @@ excerpt: <p>I started working on a old side-project that was using an out-of-dat
 
 ## The Problem
 
+<Alert>THIS IS AN ALERT</Alert>
+
 An old side-project was using an out-of-date version of IdentityServer4 (2.0.0). The project was mainly a learning project, so before jumping to the latest, I wanted to see what changed between 2.0.0 and 2.5.4.
 
 Unfortunately, the documentation at <https://identityserver4.readthedocs.io/> didn't have anything from the version 2 days. So I decided to build them myself in docker.

@@ -20,7 +20,7 @@ export default ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <header id="site-header" role="banner">
           <div className="hgroup">

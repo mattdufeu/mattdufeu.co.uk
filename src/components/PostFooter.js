@@ -4,10 +4,10 @@ import kebabCase from "lodash/kebabCase";
 
 class PostFooter extends Component {
   renderTags() {
-    let tags = this.props.data.markdownRemark.frontmatter.tags;
+    let tags = this.props.data.mdx.frontmatter.tags;
 
     if (tags) {
-      let allTags = tags.map(x => (
+      let allTags = tags.map((x) => (
         <Link key={x} to={`/blog/tags/${kebabCase(x)}`}>
           {x}
         </Link>
@@ -24,10 +24,10 @@ class PostFooter extends Component {
   }
 
   renderCategories() {
-    let categories = this.props.data.markdownRemark.frontmatter.categories;
+    let categories = this.props.data.mdx.frontmatter.categories;
 
     if (categories) {
-      let allCategories = categories.map(x => (
+      let allCategories = categories.map((x) => (
         <Link key={x} to={`/blog/categories/${kebabCase(x)}`}>
           {x}
         </Link>
@@ -44,7 +44,7 @@ class PostFooter extends Component {
       <footer className="entry-meta">
         Posted on{" "}
         <time className="entry-date" dateTime="2014-09-15T13:29:02+00:00">
-          {this.props.data.markdownRemark.frontmatter.date}
+          {this.props.data.mdx.frontmatter.date}
         </time>{" "}
         <span className="byline">
           by <span className="author vcard">DuFeu</span>{" "}

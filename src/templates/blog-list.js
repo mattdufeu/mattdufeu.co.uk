@@ -22,7 +22,7 @@ export default class BlogIndex extends React.Component {
           <body className="home blog logged-in admin-bar customize-support" />
         </Helmet>
         <div>
-          {data.allMarkdownRemark.edges.map(({ node }) => {
+          {data.allMdx.nodes.map(( node ) => {
             const content = node.frontmatter.excerpt
               ? node.frontmatter.excerpt
               : node.html;
@@ -50,7 +50,7 @@ export default class BlogIndex extends React.Component {
             justifyContent: "space-between",
             alignItems: "center",
             listStyle: "none",
-            padding: 0
+            padding: 0,
           }}
         >
           {!isFirst && (
@@ -72,23 +72,21 @@ export default class BlogIndex extends React.Component {
 
 export const query = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
+    allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
     ) {
-      edges {
-        node {
-          html
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "DD MMMM, YYYY")
-            title
-            excerpt
-            url
-          }
+      nodes {
+        body
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "DD MMMM, YYYY")
+          title
+          excerpt
+          url
         }
       }
     }
