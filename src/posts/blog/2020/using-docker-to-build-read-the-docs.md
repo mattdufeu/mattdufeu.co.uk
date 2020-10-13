@@ -73,7 +73,7 @@ docker build -t "sphinxdocs" .
 
 And ran the same command, but this time with my image:
 
-```
+```powershell
 docker run --rm -v C:\Play\Repos\IdentityServer4\docs:/docs sphinxdocs make html
 ```
 
