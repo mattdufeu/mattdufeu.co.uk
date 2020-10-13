@@ -90,7 +90,7 @@ The next file that we need to create is **.eslintignore**. As the name suggests,
 !**/Scripts/myapp*
 ```
 
-This tells ESLint to ignore all files inside the _packages_ directory, i.e. anything you&#8217;ve got from nuget. The last two lines ensures all files except those following your applications naming convention &#8211; you have a naming convention right? &#8211; are also ignored, i.e. jquery.<ver>.min.js etc.
+This tells ESLint to ignore all files inside the _packages_ directory, i.e. anything you&#8217;ve got from nuget. The last two lines ensures all files except those following your applications naming convention &#8211; you have a naming convention right? &#8211; are also ignored, i.e. jquery.&lt;ver&gt;.min.js etc.
 
 Finally, all that&#8217;s left is to configure Grunt to run ESLint.
 

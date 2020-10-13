@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 // Utilities
 import kebabCase from "lodash/kebabCase";
@@ -12,11 +11,11 @@ import Layout from "../../components/layout";
 
 const CategoriesPage = ({
   data: {
-    allMarkdownRemark: { group },
+    allMdx: { group },
     site: {
-      siteMetadata: { title }
-    }
-  }
+      siteMetadata: { title },
+    },
+  },
 }) => (
   <Layout>
     <Helmet>
@@ -25,7 +24,7 @@ const CategoriesPage = ({
     <div>
       Choose a category:
       <ul>
-        {group.map(category => (
+        {group.map((category) => (
           <li key={category.fieldValue}>
             <Link to={`/blog/categories/${kebabCase(category.fieldValue)}/`}>
               {category.fieldValue} ({category.totalCount})
@@ -37,24 +36,6 @@ const CategoriesPage = ({
   </Layout>
 );
 
-CategoriesPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      group: PropTypes.arrayOf(
-        PropTypes.shape({
-          fieldValue: PropTypes.string.isRequired,
-          totalCount: PropTypes.number.isRequired
-        }).isRequired
-      )
-    }),
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired
-      })
-    })
-  })
-};
-
 export default CategoriesPage;
 
 export const pageQuery = graphql`
@@ -64,7 +45,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 2000) {
+    allMdx(limit: 2000) {
       group(field: frontmatter___categories) {
         fieldValue
         totalCount

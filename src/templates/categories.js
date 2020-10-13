@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 // Components
 import { Link, graphql } from "gatsby";
@@ -20,7 +19,7 @@ const Categories = ({ pageContext, data }) => {
       </Helmet>
       <div>
         {categoryHeader}
-        {data.allMarkdownRemark.edges.map(({ node }) => {
+        {data.allMdx.nodes.map(( node ) => {
           const content = node.frontmatter.excerpt
             ? node.frontmatter.excerpt
             : node.html;
@@ -45,52 +44,22 @@ const Categories = ({ pageContext, data }) => {
   );
 };
 
-Categories.propTypes = {
-  pageContext: PropTypes.shape({
-    category: PropTypes.string.isRequired
-  }),
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      totalCount: PropTypes.number.isRequired,
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              title: PropTypes.string.isRequired
-            }),
-            fields: PropTypes.shape({
-              slug: PropTypes.string.isRequired
-            })
-          })
-        }).isRequired
-      )
-    })
-  })
-};
 
 export default Categories;
 
 export const pageQuery = graphql`
   query($category: String) {
-    allMarkdownRemark(
+    allMdx(
       limit: 3
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { categories: { in: [$category] } } }
     ) {
-      totalCount
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-            excerpt
-            url
-          }
-          html
+      nodes {
+        frontmatter {
+          title
+          date(formatString: "DD MMMM, YYYY")
+          excerpt
+          url
         }
       }
     }

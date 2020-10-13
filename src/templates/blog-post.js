@@ -3,9 +3,10 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import PostFooter from "../components/PostFooter";
 import Helmet from "react-helmet";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 export default ({ data, pageContext }) => {
-  const post = data.markdownRemark;
+  const post = data.mdx;
   const { previous, next } = pageContext;
   return (
     <Layout>
@@ -20,10 +21,9 @@ export default ({ data, pageContext }) => {
         <header className="entry-header">
           <h1 className="entry-title">{post.frontmatter.title}</h1>
         </header>
-        <div
-          className="entry-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <div className="entry-content">
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </div>
         <PostFooter data={data} />
       </article>
       <div
@@ -31,7 +31,7 @@ export default ({ data, pageContext }) => {
           display: `flex`,
           flexWrap: `wrap`,
           justifyContent: `space-between`,
-          padding: 0
+          padding: 0,
         }}
       >
         {previous && (
@@ -51,9 +51,9 @@ export default ({ data, pageContext }) => {
 
 export const query = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
-      html
+      body
       frontmatter {
         title
         tags

@@ -12,13 +12,13 @@ const LayoutSidebar = () => (
             title
           }
         }
-        tagsGroup: allMarkdownRemark(limit: 2000) {
+        tagsGroup: allMdx(limit: 2000) {
           group(field: frontmatter___tags) {
             fieldValue
             totalCount
           }
         }
-        categoriesGroup: allMarkdownRemark(limit: 2000) {
+        categoriesGroup: allMdx(limit: 2000) {
           group(field: frontmatter___categories) {
             fieldValue
             totalCount
@@ -26,7 +26,7 @@ const LayoutSidebar = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <div id="sidebar" role="complementary">
         <aside id="pages-3" className="widget_pages">
           <ul>
@@ -46,7 +46,7 @@ const LayoutSidebar = () => (
                 position: "static",
                 visibility: "visible",
                 width: "126px",
-                height: "20px"
+                height: "20px",
               }}
               title="Twitter Follow Button"
               src="https://platform.twitter.com/widgets/follow_button.d30011b0f5ce05b98f24b01d3331b3c1.en-gb.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en-gb&amp;screen_name=mattdufeu&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1545324279142"
@@ -63,7 +63,7 @@ const LayoutSidebar = () => (
         <h2 className="widget-title">Choose a tag:</h2>
         <div>
           <ul>
-            {data.tagsGroup.group.map(tag => (
+            {data.tagsGroup.group.map((tag) => (
               <li key={tag.fieldValue}>
                 <Link to={`/blog/tags/${kebabCase(tag.fieldValue)}/`}>
                   {tag.fieldValue} ({tag.totalCount})
@@ -75,7 +75,7 @@ const LayoutSidebar = () => (
         <div>
           <h2 className="widget-title">Choose a category:</h2>
           <ul>
-            {data.categoriesGroup.group.map(tag => (
+            {data.categoriesGroup.group.map((tag) => (
               <li key={tag.fieldValue}>
                 <Link to={`/blog/categories/${kebabCase(tag.fieldValue)}/`}>
                   {tag.fieldValue} ({tag.totalCount})
