@@ -2,11 +2,22 @@ import React, { useState } from "react";
 
 import addToMailchimp from "gatsby-plugin-mailchimp";
 
-import { Button, Card, Container, Row, Form } from "react-bootstrap";
+import {
+  Alert,
+  Button,
+  Card,
+  Container,
+  Row,
+  Col,
+  Form,
+} from "react-bootstrap";
 
 const MailChimp = () => {
   const [state, setState] = useState({
     email: "",
+    successfulSubscribe: false,
+    networkError: false,
+    networkErrorMessage: "",
   });
 
   const handleEmailChange = (e) => {
@@ -18,7 +29,23 @@ const MailChimp = () => {
 
   const _handleSubmit = async (e) => {
     e.preventDefault();
-    addToMailchimp(state.email);
+    addToMailchimp(state.email).then((result) => {
+      if (result.result === "error") {
+        setState({
+          ...state,
+          successfulSubscribe: false,
+          networkError: true,
+          networkErrorMessage: result.msg.split(". ")[0], // hack
+        });
+      } else {
+        setState({
+          ...state,
+          successfulSubscribe: true,
+          networkError: false,
+          networkErrorMessage: "",
+        });
+      }
+    });
   };
 
   return (
@@ -46,6 +73,24 @@ const MailChimp = () => {
               </Form>
             </div>
           </Row>
+          {state.successfulSubscribe && (
+            <Row>
+              <Col>
+                <Alert variant="success">
+                  Thank you for subscribing to my newsletter.
+                </Alert>
+              </Col>
+            </Row>
+          )}
+          {state.networkError && (
+            <Row>
+              <Col>
+                <Alert variant="warning">
+                  Subscription failed: {state.networkErrorMessage}
+                </Alert>
+              </Col>
+            </Row>
+          )}
         </Card.Body>
       </Card>
     </Container>
