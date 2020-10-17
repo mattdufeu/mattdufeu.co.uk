@@ -1,12 +1,15 @@
 import React from "react";
-// import { css } from "@emotion/core";
 import { Link, StaticQuery, graphql } from "gatsby";
+
 import Helmet from "react-helmet";
 
-// import { rhythm } from "../utils/typography";
-import LayoutSideBar from "./layout_sidebar";
 import "../styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import LayoutSideBar from "./layout_sidebar";
+
 import icon from "../images/favicon.ico";
+
 require("prismjs/plugins/line-numbers/prism-line-numbers.css");
 
 export default ({ children }) => (

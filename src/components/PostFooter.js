@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 import kebabCase from "lodash/kebabCase";
+import MailChimp from "./MailChimp";
 
 class PostFooter extends Component {
   renderTags() {
@@ -41,16 +42,19 @@ class PostFooter extends Component {
 
   render() {
     return (
-      <footer className="entry-meta">
-        Posted on{" "}
-        <time className="entry-date" dateTime="2014-09-15T13:29:02+00:00">
-          {this.props.data.mdx.frontmatter.date}
-        </time>{" "}
-        <span className="byline">
-          by <span className="author vcard">DuFeu</span>{" "}
-        </span>
-        <span className="cat-links">{this.renderCategories()}</span>
-        <span className="tags-links">{this.renderTags()}</span>
+      <footer>
+        <MailChimp />
+        <div className="entry-meta" style={{ marginTop: "0.5rem" }}>
+          Posted on{" "}
+          <time className="entry-date" dateTime="2014-09-15T13:29:02+00:00">
+            {this.props.data.mdx.frontmatter.date}
+          </time>{" "}
+          <span className="byline">
+            by <span className="author vcard">DuFeu</span>{" "}
+          </span>
+          <span className="cat-links">{this.renderCategories()}</span>
+          <span className="tags-links">{this.renderTags()}</span>
+        </div>
       </footer>
     );
   }

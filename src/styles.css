@@ -254,22 +254,6 @@ pre {
   font-family: monospace;
   font-size: 0.9em;
 }
-input[type="text"] {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  padding: 3% 4%;
-}
-.search-form input[type="submit"],
-.search-form label {
-  display: none;
-}
-.search-form input[type="text"] {
-  width: 90%;
-  max-width: 400px;
-  font-size: 0.9em;
-}
 iframe {
   max-width: 100%;
   padding: 0;
@@ -308,9 +292,9 @@ body .gatsby-resp-image-figure {
 .single #content-area article {
   border-bottom: none;
 }
-article {
+/* article {
   border-bottom: 1px solid #ddd;
-}
+} */
 article.last-post {
   border-bottom: none;
 }
@@ -510,55 +494,6 @@ ol.commentlist .comment-reply-link:hover {
 .gform_validation_container {
   display: none;
 }
-label {
-  display: block;
-  line-height: 1.5em;
-  margin: 1.5em 0 0 0;
-}
-input[type="email"],
-input[type="text"],
-input[type="submit"] {
-  display: block;
-  margin: 0 0 0.8em;
-  padding: 0.5em 0.8em;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  background: #fafafa;
-  border: 1px solid #ddd;
-  color: #666;
-}
-input[type="email"],
-input[type="text"] {
-  width: 300px;
-}
-textarea {
-  max-width: 700px;
-  width: 95%;
-  height: 200px;
-}
-input[type="email"],
-input[type="text"],
-textarea {
-  font-size: 0.9em;
-  font-family: "Droid Sans", sans-serif;
-}
-input[type="submit"] {
-  font-size: 1.2em;
-  background: #eee;
-  color: #333;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  margin: 1.5em 0 0 0;
-  padding: 0.4em 1em;
-}
-input[type="submit"]:hover {
-  background: #d90000;
-  color: #fff;
-  cursor: pointer;
-}
 .comment-notes,
 .form-allowed-tags {
   font-size: 1em;
@@ -686,4 +621,11 @@ input[type="submit"]:hover {
   overflow: initial;
   float: left; /* 1 */
   min-width: 100%; /* 2 */
+}
+
+/*
+ Since installing Bootstrap
+*/
+article {
+  padding-top: 1rem;
 }

@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 
 // import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
+import MailChimp from "../components/MailChimp";
 
 export default class BlogIndex extends React.Component {
   render() {
@@ -21,13 +22,13 @@ export default class BlogIndex extends React.Component {
         <Helmet>
           <body className="home blog logged-in admin-bar customize-support" />
         </Helmet>
-        <div>
-          {data.allMdx.nodes.map(( node ) => {
+        <div style={{ marginBottom: "1rem" }}>
+          {data.allMdx.nodes.map((node) => {
             const content = node.frontmatter.excerpt
               ? node.frontmatter.excerpt
               : node.html;
             return (
-              <article key={node.id}>
+              <article key={node.id} style={{ borderBottom: "1px solid #ddd" }}>
                 <Link
                   to={node.frontmatter.url}
                   css={css`
@@ -42,6 +43,9 @@ export default class BlogIndex extends React.Component {
               </article>
             );
           })}
+        </div>
+        <div style={{ paddingBottom: "1rem", borderBottom: "1px solid #ddd" }}>
+          <MailChimp />
         </div>
         <ul
           style={{
@@ -78,6 +82,7 @@ export const query = graphql`
       skip: $skip
     ) {
       nodes {
+        id
         body
         fields {
           slug
