@@ -18,13 +18,7 @@ const MailChimp = () => {
 
   const _handleSubmit = async (e) => {
     e.preventDefault();
-    addToMailchimp("state.email")
-      .then((data) => {
-        console.log(data);
-      })
-      .catch(() => {
-        console.error("Something went wrong");
-      });
+    addToMailchimp(state.email);
   };
 
   return (
