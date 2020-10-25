@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /4ls-retrospective-and-why-you-would-use-it/
 excerpt:
   I&#8217;ve just started working on a brand new project as a Scrum Master for a team of 7. There&#8217;s quite a mixed bag of experience,   ranging from other scrum masters to agile first timers.
   <br>

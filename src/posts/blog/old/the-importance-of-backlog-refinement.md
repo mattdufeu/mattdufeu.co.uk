@@ -6,8 +6,7 @@ date: 2015-05-09T19:54:57+00:00
 url: /blog/the-importance-of-backlog-refinement/
 categories:
   - Agile
-redirect_from:
-  - /the-importance-of-backlog-refinement/
+description: Backlog refinement can seem like a chore, but I think it's one of the more important things a scrum team can do.
 ---
 
 Backlog refinement isn&#8217;t a prescribed meeting, instead the [Scrum Guide][1] states:

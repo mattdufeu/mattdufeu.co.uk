@@ -6,8 +6,6 @@ date: 2014-10-24T19:48:14+00:00
 url: /blog/sprint-planning-technique-group-sorting/
 categories:
   - Agile
-redirect_from:
-  - /sprint-planning-technique-group-sorting/
 ---
 
 Do your sprint planning meetings contain a lot of disagreements and arguments? Are you spending more time trying to decide how many points a PBI is worth than it would take to develop it? Don&#8217;t worry, you&#8217;re not alone.

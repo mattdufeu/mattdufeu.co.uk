@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /retrospective-experience-appreciative-inquiry/
 ---
 
 It&#8217;s been over 6 months since I started using different retrospective techniques with my current team and although we are a long way from repeating the same thing over and over, I was beginning to worry about stagnation. A great deal of the techniques I&#8217;ve been using have essentially been &#8220;what are we doing wrong?&#8221;. I wanted something that was &#8220;what are we doing right&#8221;.

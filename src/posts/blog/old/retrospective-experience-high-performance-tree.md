@@ -6,8 +6,6 @@ date: 2014-10-04T17:13:39+00:00
 url: /blog/retrospective-experience-high-performance-tree/
 categories:
   - Agile
-redirect_from:
-  - /retrospective-experience-high-performance-tree/
 ---
 
 For this retrospective, I was struggling to pick an appropriate technique. The team&#8217;s velocity has been creeping up and the actions from each retrospective were mostly minor tweaks. So I hit the books and saw this in the &#8220;When you would use this exercise&#8221; heading of Luis Gonçalves and Ben Linders [Getting Value out of Agile Retrospectives book][1] chapter on &#8220;High Performance Tree&#8221;:

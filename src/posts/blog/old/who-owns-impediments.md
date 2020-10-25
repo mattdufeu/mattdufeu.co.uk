@@ -6,8 +6,6 @@ date: 2016-02-09T10:34:03+00:00
 url: /blog/who-owns-impediments/
 categories:
   - Agile
-redirect_from:
-  - /who-owns-impediments/
 ---
 
 In a previous post I listed some of the [different types of impediment to identify][1] as a scrum master. In this post I&#8217;m going to go through the same types and list who I think should own them and some ideas of how to try and remove them.

@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /retrospective-experience-asking-questions/
 ---
 
 We&#8217;re close to a big release and things have been going well &#8211; think 200%+ increase in velocity from when we started the release (and we were good already ) &#8211; but our last couple of retrospectives felt a little flat, possibly because the big wins have already been made. I wanted a technique to really get the team involved.

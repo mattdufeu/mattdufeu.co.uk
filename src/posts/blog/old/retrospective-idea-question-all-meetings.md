@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /retrospective-idea-question-all-meetings/
 ---
 
 A colleague of mine has been commenting on the &#8220;cost&#8221; of some of the meetings we have each sprint. To be fair, a whole team sat in a room for an hour is expensive so it got me thinking. Lean, highly influential on Agile, has the concept of cutting away everything that isn&#8217;t need, so I wondered if our meetings were value for money and if not, what could be cut away.

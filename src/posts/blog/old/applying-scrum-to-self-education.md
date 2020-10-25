@@ -6,8 +6,6 @@ date: 2015-04-16T18:08:29+00:00
 url: /blog/applying-scrum-to-self-education/
 categories:
   - Agile
-redirect_from:
-  - /applying-scrum-to-self-education/
 ---
 
 I&#8217;ve been reading a _lot_ in the last couple of months about self-education and in particular how to overcome procrastination. I realised I was making great plans to &#8220;learn X&#8221; or &#8220;build Y&#8221;, spending ages planning it all out but not following through when it came time to actually do it. Sound familiar?

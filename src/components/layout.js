@@ -7,8 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import LayoutSideBar from "./layout_sidebar";
 
-import icon from "../images/favicon.ico";
-
 require("prismjs/plugins/line-numbers/prism-line-numbers.css");
 
 export default ({ children }) => (

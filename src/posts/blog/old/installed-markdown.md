@@ -6,8 +6,6 @@ date: 2014-01-19T09:53:19+00:00
 url: /blog/installed-markdown/
 categories:
   - Agile
-redirect_from:
-  - /installed-markdown/
 ---
 
 I&#8217;ve taken the advice of [Scott Hanselman][1] and [Rob Conery][2] in their [Get Involved!][3] Pluralsight course and have installed Markdown (or perhaps more accurately the [Markdown on Save Improved plugin][4]). I haven&#8217;t even begun to get to grips with the syntax, but I can certainly see how much easier it&#8217;s going to become to write posts.

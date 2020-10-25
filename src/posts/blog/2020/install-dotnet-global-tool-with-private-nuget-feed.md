@@ -6,6 +6,7 @@ date: 2020-06-30T12:00:00+00:00
 url: /blog/install-dotnet-global-tool-with-private-nuget-feed/
 categories:
   - .NET
+description: In this post I show how to solve a 401 Unauthorised error while installing a .NET Global Tool and you have a private NuGet feed.
 excerpt: <p>If you have a private NuGet feed and are getting a 401 Unauthorised while trying to install a .NET Global Tool, you're not alone.</p><p>Thankfully there's an easier way to solve it than removing your feed each time.</p>
 ---
 

@@ -6,8 +6,6 @@ date: 2014-07-06T20:10:11+00:00
 url: /blog/just-write-something/
 categories:
   - Agile
-redirect_from:
-  - /just-write-something/
 ---
 
 I&#8217;ve just renewed the hosting and domain for this place and in two years I&#8217;ve written 14 posts&#8230; including this one!

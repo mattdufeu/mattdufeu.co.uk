@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /sprint-retrospective-idea-essentialism/
 ---
 
 Until now, I&#8217;ve always used someone else&#8217;s ideas for retrospectives. That&#8217;s fine, but I&#8217;m always on the lookout to push myself, so wanted to see if I could come up with something of my own design.

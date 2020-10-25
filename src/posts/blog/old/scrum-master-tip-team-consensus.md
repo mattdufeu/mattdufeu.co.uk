@@ -6,8 +6,6 @@ date: 2016-03-20T14:41:16+00:00
 url: /blog/scrum-master-tip-team-consensus/
 categories:
   - Agile
-redirect_from:
-  - /scrum-master-tip-team-consensus/
 ---
 
 In [Scrum Master Tip &#8211; Many Voices][1] I listed a few things to try if your team meetings are dominated by one person and you want to hear from the others in the team.

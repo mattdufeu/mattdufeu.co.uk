@@ -6,8 +6,6 @@ date: 2015-05-21T18:28:22+00:00
 url: /blog/cumulative-flow-diagram-from-tfs-data/
 categories:
   - Agile
-redirect_from:
-  - /cumulative-flow-diagram-from-tfs-data/
 ---
 
 One of the teams I&#8217;ve worked with frequently ended a sprint with 2 or more user stories &#8220;almost&#8221; ready. To them &#8220;almost&#8221; meant less than 2 hours, but in reality, due to sprint planning, task breakdowns etc, we more often than not finished those user stories on day 2 of the next sprint.

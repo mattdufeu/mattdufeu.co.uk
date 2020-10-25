@@ -6,8 +6,6 @@ date: 2016-02-29T06:43:46+00:00
 url: /blog/unit-testing-check-your-return-on-investment/
 categories:
   - Agile
-redirect_from:
-  - /unit-testing-check-your-return-on-investment/
 ---
 
 I once asked a team to question everything we do. We ended up with a few suggestions about things we could streamline but I was surprised at how quickly everyone on the team said &#8220;unit tests are good&#8221;.
