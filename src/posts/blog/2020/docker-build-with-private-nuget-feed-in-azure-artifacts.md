@@ -3,7 +3,7 @@ title: Docker build with private NuGet feed in Azure Artifacts
 author: DuFeu
 type: post
 date: 2020-06-23T12:00:00+00:00
-url: /blog/docker-build-with-private-nuget-feed-in-azure-artifacts
+url: /blog/docker-build-with-private-nuget-feed-in-azure-artifacts/
 categories:
   - .NET
   - Docker

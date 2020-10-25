@@ -3,7 +3,7 @@ title: Quick start to C# .NET Core with MongoDB in Docker
 author: DuFeu
 type: post
 date: 2020-09-12T12:00:00+00:00
-url: /blog/dotnet-core-with-mongodb-in-docker
+url: /blog/dotnet-core-with-mongodb-in-docker/
 categories:
   - Docker
   - .NET

@@ -1,0 +1,49 @@
+{
+  "redirects": [
+    {
+      "source": "/blog/docker-build-with-private-nuget-feed-in-azure-artifacts",
+      "destination": "https://mattdufeu.co.uk/blog/docker-build-with-private-nuget-feed-in-azure-artifacts/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/persist-the-azure-cli-docker-container-credentials",
+      "destination": "https://mattdufeu.co.uk/blog/persist-the-azure-cli-docker-container-credentials/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dotnet-core-with-mongodb-in-docker",
+      "destination": "https://mattdufeu.co.uk/blog/dotnet-core-with-mongodb-in-docker/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/docker-wsl-error-0xffffffff",
+      "destination": "https://mattdufeu.co.uk/blog/docker-wsl-error-0xffffffff",
+      "permanent": true
+    },
+    {
+      "source": "/blog/install-dotnet-global-tool-with-private-nuget-feed",
+      "destination": "https://mattdufeu.co.uk/blog/install-dotnet-global-tool-with-private-nuget-feed/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/create-wordpress-category-widget-in-gatsby",
+      "destination": "https://mattdufeu.co.uk/blog/create-wordpress-category-widget-in-gatsby/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/docker-build-cant-add-file-used-by-another-process",
+      "destination": "https://mattdufeu.co.uk/blog/docker-build-cant-add-file-used-by-another-process/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/docker-user-not-granted-requested-logon-type",
+      "destination": "https://mattdufeu.co.uk/blog/docker-user-not-granted-requested-logon-type/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/using-docker-to-build-read-the-docs",
+      "destination": "https://mattdufeu.co.uk/blog/using-docker-to-build-read-the-docs/",
+      "permanent": true
+    }
+  ]
+}

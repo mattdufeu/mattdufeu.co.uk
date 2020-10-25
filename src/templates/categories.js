@@ -4,22 +4,21 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 
 import { css } from "@emotion/core";
-import Helmet from "react-helmet";
 
 import Layout from "../components/layout";
+import SEO from "../components/SEO";
 
 const Categories = ({ pageContext, data }) => {
   const { category } = pageContext;
-  const categoryHeader = `Posts tagged with "${category}"`;
+  const categoryHeader = `Posts with a category of "${category}"`;
+  const pathname = `/blog/categories/${category.toLowerCase()}`;
 
   return (
     <Layout>
-      <Helmet>
-        <body className="home blog logged-in admin-bar customize-support" />
-      </Helmet>
+      <SEO title={categoryHeader} pathname={pathname} />
       <div>
         {categoryHeader}
-        {data.allMdx.nodes.map(( node ) => {
+        {data.allMdx.nodes.map((node) => {
           const content = node.frontmatter.excerpt
             ? node.frontmatter.excerpt
             : node.html;
@@ -43,7 +42,6 @@ const Categories = ({ pageContext, data }) => {
     </Layout>
   );
 };
-
 
 export default Categories;
 

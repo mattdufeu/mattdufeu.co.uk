@@ -3,7 +3,7 @@ title: Persist the azure cli docker container credentials
 author: DuFeu
 type: post
 date: 2019-04-19
-url: /blog/persist-the-azure-cli-docker-container-credentials
+url: /blog/persist-the-azure-cli-docker-container-credentials/
 categories:
   - DevOps
 tags:

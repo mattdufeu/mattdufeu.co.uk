@@ -3,7 +3,7 @@ title: Docker build "Can't add file used by another process"
 author: DuFeu
 type: post
 date: 2020-07-07T12:00:00+00:00
-url: /blog/docker-build-cant-add-file-used-by-another-process
+url: /blog/docker-build-cant-add-file-used-by-another-process/
 categories:
   - .NET
   - Docker
