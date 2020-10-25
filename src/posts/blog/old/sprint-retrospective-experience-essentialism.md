@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /sprint-retrospective-experience-essentialism/
 ---
 
 _This post is all about the sprint retrospective experience I had using the technique I invented and wrote about last time in [&#8220;Scrum Retrospective Idea &#8211; Essentialism&#8221;][1]. I won&#8217;t go through the 5 stages again here, so I recommend you give that a read first._

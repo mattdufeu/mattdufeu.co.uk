@@ -6,8 +6,6 @@ date: 2012-09-20T18:55:53+00:00
 url: /blog/get-public-key-token-for-an-assembly/
 categories:
   - .NET
-redirect_from:
-  - /get-public-key-token-for-an-assembly/
 ---
 
 This is going to be a quick post as I&#8217;m hoping that posting about it will help me remember. At worse, I should be able to remember I posted about it and find this page.

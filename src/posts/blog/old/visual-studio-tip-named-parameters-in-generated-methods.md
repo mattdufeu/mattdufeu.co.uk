@@ -6,8 +6,6 @@ date: 2015-10-22T18:30:48+00:00
 url: /blog/visual-studio-tip-named-parameters-in-generated-methods/
 categories:
   - .NET
-redirect_from:
-  - /visual-studio-tip-named-parameters-in-generated-methods/
 ---
 
 Really quick tip that I found recently while refactoring some old code.

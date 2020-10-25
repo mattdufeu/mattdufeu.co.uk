@@ -4,22 +4,21 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 
 import { css } from "@emotion/core";
-import Helmet from "react-helmet";
 
 import Layout from "../components/layout";
+import SEO from "../components/SEO";
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const tagHeader = `Posts tagged with "${tag}"`;
+  const pathname = `/blog/tags/${tag.toLowerCase()}`;
 
   return (
     <Layout>
-      <Helmet>
-        <body className="home blog logged-in admin-bar customize-support" />
-      </Helmet>
+      <SEO title={tagHeader} pathname={pathname} />
       <div>
         {tagHeader}
-        {data.allMdx.nodes.map(( node ) => {
+        {data.allMdx.nodes.map((node) => {
           const content = node.frontmatter.excerpt
             ? node.frontmatter.excerpt
             : node.html;

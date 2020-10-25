@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /retrospective-experience-happiness-index-using-a-niko-niko-calendar/
 ---
 
 In the last month or so, I&#8217;ve been trying to change tactics for how I approach increasing velocity. I think this all started with a tweet from Luis Gonçalves:

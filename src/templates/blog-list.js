@@ -1,10 +1,10 @@
 import React from "react";
 import { css } from "@emotion/core";
 import { Link, graphql } from "gatsby";
-import Helmet from "react-helmet";
 
 // import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
+import SEO from "../components/SEO";
 import MailChimp from "../components/MailChimp";
 
 export default class BlogIndex extends React.Component {
@@ -16,12 +16,11 @@ export default class BlogIndex extends React.Component {
     const prevPage =
       currentPage - 1 === 1 ? "/" : "/blog/" + (currentPage - 1).toString();
     const nextPage = "/blog/" + (currentPage + 1).toString();
+    const pathname = currentPage - 1 === 0 ? "/" : "/blog/" + currentPage;
 
     return (
       <Layout>
-        <Helmet>
-          <body className="home blog logged-in admin-bar customize-support" />
-        </Helmet>
+        <SEO pathname={pathname} />
         <div style={{ marginBottom: "1rem" }}>
           {data.allMdx.nodes.map((node) => {
             const content = node.frontmatter.excerpt

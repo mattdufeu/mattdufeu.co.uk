@@ -3,10 +3,11 @@ title: Docker build with private NuGet feed in Azure Artifacts
 author: DuFeu
 type: post
 date: 2020-06-23T12:00:00+00:00
-url: /blog/docker-build-with-private-nuget-feed-in-azure-artifacts
+url: /blog/docker-build-with-private-nuget-feed-in-azure-artifacts/
 categories:
   - .NET
   - Docker
+description: In this post I describe how to do a NuGet restore from a private nuget feed within a docker container.
 excerpt: <p>While trying to containerise a .NET Framework app I hit a problem while trying to restore packages from NuGet that were from a private NuGet feed. The container didn't know my credentials, so the feed was rightly responding with "401 (Unauthorized)".</p><p>Here's how I used <a href="https://github.com/Microsoft/artifacts-credprovider">Azure Artifacts Credential Provider</a> with Windows Containers to solve it.</p>
 ---
 

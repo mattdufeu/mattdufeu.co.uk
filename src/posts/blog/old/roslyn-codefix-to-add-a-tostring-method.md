@@ -6,8 +6,6 @@ date: 2017-04-19T19:53:08+00:00
 url: /blog/roslyn-codefix-to-add-a-tostring-method/
 categories:
   - .NET
-redirect_from:
-  - /roslyn-codefix-to-add-a-tostring-method/
 excerpt: <p>I recently had the opportunity to update the quality of logging in an application. Exceptions were handled well, but it was hard to see the values passed through the layers. </p><p> I ended up using a <em>Roslyn CodeFix to add a ToString method</em>.</p>
 ---
 

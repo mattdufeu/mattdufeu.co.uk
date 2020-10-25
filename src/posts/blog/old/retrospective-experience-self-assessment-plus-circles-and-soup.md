@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /retrospective-experience-self-assessment-plus-circles-and-soup/
 ---
 
 After recapping the previous sprint retrospective actions, where I&#8217;m pleased to say we made a handful of small improvements, I introduced the team to the notion of team self-assessments. We all agreed it was worthwhile, so completed [SAFe ScrumXP Self-Assessment][1] which despite some disagreements took about 15 minutes.

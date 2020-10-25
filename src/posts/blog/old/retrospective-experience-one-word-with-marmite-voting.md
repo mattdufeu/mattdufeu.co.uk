@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /retrospective-experience-one-word-with-marmite-voting/
 ---
 
 The last couple of retrospectives &#8211; [&#8220;ESVP, Sailboat and Constellation&#8221;][1] and [&#8220;Self-Assessment and Circles and Soup&#8221;][2] &#8211; had much larger scopes than you&#8217;d normally use. So for this retrospective I wanted to bring the scope much tighter and concentrate on what you&#8217;d normally discuss, i.e. the last sprint.

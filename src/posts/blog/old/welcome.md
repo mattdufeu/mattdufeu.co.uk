@@ -6,8 +6,6 @@ date: 2012-07-29T07:02:56+00:00
 url: /blog/welcome/
 categories:
   - Agile
-redirect_from:
-  - /welcome/
 ---
 
 Hi and welcome to my blog about all things SharePoint (hence the sp in the url).

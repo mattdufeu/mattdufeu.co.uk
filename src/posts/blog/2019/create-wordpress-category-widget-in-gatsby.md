@@ -3,7 +3,7 @@ title: Create Wordpress Category Widget in Gatsby
 author: DuFeu
 type: post
 date: 2019-06-12T06:43:05+00:00
-url: /blog/create-wordpress-category-widget-in-gatsby
+url: /blog/create-wordpress-category-widget-in-gatsby/
 categories:
   - React
 tags:

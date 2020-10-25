@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /retrospective-experience-6-thinking-hats/
 ---
 
 To make the team think a different way during the retrospective I decided to try [6 Thinking Hats][1]. We&#8217;re used to saying what went well and what didn&#8217;t, so I thought this would be a good way to get some different discussions going.

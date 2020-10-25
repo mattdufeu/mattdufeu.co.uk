@@ -2,9 +2,19 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://mattdufeu.co.uk`,
     title: `Matt DuFeu - Father and .NET enthusiast. Striving to learn`,
+    description: `Hi, my name is Matt DuFeu. I share my experiences with all things .NET and various JavaScript front end frameworks.`,
+    author: `Matt DuFeu`,
+    keywords: [
+      `.NET core`,
+      `c#`,
+      `docker`,
+      `javascript for c# devs`,
+      `typescript`,
+    ],
   },
   plugins: [
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -52,17 +62,15 @@ module.exports = {
             },
           },
           `gatsby-remark-prismjs`,
-          "gatsby-redirect-from",
         ],
       },
     },
-    "gatsby-plugin-meta-redirect",
     {
-      resolve: 'gatsby-plugin-mailchimp',
+      resolve: "gatsby-plugin-mailchimp",
       options: {
-          endpoint: process.env.MAILCHIMP_URL, // string; add your MC list endpoint here; see instructions below
-          timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
-      }
-    }
+        endpoint: process.env.MAILCHIMP_URL, // string; add your MC list endpoint here; see instructions below
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
   ],
 };

@@ -6,8 +6,6 @@ date: 2015-04-01T19:12:39+00:00
 url: /blog/is-the-scrum-master-a-disruptive-role/
 categories:
   - Agile
-redirect_from:
-  - /is-the-scrum-master-a-disruptive-role/
 ---
 
 While talking to one of my team during our regular chats, the number of changes I&#8217;ve challenged the team with came up. I was glad when he said he could see the value in them, but was surprised when he said he initially saw them as a **disruption**.

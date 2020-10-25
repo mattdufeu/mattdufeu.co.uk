@@ -6,8 +6,6 @@ date: 2016-01-20T19:23:34+00:00
 url: /blog/scrum-master-tip-many-voices/
 categories:
   - Agile
-redirect_from:
-  - /scrum-master-tip-many-voices/
 ---
 
 This is a quick tip that I struggled with when I started as a Scrum Master and wish someone told me about.

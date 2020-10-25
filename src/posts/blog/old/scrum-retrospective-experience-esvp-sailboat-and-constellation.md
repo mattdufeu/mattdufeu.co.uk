@@ -8,8 +8,6 @@ categories:
   - Agile
 tags:
   - Retrospective
-redirect_from:
-  - /scrum-retrospective-experience-esvp-sailboat-and-constellation/
 ---
 
 I recently conducted my first Sprint Retrospective since becoming a Certified ScrumMaster and although I think it went ok, I&#8217;m sure there&#8217;s room for improvement. I&#8217;m hoping that by writing about it I perform a more in-depth personal reflection than I normally would and if someone else finds it useful or can provide feedback, I&#8217;ll be very happy.

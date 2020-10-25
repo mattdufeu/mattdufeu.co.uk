@@ -6,8 +6,6 @@ date: 2015-03-11T18:31:54+00:00
 url: /blog/getting-started-with-eslint-using-grunt/
 categories:
   - JavaScript
-redirect_from:
-  - /getting-started-with-eslint-using-grunt/
 ---
 
 ![Getting Started with ESLint using Grunt](../../../images/2015/01/ESLint.png "Getting Started with ESLint using Grunt")
@@ -96,10 +94,10 @@ This file will also be automatically updated by npm when we start installing oth
 Gruntfile.js is similar to a makefile (showing my age) and is used by grunt to see what to do when you issue grunt commands. To get started, create a file that contains:
 
 ```javascript
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON("package.json")
+    pkg: grunt.file.readJSON("package.json"),
   });
 };
 ```

@@ -4,10 +4,10 @@ import React from "react";
 import kebabCase from "lodash/kebabCase";
 
 // Components
-import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../../components/layout";
+import SEO from "../../components/SEO";
 
 const CategoriesPage = ({
   data: {
@@ -18,9 +18,7 @@ const CategoriesPage = ({
   },
 }) => (
   <Layout>
-    <Helmet>
-      <body className="home blog logged-in admin-bar customize-support" />
-    </Helmet>
+    <SEO title="List of all categories" pathname="/blog/categories" />
     <div>
       Choose a category:
       <ul>

@@ -31,7 +31,16 @@ const LayoutSidebar = () => (
         <aside id="pages-3" className="widget_pages">
           <ul>
             <li className="page_item page-item-26">
+              <a href="/">Home</a>
+            </li>
+            <li className="page_item page-item-26">
               <a href="/about/">About</a>
+            </li>
+            <li className="page_item page-item-26">
+              <a href="/blog/tags/">Tags</a>
+            </li>
+            <li className="page_item page-item-26">
+              <a href="/blog/categories/">Categories</a>
             </li>
           </ul>
         </aside>
