@@ -7,6 +7,10 @@ url: /blog/docker-wsl-error-0xffffffff/
 categories:
   - Docker
 description: In this post I describe how I solved docker error 0xffffffff when lauching a WSL prompt.
+keywords:
+  - Docker
+  - Docker error 0xffffff
+  - WSL
 excerpt: <p>Since upgrading Windows 10 to version 2004 and upgrading docker for Windows to use WSL 2 I've been getting a very unhelpful "error 0xffffffff" when launcing a bash prompt.</p><p>I'm sure it will get fixed at some point, but for the mean time it seems something is hogging port 53 and causing conflicts. Thankfully there's some PowerShell to fix it.</p>
 ---
 

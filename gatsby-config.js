@@ -5,8 +5,10 @@ module.exports = {
     description: `Hi, my name is Matt DuFeu. I share my experiences with all things .NET and various JavaScript front end frameworks.`,
     author: `Matt DuFeu`,
     keywords: [
-      `.NET core`,
+      `.NET`,
+      `.NET Core`,
       `c#`,
+      `Azure`,
       `docker`,
       `javascript for c# devs`,
       `typescript`,

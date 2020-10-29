@@ -18,7 +18,7 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <SEO title="List of all tags" pathname="/blog/tags" />
+    <SEO title="List of all tags" pathname="/blog/tags" keywords={[]} />
     <div>
       Choose a tag:
       <ul>

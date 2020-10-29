@@ -7,6 +7,11 @@ url: /blog/command-pattern-web-api2-mediatr-ninject/
 categories:
   - .NET
 description: In this post I show how to use the Command Pattern in Web API 2 with MediatR and Ninject.
+keywords:
+  - .NET
+  - Command Pattern
+  - Web API 2
+  - MediatR
 excerpt: <p>I ran across <a href="https://github.com/jbogard/MediatR">MediatR</a> the other day while looking into the <a href="https://  en.wikipedia.org/wiki/Command_pattern">command pattern</a>. I’ve been working a lot with micro-services. So I wanted to see how I could use the  <strong>Command Pattern in Web API 2 with MediatR and Ninject</strong>.</p>
 ---
 

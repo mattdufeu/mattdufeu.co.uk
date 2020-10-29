@@ -8,6 +8,11 @@ categories:
   - .NET
   - Docker
 description: In this post I describe how to do a NuGet restore from a private nuget feed within a docker container.
+keywords:
+  - NuGet restore
+  - Private NuGet feed
+  - Docker
+  - .NET
 excerpt: <p>While trying to containerise a .NET Framework app I hit a problem while trying to restore packages from NuGet that were from a private NuGet feed. The container didn't know my credentials, so the feed was rightly responding with "401 (Unauthorized)".</p><p>Here's how I used <a href="https://github.com/Microsoft/artifacts-credprovider">Azure Artifacts Credential Provider</a> with Windows Containers to solve it.</p>
 ---
 

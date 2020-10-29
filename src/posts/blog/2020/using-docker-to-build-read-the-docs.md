@@ -6,6 +6,9 @@ date: 2020-09-29T12:00:00+00:00
 url: /blog/using-docker-to-build-read-the-docs/
 categories:
   - Docker
+keywords:
+  - Docker
+  - Read the Docs
 excerpt: <p>I started working on a old side-project that was using an out-of-date version of IdentityServer (2.0.0). Rather than jump two major versions, I decided to go slowly, use this as a learning exercise, and go to the highest major version I could find (2.5.4).</p><p>Unfortunately the online docs didn't have 2.5.4, so I decided to build them myself. As always, I didn't want to install a lot of stuff that would be used just once. Another perfect scenario for docker.</p>
 ---
 

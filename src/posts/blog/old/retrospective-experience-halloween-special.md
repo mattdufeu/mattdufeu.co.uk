@@ -9,6 +9,13 @@ categories:
 tags:
   - Retrospective
 description: If you're looking for ideas to run a Halloween Special Retrospective, here's how I ran one. Spooky!
+keywords:
+  - Agile
+  - Scrum
+  - Halloween Special Retrospective
+  - Retrospective
+  - Retro
+  - Halloween Retrospective
 ---
 
 The end of the sprint was approaching and I was researching which technique to try next, when I saw this tweet from [@aaronjmckenna][1] which I had to try:

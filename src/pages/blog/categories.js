@@ -18,7 +18,11 @@ const CategoriesPage = ({
   },
 }) => (
   <Layout>
-    <SEO title="List of all categories" pathname="/blog/categories" />
+    <SEO
+      title="List of all categories"
+      pathname="/blog/categories"
+      keywords={[]}
+    />
     <div>
       Choose a category:
       <ul>

@@ -15,7 +15,7 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      <SEO title={tagHeader} pathname={pathname} />
+      <SEO title={tagHeader} pathname={pathname} keywords={[]} />
       <div>
         {tagHeader}
         {data.allMdx.nodes.map((node) => {
