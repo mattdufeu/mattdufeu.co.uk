@@ -8,6 +8,13 @@ categories:
   - Docker
   - .NET
 description: In this post I describe how to get started really quickly with MongoDB and .NET Core by using docker.
+keywords:
+  - Docker
+  - .NET Core
+  - MongoDB
+  - Mongo
+  - Quick start
+  - Quick start .NET Core with MongoDB in Docker
 excerpt: <p>Although I've been using MongoDB for a while, I realised I'd never started a greenfield project. Not wanting to install yet more software on my laptop, I realised this was a perfect fit for Docker.</p><p>Here's a quick start guide to getting C# .NET Core querying a MongoDB docker instance I used to get up and running.</p>
 ---
 

@@ -15,7 +15,7 @@ const Categories = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      <SEO title={categoryHeader} pathname={pathname} />
+      <SEO title={categoryHeader} pathname={pathname} keywords={[]} />
       <div>
         {categoryHeader}
         {data.allMdx.nodes.map((node) => {

@@ -9,6 +9,10 @@ categories:
 tags:
   - Azure-cli
 description: Docker for the Azure-Cli makes updating simpler. I show how you can stop the need to login every time by saving your credentials.
+keywords:
+  - Azure
+  - Azure-cli
+  - Docker
 excerpt:
   <p>I've been using Docker for more development tasks recently. Pulling a new pre-configured image and getting on with what I'm trying to do saves a lot of time. I've lost count of the number of hours I've "lost" chasing version numbers. Downloading files, installing them and then figuring out why it doesn't work isn't fun. When I read you can run the Azure CLI in a Docker container, I decided to use it.</p>
   <p>However, authenticating with `az login` every time got old quick. Here's how I managed to persist the azure cli docker container credentials between sessions.</p>

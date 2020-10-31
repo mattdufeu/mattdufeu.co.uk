@@ -7,6 +7,10 @@ url: /blog/different-types-of-impediment-to-identify/
 categories:
   - Agile
 description: As a scrum master, it's sometimes hard to know what to focus on. I list some types of impediment to look out for.
+keywords:
+  - Scrum
+  - Impediment
+  - Impediments
 ---
 
 As a Scrum Master, impediment removal is not only an essential part of your job, but it&#8217;s probably one of the biggest ways to have a positive impact on team velocity. Even a highly motivated, highly skilled team are going to struggle if half of their equipment is broke!

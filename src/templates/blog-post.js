@@ -18,6 +18,7 @@ export default ({ data, pageContext }) => {
         title={post.frontmatter.title}
         pathname={post.frontmatter.url}
         description={description}
+        keywords={post.frontmatter.keywords}
       />
       <article
         id="post-123"
@@ -66,6 +67,7 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         url
         description
+        keywords
       }
     }
   }
