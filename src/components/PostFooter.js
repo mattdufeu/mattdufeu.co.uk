@@ -8,9 +8,10 @@ class PostFooter extends Component {
     let tags = this.props.data.mdx.frontmatter.tags;
 
     if (tags) {
-      let allTags = tags.map((x) => (
+      let allTags = tags.map((x, index) => (
         <Link key={x} to={`/blog/tags/${kebabCase(x)}`}>
           {x}
+          {index === tags.length - 1 ? "." : ", "}
         </Link>
       ));
 
@@ -28,9 +29,12 @@ class PostFooter extends Component {
     let categories = this.props.data.mdx.frontmatter.categories;
 
     if (categories) {
-      let allCategories = categories.map((x) => (
+      let allCategories = categories.map((x, index) => (
         <Link key={x} to={`/blog/categories/${kebabCase(x)}`}>
-          {x}
+          <span>
+            {x}
+            {index === categories.length - 1 ? "." : ", "}
+          </span>
         </Link>
       ));
 
@@ -52,7 +56,7 @@ class PostFooter extends Component {
           <span className="byline">
             by <span className="author vcard">DuFeu</span>{" "}
           </span>
-          <span className="cat-links">{this.renderCategories()}</span>
+          <span className="cat-links">{this.renderCategories()}</span>{" "}
           <span className="tags-links">{this.renderTags()}</span>
         </div>
       </footer>
