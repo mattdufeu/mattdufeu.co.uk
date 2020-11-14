@@ -358,7 +358,7 @@ td {
   max-width: 1080px;
 }
 #site-content {
-  width: 63%;
+  width: 73%;
   padding: 0 0 0 3%;
   float: left;
   overflow: hidden;
@@ -628,4 +628,8 @@ ol.commentlist .comment-reply-link:hover {
 */
 article {
   padding-top: 1rem;
+}
+
+p {
+  margin-bottom: 0.85em !important;
 }
