@@ -629,3 +629,7 @@ ol.commentlist .comment-reply-link:hover {
 article {
   padding-top: 1rem;
 }
+
+p {
+  margin-bottom: 0.85em !important;
+}
