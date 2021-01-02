@@ -26,12 +26,14 @@ export default ({ children }) => (
           <SEO pathname="test" />
           <header id="site-header" role="banner">
             <div className="hgroup">
-              <h1>
+              <div className="main-header">
                 <Link to="/">
                   Matt <span>DuFeu</span>
                 </Link>
-              </h1>
-              <h2>Father and .NET enthusiast. Striving to learn</h2>
+              </div>
+              <div className="tag-line">
+                Father and .NET enthusiast. Striving to learn
+              </div>
             </div>
           </header>
           <div id="main" className="site-main">

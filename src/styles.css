@@ -89,7 +89,7 @@ a:hover {
   margin: 2em auto 1em auto;
   max-width: 1080px;
 }
-#site-header h1 {
+#site-header .main-header {
   float: left;
   font-family: "Droid Sans", sans-serif;
   font-size: 2.8em;
@@ -99,19 +99,19 @@ a:hover {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   margin: 0 0 0 2%;
 }
-#site-header h1 a {
+#site-header .main-header a {
   color: #000;
 }
-#site-header h1 a:hover {
+#site-header .main-header a:hover {
   text-decoration: none;
 }
-#site-header h1 a span {
+#site-header .main-header a span {
   color: #d90000;
 }
-#site-header h1 a small {
+#site-header .main-header a small {
   font-size: 65%;
 }
-#site-header h2 {
+#site-header .tag-line {
   font-family: "Droid Sans", sans-serif;
   font-size: 1em;
   font-style: italic;
