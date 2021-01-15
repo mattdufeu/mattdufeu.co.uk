@@ -66,5 +66,5 @@ The team didn&#8217;t produce anywhere near the number of negative comments I th
 - Another sign of my inexperience is that I&#8217;m too keen to try out all the new techniques I&#8217;ve heard of! I&#8217;m not convinced doing both a Self-Assessment and a &#8220;normal&#8221; retrospective is right. I&#8217;ll need to read more into this.
 
 [1]: http://scaledagileframework.com/metrics/
-[2]: http://localhost:8000/empty/scrum-retrospective-experience-esvp-sailboat-and-constellation/
+[2]: /blog/scrum-retrospective-experience-esvp-sailboat-and-constellation/
 [3]: http://www.innovationgames.com/circles-and-soup/

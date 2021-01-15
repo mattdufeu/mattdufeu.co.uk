@@ -152,4 +152,4 @@ Please leave a comment below or catch me on [twitter][6] if you&#8217;re having 
 [4]: http://nodejs.org/
 [5]: ../../../images/2015/01/grunt.png
 [6]: https://www.twitter.com/mattdufeu
-[7]: http://localhost:8000/empty/add-grunt-and-eslint-to-a-mvc-project/
+[7]: /blog/add-grunt-and-eslint-to-a-mvc-project/

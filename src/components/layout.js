@@ -31,9 +31,7 @@ export default ({ children }) => (
                   Matt <span>DuFeu</span>
                 </Link>
               </h1>
-              <div className="tag-line">
-                Father and .NET enthusiast. Striving to learn
-              </div>
+              <div className="tag-line">.NET and striving to learn</div>
             </div>
           </header>
           <div id="main" className="site-main">

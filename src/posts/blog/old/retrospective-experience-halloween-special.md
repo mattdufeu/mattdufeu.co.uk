@@ -8,7 +8,7 @@ categories:
   - Agile
 tags:
   - Retrospective
-description: If you're looking for ideas to run a Halloween Special Retrospective, here's how I ran one. Spooky!
+description: If you're looking for ideas to run a Halloween Special Retrospective, here's how I ran one. Including a Spooky mascot!
 keywords:
   - Agile
   - Scrum

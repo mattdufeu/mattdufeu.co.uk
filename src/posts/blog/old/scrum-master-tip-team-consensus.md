@@ -38,4 +38,4 @@ Imagine there is a line along one wall where one end is agree and the other is d
 
 Use planning poker cards where a higher number is more agreement.
 
-[1]: http://localhost:8000/empty/scrum-master-tip-many-voices/
+[1]: /blog/scrum-master-tip-many-voices/

@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import PostFooter from "../components/PostFooter";
 import { MDXRenderer } from "gatsby-plugin-mdx";
@@ -7,10 +7,6 @@ import SEO from "../components/SEO";
 
 export default ({ data, pageContext }) => {
   const post = data.mdx;
-  const { previous, next } = pageContext;
-  const description = post.frontmatter.description
-    ? post.frontmatter.description.substring(0, 156)
-    : null;
 
   const keywords = [".NET", "JavaScript", "newsletter"];
 

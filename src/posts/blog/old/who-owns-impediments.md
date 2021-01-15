@@ -60,8 +60,8 @@ Not all impediments are the scrum masters to solve, sometimes it can be really b
 
 This obviously isn&#8217;t an exhaustive list and I&#8217;m not going to claim it&#8217;s perfect, so please leave a comment below or catch me on [twitter][5] if you have any comments.
 
-[1]: http://localhost:8000/empty/different-types-of-impediment-to-identify/
+[1]: /blog/different-types-of-impediment-to-identify/
 [2]: https://hbr.org/2013/03/treat-employees-with-trust
 [3]: http://www.scrum-master-toolbox.com/
-[4]: http://localhost:8000/empty/retrospective-experience-self-assessment-plus-circles-and-soup/
+[4]: /blog/retrospective-experience-self-assessment-plus-circles-and-soup/
 [5]: https://twitter.com/mattdufeu
