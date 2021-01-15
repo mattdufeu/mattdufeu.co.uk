@@ -7,7 +7,7 @@ url: /blog/key-differences-between-csharp-and-javascript/
 categories:
   - JavaScript
   - .NET
-description: In this post I detail some of the differences between C# and JavaScript.
+description: In this post I detail some of the differences between C# and JavaScript with the aim to help you jump between the two more easily.
 keywords:
   - JavaScript for C# developers
   - JavaScript for .NET developers

@@ -44,6 +44,6 @@ I&#8217;m pleased to say that overall, the technique worked and would happily re
 
 Thanks to [@GregoryMcKeown][3] for his book, and thanks to my team for letting me try something new.
 
-[1]: http://localhost:8000/empty/sprint-retrospective-idea-essentialism/
-[2]: http://localhost:8000/empty/wp-admin/post.php?post=210&action=edit
+[1]: /blog/sprint-retrospective-idea-essentialism/
+[2]: /blog/wp-admin/post.php?post=210&action=edit
 [3]: https://twitter.com/@GregoryMcKeown

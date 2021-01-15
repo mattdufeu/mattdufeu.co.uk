@@ -13,7 +13,7 @@ keywords:
   - LINQ equivalent in JavaScript
   - LINQ in JavaScript
   - LINQ Select in JavaScript
-description: In this post I go through the JavaScript equivalant of the .NET LINQ Select method.
+description: In this post I go through the JavaScript equivalant of the .NET LINQ Select method. There are slight differences, but nicely familiar.
 excerpt: <p>I accidentally typed out a couple of .NET LINQ statements while writing JavaScript and drew a blank on the equivalent method names.</p><p>In the hope of not forgetting again, here I dig into the equivalent of the .NET LINQ Select method in JavaScript. They're not identical, but I think for most people the differences won't matter.</p>
 ---
 

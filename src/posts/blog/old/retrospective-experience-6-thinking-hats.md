@@ -52,4 +52,4 @@ Overall, I think it&#8217;s a good exercise to conduct and one I&#8217;ll certai
 
 [1]: http://retrospectivewiki.org/index.php?title=6_Thinking_Hats_Retrospective
 [2]: http://www.funretrospectives.com/esvp-explorer-shopper-vacationer-prisoner/
-[3]: http://localhost:8000/empty/scrum-retrospective-experience-esvp-sailboat-and-constellation/
+[3]: /blog/scrum-retrospective-experience-esvp-sailboat-and-constellation/

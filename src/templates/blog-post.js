@@ -9,7 +9,7 @@ export default ({ data, pageContext }) => {
   const post = data.mdx;
   const { previous, next } = pageContext;
   const description = post.frontmatter.description
-    ? post.frontmatter.description.substring(0, 156)
+    ? post.frontmatter.description.substring(0, 320)
     : null;
 
   return (

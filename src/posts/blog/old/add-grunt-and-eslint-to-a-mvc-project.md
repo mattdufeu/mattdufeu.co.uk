@@ -8,7 +8,7 @@ categories:
   - JavaScript
 ---
 
-This is part two of getting started with ESLint using Grunt where I will show you how to configure ESLint to analyse a MVC .NET Project. In [part one][1] I set-up our environment with node.js, Grunt-cli and finally Grunt for our project, but you couldn&#8217;t do much with it.
+This is part two of getting started with ESLint using Grunt where I will show you how to configure ESLint to analyse a MVC .NET Project. In [part one](/blog/getting-started-with-eslint-using-grunt/) I set-up our environment with node.js, Grunt-cli and finally Grunt for our project, but you couldn&#8217;t do much with it.
 
 In this post, I&#8217;ll install ESLint, disable all the default ESLint rules, enable one specific some rule and exclude some files from analysis.
 ![Add Grunt and ESLint to a MVC Project](../../../images/2015/01/ESLint.png "Add Grunt and ESLint to a MVC Project")
@@ -55,7 +55,7 @@ npm install --save-dev load-grunt-tasks
 
 ### eslint.json
 
-To make our lives easier to change the configuration of ESLint, we&#8217;re going to use an **eslint.json** file. As you can probably tell from the name, it&#8217;s a text file containing some json that ESLint parses. The [ESLint documentation][3] is pretty good at explaining what all the options are, so I won&#8217;t do that here, but for now just create one containing the following:
+To make our lives easier to change the configuration of ESLint, we&#8217;re going to use an **eslint.json** file. As you can probably tell from the name, it&#8217;s a text file containing some json that ESLint parses. The [ESLint documentation](https://eslint.org/docs/user-guide/getting-started) is pretty good at explaining what all the options are, so I won&#8217;t do that here, but for now just create one containing the following:
 
 ```javascript
 {
@@ -179,12 +179,4 @@ And that's it! ESLint is now analysing the JavaScript files in my MVC project.
 
 ### Step 4 &#8211; Next Steps
 
-If you&#8217;ve got this far, you&#8217;re set to go. You will definitely want to edit the [rules][4] you&#8217;re using, but I&#8217;ll leave that up to you.
-
-Please leave a comment below or catch me on [twitter][5] if you&#8217;re having any problems.
-
-[1]: http://localhost:8000/empty/getting-started-with-eslint-using-grunt/
-[2]: ../../../images/2015/01/ESLint.png
-[3]: http://eslint.org/docs/configuring/
-[4]: http://eslint.org/docs/rules/
-[5]: https://www.twitter.com/mattdufeu
+If you&#8217;ve got this far, you&#8217;re set to go. You will definitely want to edit the [rules](https://eslint.org/docs/rules/) you&#8217;re using, but I&#8217;ll leave that up to you.

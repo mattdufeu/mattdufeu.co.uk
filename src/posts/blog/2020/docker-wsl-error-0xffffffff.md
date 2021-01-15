@@ -6,7 +6,7 @@ date: 2020-08-22T12:00:00+00:00
 url: /blog/docker-wsl-error-0xffffffff/
 categories:
   - Docker
-description: In this post I describe how I solved docker error 0xffffffff when lauching a WSL prompt.
+description: In this post I describe how I solved "docker error 0xffffffff" when lauching a WSL prompt. Update Jan 2021 - I haven't have this for a long time, so update docker.
 keywords:
   - Docker
   - Docker error 0xffffff

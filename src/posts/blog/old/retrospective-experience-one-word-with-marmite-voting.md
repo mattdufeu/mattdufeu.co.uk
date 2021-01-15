@@ -55,7 +55,7 @@ I thanked the team for their hard work and ideas produced so far.
 
 - I think I led, rather than facilitated the Generate Insights part of the retrospective. Perhaps that isn&#8217;t a bad thing, but I think my voice was over used.
 
-[1]: http://localhost:8000/empty/scrum-retrospective-experience-esvp-sailboat-and-constellation/
-[2]: http://localhost:8000/empty/retrospective-experience-self-assessment-plus-circles-and-soup/
+[1]: /blog/scrum-retrospective-experience-esvp-sailboat-and-constellation/
+[2]: /blog/retrospective-experience-self-assessment-plus-circles-and-soup/
 [3]: http://www.funretrospectives.com/one-word/
 [4]: http://scrumandkanban.co.uk/tag/marmite-voting/
