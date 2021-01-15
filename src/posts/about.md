@@ -13,7 +13,7 @@ As such, I consider myself as a [T-Shaped](https://en.wikipedia.org/wiki/T-shape
 
 Most of the older content on this site is from my days working as a Scrum Master. I'm keeping it around in the hope that it helps someone. The [Halloween Special Retrospective](/blog/retrospective-experience-halloween-special/) in particular gets a bit of traffic each year in October.
 
-## Current Focus
+### Current Focus
 
 I'm _trying_ to stay up to date with all things .NET and Azure. If that wasn't hard enough, it's becoming increasingly popular for a .NET backend to be sitting behind a front-end built using a JavaScript framework such as React, Vue or Angular. A decent chunk of my time is spent staying up to date with React and Vue.
 

@@ -10,7 +10,7 @@ categories:
 
 I once asked a team to question everything we do. We ended up with a few suggestions about things we could streamline but I was surprised at how quickly everyone on the team said &#8220;unit tests are good&#8221;.
 
-## Are unit tests good?
+### Are unit tests good?
 
 I&#8217;m strongly believe that unit tests are critical, but only if they offer a _good_ return on investment. It takes a scary amount of time writing and maintaining a suite of unit tests, so any efficiency savings can really add up.
 
@@ -18,7 +18,7 @@ I&#8217;m strongly believe that unit tests are critical, but only if they offer 
 
 Adam Tibi got me thinking about it a lot recently when I read his post on [not testing MVC controllers][1].
 
-## When are unit tests &#8220;Bad&#8221;
+### When are unit tests &#8220;Bad&#8221;
 
 I basically agree with Adam, but applied to every single line of code, not just controllers.
 
@@ -26,7 +26,7 @@ I&#8217;ve seen teams decide a certain % of code coverage is required and then j
 
 I find questioning the ROI of a unit test can also lead to some nice refactoring.
 
-## Summary
+### Summary
 
 Question your return on investment of every unit test you write and maintain. Why are you spending time and money writing and maintaining unit tests that are trivial.
 

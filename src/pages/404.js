@@ -8,7 +8,7 @@ const TagsPage = () => (
     <SEO title="Page Not Found - 404" pathname="404" keywords={[]} />
     <article>
       <header class="entry-header">
-        <h1 class="entry-title">Page Not Found - 404</h1>
+        <h2 class="entry-title">Page Not Found - 404</h2>
       </header>
       <p>
         Oops, that's a <strong>404</strong> - we couldn't find the page you

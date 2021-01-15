@@ -12,7 +12,7 @@ tags:
 
 We&#8217;re close to a big release and things have been going well &#8211; think 200%+ increase in velocity from when we started the release (and we were good already ) &#8211; but our last couple of retrospectives felt a little flat, possibly because the big wins have already been made. I wanted a technique to really get the team involved.
 
-## Back to Basic
+### Back to Basic
 
 In my research, I went back to the old favourite [Getting Value out of Agile Retrospectives][1] written by [Luis Gonçalves][2] and [Ben Linders][3] .
 
@@ -28,7 +28,7 @@ Rather than the Scrum Master asking the question, taking turns, I asked each tea
 
 I&#8217;m pleased to say this lead to a lot more group involvement than the last couple of retrospectives and we managed to find a couple of tweaks as well as a bit of forward planning for the next release.
 
-## Summary
+### Summary
 
 The book says this is a great technique to use if you&#8217;ve never facilitated a retrospective before. The tweaks I made may or may not help this, but it certainly got the team involved and resulted in some great actions.
 
@@ -36,7 +36,7 @@ So another fantastic technique that I would recommend to a newbie or expert Scru
 
 I&#8217;d be really interested to hear anyone trying this technique in the comments below or catch me on [twitter][4] if you prefer.
 
-## Personal Retrospective
+### Personal Retrospective
 
 ### What went well
 

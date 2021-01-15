@@ -14,7 +14,7 @@ A colleague of mine has been commenting on the &#8220;cost&#8221; of some of the
 
 I obviously didn&#8217;t want to dictate my thoughts to the team, so I tried to come to up with a retrospective technique to get the teams thoughts. As usual, it followed the 5 steps:
 
-## Question All Meetings Retrospective
+### Question All Meetings Retrospective
 
 ### Set the Stage
 
@@ -44,7 +44,7 @@ If there are any perceived problems with the meetings, i.e. we&#8217;re not gett
 
 I closed the retrospective by thanking everyone for their time and asking them all to provide me with some feedback on how they would rate the retrospective.
 
-## Result
+### Result
 
 The retrospective went &#8220;Okay&#8221; as it didn&#8217;t flow particularly well or feel like there was enough material for a whole retrospective. Saying that, we did get some useful ideas and have drastically changed some meetings, so it couldn&#8217;t have been totally bad.
 
@@ -52,13 +52,13 @@ To be honest though, that was probably due to my team being very good and effect
 
 Overall, I wouldn&#8217;t recommend this technique as is to a new Scrum Master or a new team, but I think there&#8217;s a good retrospective technique in here somewhere waiting to come out.
 
-## Warning
+### Warning
 
 I don&#8217;t think you should consider drastically changing or completely dropping one of the regular scrum events. Also, please be very careful to monitor the reaction and changes in the team if you make any.
 
 Basically, not all ideas are good ones, but have the courage to try something &#8220;out there&#8221; if the team reach a consensus on trying it.
 
-## Personal Retrospective
+### Personal Retrospective
 
 ### What went well
 

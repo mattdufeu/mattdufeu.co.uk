@@ -13,7 +13,7 @@ excerpt: <p>I've recently moved this blog from WordPress to Gatsby. So far, I'm 
 
 I've recently moved this blog from WordPress to Gatsby. So far, I'm very happy with the move, but I missed a couple of the things WordPress gave me out of the box. One of those things were the various widgets you can add to the sidebar. In particular, I missed the [Category Widget](https://en.support.wordpress.com/widgets/categories-widget/).
 
-## How to query and count categories?
+### How to query and count categories?
 
 First thing we need to do is figure out what categories are being used and count them. I'd only just completed the [Adding Tags and Categories to Blog Posts](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/) guide, so knew about the _group_ query syntax, so we need:
 
@@ -30,7 +30,7 @@ query {
 
 Now we know what query to use, but how to use it?
 
-## Adding the query in a component
+### Adding the query in a component
 
 We'd ideally add this to a React component. Thankfully Gatsby v2 added [StaticQuery](https://www.gatsbyjs.org/docs/static-query/) which is exactly what we want.
 
@@ -55,7 +55,7 @@ The render prop is how you want to display the result of the query. I used:
 
 So far so good, but I also wanted to display a similar widget for tags.
 
-## Tags and Categories
+### Tags and Categories
 
 Initially I duplicated the above query and replaced the words categories with tags. I got this error:
 
@@ -84,7 +84,7 @@ categoriesGroup: allMarkdownRemark(limit: 2000) {
 
 Which I can use in render prop with `data.tagsGroup.group` or `data.categoriesGroup.group`. You can see the final code at <https://github.com/mattdufeu/mattdufeu.co.uk/blob/master/src/components/layout_sidebar.js>.
 
-## Conclusion
+### Conclusion
 
 Creating an equivalent of the WordPress Category Widget for Gatsby turned out nicely.
 

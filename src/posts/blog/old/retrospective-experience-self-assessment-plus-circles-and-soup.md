@@ -46,7 +46,7 @@ After the groups presented their points to the rest of the team, we then used Do
 
 I thanked the team.
 
-## Personal Retrospective
+### Personal Retrospective
 
 The team didn&#8217;t produce anywhere near the number of negative comments I thought they would so I&#8217;m not convinced Circles and Soup was the best technique to use. It was definitely worth trying, but I think it would be nice to apply this technique once you knew there were a lot of negative things being mentioned, rather than doing it regardless.
 

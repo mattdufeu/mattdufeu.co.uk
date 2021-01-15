@@ -31,7 +31,7 @@ const Categories = ({ pageContext, data }) => {
                   color: inherit;
                 `}
               >
-                <h1>{node.frontmatter.title}</h1>
+                <h2>{node.frontmatter.title}</h2>
               </Link>
               <div dangerouslySetInnerHTML={{ __html: content }} />
             </article>
@@ -48,7 +48,7 @@ export default Categories;
 export const pageQuery = graphql`
   query($category: String) {
     allMdx(
-      limit: 3
+      limit: 4
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { categories: { in: [$category] } } }
     ) {

@@ -18,7 +18,7 @@ Before I did anything, I was wise enough to check with the other members to get 
 
 I can see that could be taken as disruptive, so I did some digging. I couldn&#8217;t see much reference to the Scrum Master being a disruption, until I came across this <http://www.scruminc.com/the-power-of-disruptive-leadership/>. It&#8217;s quite hard to get the meaning of the presentation from just the slides, but I&#8217;m taking comfort in the title.
 
-## Personal Conclusion
+### Personal Conclusion
 
 After a fair bit of thinking, I&#8217;ve come to the conclusion that &#8220;disruption&#8221; is as another tool in my belt. As long as I limit it&#8217;s use to when I think the team are stagnating, treading water or could simply do something better, it could be a very useful way to ultimately increase velocity. Importantly, I think as long as I don&#8217;t expect all of my suggestions to be acted upon and I&#8217;m more than willing to be told I&#8217;m wrong, I see no problem with it.
 

@@ -17,7 +17,7 @@ As a Scrum Master, impediment removal is not only an essential part of your job,
 
 What I didn&#8217;t realise when I first started out was that there are many different types of impediment. I guess as I have a technical background I automatically focussed on things like &#8220;slow pcs&#8221;, &#8220;technology X isn&#8217;t great&#8221;, &#8220;my monitor is too small&#8221; and &#8220;technical debt&#8221;, but as I work with more teams and different customers I&#8217;m beginning to realise the subtle issues are much more common.
 
-## Types of Impediment
+### Types of Impediment
 
 ![Different Types of Impediment to Identify](../../../images/2016/01/RoadWorks.png "Different Types of Impediment to Identify")
 
@@ -51,7 +51,7 @@ I&#8217;m classing this as a team impediment instead of individual as the whole 
 
 These can be easy to identify, but very hard to resolve as they&#8217;re often outside the control of the team. For example, I have a person on my team who is constantly being asked by other managers to help out with other work. As a result, they are never able to properly focus on the work for my project.
 
-## Summary
+### Summary
 
 That isn&#8217;t an exhaustive list, but will hopefully get you thinking about the types of issues a Scrum Master has to deal with. In an upcoming post I&#8217;ll go through the same list again stating who I think should own the impediment and therefore get it removed. It&#8217;s not always the Scrum Masters job!
 

@@ -11,14 +11,14 @@ excerpt: <p>I recently had the opportunity to update the quality of logging in a
 
 I recently had the opportunity to update the quality of logging in an application. Exceptions were handled well, but it was hard to see the values passed through the layers. I ended up using a _Roslyn CodeFix to add a ToString method_.
 
-## Setup
+### Setup
 
 Once you&#8217;ve created a new &#8220;Analyzer with Code Fix&#8221; project, there&#8217;s two parts to write:
 
 1. The Analyzer &#8211; the code that highlights the problem by adding a green squiggly line;
 2. The CodeFix &#8211; the code that runs to &#8220;fix&#8221; the problem highlighted by the analyzer
 
-## The Analyzer
+### The Analyzer
 
 My requirement was straight foreward, &#8220;add a ToString method&#8221; to a class. Turns out the code created in the new project is almost good enough. It highlights any classes declared with lowercase letters. As I want _all_ classes, we can just change the `AnalyzeSymbol` method in Analyzer.cs to:
 
@@ -41,7 +41,7 @@ If you press F5 now to debug the project, a new instance of Visual Studio will o
 ![Rosylyn Green Squiggly](../../../images/2017/04/Roslyn-Green-Squiggly.png "Rosylyn Green Squiggly")
 So far, so good. Now to create the codefix.
 
-## The CodeFix
+### The CodeFix
 
 This is a bit more involved. I didn&#8217;t know what I was doing and struggled with the documentation. After some trial and error, this is what I ended up doing:
 
@@ -183,7 +183,7 @@ private IEnumerable<ParameterSyntax> GetParametersList(string[] parameterTypes, 
 If you run this code now, and apply the code fix to a class with some properties, it should add a ToString method.
 ![ToString Method Added](../../../images/2017/04/ToString-Method-Added.png "ToString Method Added")
 
-## Alternatives
+### Alternatives
 
 Before winding up this post, I think it&#8217;s worth pointing out some other ways of doing it.
 
@@ -197,7 +197,7 @@ I&#8217;m sure there&#8217;s a way of using attributes (or something else) to ma
 
 Finally, there&#8217;s always ReSharper!
 
-## Conclusions
+### Conclusions
 
 The solution in this post is far from perfect. There are a number of things that can be improved:
 

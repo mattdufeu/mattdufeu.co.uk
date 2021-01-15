@@ -26,11 +26,11 @@ export default ({ children }) => (
           <SEO pathname="test" />
           <header id="site-header" role="banner">
             <div className="hgroup">
-              <div className="main-header">
+              <h1>
                 <Link to="/">
                   Matt <span>DuFeu</span>
                 </Link>
-              </div>
+              </h1>
               <div className="tag-line">
                 Father and .NET enthusiast. Striving to learn
               </div>
@@ -46,7 +46,7 @@ export default ({ children }) => (
           </div>
           <footer id="site-footer" role="contentinfo">
             <div id="site-info">
-              Copyright © Matt DuFeu 2020. Copy of the WordPress theme by{" "}
+              Copyright © Matt DuFeu 2021. Copy of the WordPress theme by{" "}
               <a href="https://geek.hellyer.kiwi/" title="Ryan Hellyer">
                 Ryan Hellyer
               </a>

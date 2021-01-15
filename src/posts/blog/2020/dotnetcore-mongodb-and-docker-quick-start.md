@@ -24,7 +24,7 @@ Being brutally honest with myself, I'm not particularly familiar with how the co
 
 As I've learned, reading about something and actually doing it are worlds apart. So I wanted to dig a little deeper without installing lots of software. Docker to the rescue.
 
-## Docker Compose
+### Docker Compose
 
 Unsuprisingly, someone has thought about and solved this problem for me already. So I did the following:
 
@@ -41,7 +41,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 21fd00de630e        mongo-express       "tini -- /docker-ent…"   2 days ago          Up 2 days           0.0.0.0:8081->8081/tcp     mongodb_mongo-express_1
 ```
 
-## Persistant Storage
+### Persistant Storage
 
 If you're not worried about the data, you can skip this bit. I wanted to keep the files Mongo creates, so added a volume to my docker-compose.yml file:
 
@@ -54,7 +54,7 @@ If you're not worried about the data, you can skip this bit. I wanted to keep th
 
 ```
 
-## Mongo Shell
+### Mongo Shell
 
 Again, you may not need this part, especially with mongo express. But if you need to use the [mongo shell](https://docs.mongodb.com/manual/mongo/), you can connect to the container and run bash. The credentials from the docker-compose file make the command:
 
@@ -63,7 +63,7 @@ Again, you may not need this part, especially with mongo express. But if you nee
     mongo -u root -p example
 ```
 
-## .NET Core console app
+### .NET Core console app
 
 To make sure we can talk to it programaticaly, I created a _not_ safe for production console app with:
 
@@ -111,7 +111,7 @@ Once you run that, use mongo express to confirm you have a new record.
 
 ![Mongo Express showing single sample record](../../../images/2020/Mongo-Express-Sample-DB.png "Mongo Express showing single sample record")
 
-## Conclusion
+### Conclusion
 
 I'm now free to explore and play with Mongo locally and I haven't had to install a thing.
 
