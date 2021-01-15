@@ -12,11 +12,11 @@ tags:
 
 I recently conducted my first Sprint Retrospective since becoming a Certified ScrumMaster and although I think it went ok, I&#8217;m sure there&#8217;s room for improvement. I&#8217;m hoping that by writing about it I perform a more in-depth personal reflection than I normally would and if someone else finds it useful or can provide feedback, I&#8217;ll be very happy.
 
-## Brief Background
+### Brief Background
 
 This is an established team that has great morale, but they&#8217;ve been through the ringer a bit. I was worried the enthusiasm for Agile was fading, or worse, we were just going through the motions.
 
-## Five Stage Retrospective
+### Five Stage Retrospective
 
 When I first joined, <a title="I asked twitter about the various retrospective techniques others liked" href="https://twitter.com/mattdufeu/status/425907235739291648" target="_blank">I asked twitter about the various retrospective techniques others liked</a> and Ben Linders kindly responded. So when I saw the book he&#8217;d written on the very subject &#8211; <a title="Getting Value out of Agile Retrospectives" href="http://www.benlinders.com/getting-value-out-of-agile-retrospectives/" target="_blank">http://www.benlinders.com/getting-value-out-of-agile-retrospectives/</a> &#8211; was cheap I bought it!
 
@@ -57,7 +57,7 @@ We then took each one from most important to least important and came up with so
 
 Nothing special to note beyond thanking the team for the patience and enthusiasm for a new approach. I also asked for feedback, which I&#8217;m hoping will come willingly over the next couple of days.
 
-## Personal Retrospective
+### Personal Retrospective
 
 In summary, I&#8217;m really happy with the retrospective. I certainly gained some insight and I think the team got something out of it.
 

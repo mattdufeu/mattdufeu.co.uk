@@ -18,7 +18,7 @@ It was almost exactly what I wanted, but because it needed manual data entry, I 
 
 What I wanted, was a way to extract the information on a daily basis without me having to open a web browser.
 
-## Less Manual Approach
+### Less Manual Approach
 
 ### Part 1 &#8211; What data do I need
 
@@ -46,7 +46,7 @@ Getting the data out of TFS is relative simple. In the web interface, go to Work
 
 It doesn&#8217;t matter how you configure the column options for this query as we&#8217;ll be extracting things via C# next.
 
-## Part 2 &#8211; Command Line Tool
+### Part 2 &#8211; Command Line Tool
 
 Running the above query from C# is also simple. The below code clearly has a lot to be desired, but it was a quick 5 second proof of concept and as it&#8217;s been &#8220;good enough&#8221; I&#8217;ve never tweaked it.
 
@@ -96,7 +96,7 @@ namespace CFDConsoleApp
 
 As you can see, I&#8217;ve placed some stuff in the App.config under App.Settings, but otherwise it&#8217;s very simple.
 
-## Part 3 &#8211; Scheduled Tasks
+### Part 3 &#8211; Scheduled Tasks
 
 So I don&#8217;t have to remember to run this every day, I set up a scheduled tasks to run every morning at 8am, running the following command to output to a file called the current days date and time.
 
@@ -107,13 +107,13 @@ cfd_console.exe &gt; %date:~10,4%_%date:~4,2%_%date:~7,2%__%time:~0,2%_%time:~3,
 
 This way, for whatever time period you want, you just have to use those files. No outlook reminders or alarms!
 
-## Part 4 &#8211; Cumulative Flow Diagram from TFS Data
+### Part 4 &#8211; Cumulative Flow Diagram from TFS Data
 
 When you have a period of time you want to produce a CFD chart for, simply take the relevant .txt files and import the data into the excel template from the above post.
 
 I&#8217;m sure this could be automated also, but as it only takes a few minutes every iteration I haven&#8217;t bothered.
 
-## Summary
+### Summary
 
 The above way is still fairly manual, but it&#8217;s quicker than looking at PBIs and Tasks in TFS regularly. There&#8217;s also a lot to be desired with the coding, but it serves its purpose!
 

@@ -28,7 +28,7 @@ C:\myproject\WebApplication1>
 
 Let&#8217;s get started.
 
-## Step 1 &#8211; Install ESLint and Grunt-ESLint
+### Step 1 &#8211; Install ESLint and Grunt-ESLint
 
 Like last time, npm makes installing things trivial. First, install ESLint:
 
@@ -51,7 +51,7 @@ npm install --save-dev load-grunt-tasks
 
 ```
 
-## Step 2 &#8211; Configure ESLint
+### Step 2 &#8211; Configure ESLint
 
 ### eslint.json
 
@@ -92,7 +92,7 @@ This tells ESLint to ignore all files inside the _packages_ directory, i.e. anyt
 
 Finally, all that&#8217;s left is to configure Grunt to run ESLint.
 
-## Step 3 &#8211; Configure Grunt to use ESLint
+### Step 3 &#8211; Configure Grunt to use ESLint
 
 Before explaining the syntax, please edit your **Gruntfile.js** file to contain:
 
@@ -177,7 +177,7 @@ WebApplication1/Scripts/respond.min.js
 And that's it! ESLint is now analysing the JavaScript files in my MVC project.
 ```
 
-## Step 4 &#8211; Next Steps
+### Step 4 &#8211; Next Steps
 
 If you&#8217;ve got this far, you&#8217;re set to go. You will definitely want to edit the [rules][4] you&#8217;re using, but I&#8217;ll leave that up to you.
 

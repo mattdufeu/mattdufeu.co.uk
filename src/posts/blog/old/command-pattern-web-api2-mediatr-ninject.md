@@ -17,7 +17,7 @@ excerpt: <p>I ran across <a href="https://github.com/jbogard/MediatR">MediatR</a
 
 I ran across [MediatR][1] the other day while looking into the [command pattern][2]. I&#8217;ve been working a lot with micro-services. So I wanted to see how I could use the **Command Pattern in Web API 2 with MediatR and Ninject**.
 
-## Project Configuration
+### Project Configuration
 
 From the [project wiki][3], it seems Jimmy Bogard prefers StructureMap as a DI container. I&#8217;ve been mostly using Ninject and the documentation wasn&#8217;t quite as clear.
 
@@ -35,7 +35,7 @@ Install the following NuGet packages
 
 We don&#8217;t need Swashbuckle, but it makes it a _lot_ easier to test.
 
-## Using MediatR
+### Using MediatR
 
 I&#8217;ll show a trivial example that negates the command passed in. Your real world usage will be more complex. But this will show the technology without complicating the example.
 
@@ -70,7 +70,7 @@ And that&#8217;s it for the plumbing of MediatR. We have now implemented with co
 
 But before this will work, we need to configure our DI container, in my case Ninject.
 
-## Ninject Configuration
+### Ninject Configuration
 
 I struggled with this as I couldn&#8217;t find any clear examples. The project github repos has an example, but I couldn&#8217;t get it to compile . When I finally did, it didn&#8217;t work. I failed to use Ninject.Common.Extensions , but the below definitely works.
 
@@ -92,7 +92,7 @@ Note the highlighted line. It is specific to the command and handler classes we 
 
 All that&#8217;s left is using our commands in our Web API 2 application.
 
-## Web API 2 controller
+### Web API 2 controller
 
 I intend to call mediator from within my controllers. It doesn&#8217;t have to be there, but I like to keep [thin controllers][4].
 
@@ -122,7 +122,7 @@ As you can see, we now have a nice thin controller. Note, the use of async and a
 
 Let&#8217;s make sure it works.
 
-## Confirming It Works
+### Confirming It Works
 
 This is where Swashbuckle comes in handy. Set a breakpoint in the POST action method and press F5. Navigate to http://localhost:&lt;port&gt;/swagger and expand Values and POST. Fill out the message like below
 
@@ -130,7 +130,7 @@ This is where Swashbuckle comes in handy. Set a breakpoint in the POST action me
 
 Click &#8220;Try it out!&#8221; and you should be able to step through the code. Travelling through your handler. And finally back to the controller to see the value passed in negated:
 
-## Conclusion
+### Conclusion
 
 MediatR is a small library, but makes adding the command pattern to your .net projects simple. Getting Ninject working was a little harder than I expected, but nothing too hard. Give it a try and let me know if I&#8217;m missing a trick.
 

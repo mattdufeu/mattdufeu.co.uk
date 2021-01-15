@@ -23,7 +23,7 @@ Typically, my mind went blank on what the JavaScript equivalent of LINQ Select w
 
 Turns out modern JavaScript has a lot of very similar functionality to LINQ. I'm pretty sure I've got an old notebook with a cheatsheet in it somewhere, but I can't find it, so I am adding it here for safe(r) keeping.
 
-## High Level Comparison
+### High Level Comparison
 
 At a high level `Select` "does something" to each element in an `IEnumerable<TSource>`, giving you back the result as another `IEnumerabl<TResult>`.
 
@@ -50,11 +50,11 @@ let employees = [
   { Name: "Katie", Salary: 50000, Age: 46 },
   { Name: "Terry", Salary: 5000, Age: 16 },
   { Name: "Fred", Salary: 35000, Age: 26 },
-  { Name: "Elsie", Salary: 100000, Age: 36 },
+  { Name: "Elsie", Salary: 100000, Age: 36 }
 ];
 ```
 
-## .NET LINQ Select
+### .NET LINQ Select
 
 If you wanted a list of the employees with their name capitalised, you could write the following in C# using LINQ and the `Select` method:
 
@@ -65,7 +65,7 @@ employees.Select(v => v.Name.ToUpper());
 
 **Please note:** In an attempt to keep this to the point, I'm ignoring the fact that LINQ statements are not actually performed until you call something like `ToList()`.
 
-## JavaScript equivalent of LINQ Select is Map
+### JavaScript equivalent of LINQ Select is Map
 
 If you're able to use [JavaScript Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), you could write something like:
 
@@ -85,7 +85,7 @@ employees.map(function (x) {
 
 If like me, you like to dig a little deeper into things, please keep reading. If all you needed was a jog of your memory, or you simply don't care, I won't be too upset if you stop reading here.
 
-## In depth comparison
+### In depth comparison
 
 ### Similarities
 
@@ -103,7 +103,7 @@ In .NET LINQ methods are extension methods of IEnumerable&lt;T&gt;. A _lot_ of c
 
 Another much bigger difference between .NET Select and JavaScript map is that the .NET methods defer execution. In other words, they are not executed until needed by something like `ToList()`. In JavaScript, map creates and returns a new array immediately.
 
-## Alternatives
+### Alternatives
 
 Finally, I think it's worth pointing out you can get a much closer to .NET experience in JavaScript if you're willing to pull in an external dependency.
 

@@ -16,7 +16,7 @@ Principal.Identity.AddClaim(new Claim(ClaimType, "ClaimValue"));
 
 Unfortunately, where you add that code isn&#8217;t.
 
-## Options
+### Options
 
 I found a number of options that worked, but didn&#8217;t behave in the way I needed.
 
@@ -26,13 +26,13 @@ Option 2 &#8211; add the above code into the [Application_PostAuthenticateReques
 
 Option 3 &#8211; if you&#8217;re using Owin, to create some [Katana Middleware][3]
 
-## Problem
+### Problem
 
 The problem with all these solutions is the number of times the transformation takes place, i.e. how often that code is executed.
 
 Why would you care about the number of times it&#8217;s called? In all the examples I found, you wouldn&#8217;t, as &#8220;magic strings&#8221; are being added to the claims, and therefore it&#8217;s really fast. In my case, and I&#8217;d imagine most real world cases, you&#8217;re likely to be making an IO bound call to a database or web service to lookup the extra claim. You _really_ don&#8217;t want to be doing that every _single_ page hit.
 
-## Solution
+### Solution
 
 I eventually hit upon the solution with the thanks to a StackOverflow post which [hinted at using the OnResponseSignIn of the CookieAuthenticationProvider][4]
 

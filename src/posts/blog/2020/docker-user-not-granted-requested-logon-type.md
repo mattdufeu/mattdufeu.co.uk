@@ -1,5 +1,5 @@
 ---
-title: Docker - the user has not been granted the requested logon type at this computer.
+title: Docker error - Logon failure user not granted logon type
 author: DuFeu
 type: post
 date: 2020-07-16T12:00:00+00:00
@@ -13,7 +13,10 @@ It's quite frustrating to sit down for the day, and something that worked the da
 
 ```powershell
 ---> Running in 143123d54e5b
-hcsshim::CreateComputeSystem 143123d54e5b8c3b028bfad97141a2b1afc6ffa04889a4213f62b2d0daa9f91c: Logon failure: the user has not been granted the requested logon type at this computer.
+hcsshim::CreateComputeSystem 143123d54e5b8c3b028bfad97141a2b1afc6ffa04889a4213f62b2d0daa9f91c:
+Logon failure: the user has not been granted the requested logon type at this computer.
 ```
 
-A reboot seemed to solve it, but I think that was more luck than judgement. Thankfully I found a better answer in <https://github.com/docker/for-win/issues/1056#issuecomment-401810678>, namely, restarting the "Hyper-V Virtual Machine Management" service.
+To be honest, I didn't know where to begin with this one. The error "the user has not been granted the requested logon type at this computer" presumably refers to the system account that docker runs under. No idea how to check those permissions or why they would change. I initially resorted to rebooting.
+
+The reboot seemed to solve it, but I think that was more luck than judgement. Thankfully I found a better answer in <https://github.com/docker/for-win/issues/1056#issuecomment-401810678>, namely, restarting the "Hyper-V Virtual Machine Management" service.

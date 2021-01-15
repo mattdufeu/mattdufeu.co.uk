@@ -31,13 +31,13 @@ Tool 'try-convert' failed to install. This failure may have been caused by:
 For more reasons, including package naming enforcement, visit https://aka.ms/failure-installing-tool
 ```
 
-## Solution 1 - remove private feed
+### Solution 1 - remove private feed
 
 My immediate thought was to remove or disable the private feed from within Visual Studio Tools -> NuGet Package Manager -> Package Manager Settings as I don't install a lot of global tools.
 
 But that's going to get old fast.
 
-## Solution 2 - `--ignore-failed-sources`
+### Solution 2 - `--ignore-failed-sources`
 
 After a bit of searching I finally found the answer halfway down <https://github.com/dotnet/sdk/issues/9555>.
 

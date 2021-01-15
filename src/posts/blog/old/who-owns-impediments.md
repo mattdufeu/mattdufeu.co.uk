@@ -10,7 +10,7 @@ categories:
 
 In a previous post I listed some of the [different types of impediment to identify][1] as a scrum master. In this post I&#8217;m going to go through the same types and list who I think should own them and some ideas of how to try and remove them.
 
-## Types of Impediment
+### Types of Impediment
 
 ![Different Types of Impediment to Identify](../../../images/2016/01/RoadWorks.png "Different Types of Impediment to Identify")
 
@@ -54,7 +54,7 @@ The [Scrum Master Podcast][3] calls this &#8220;the dreaded system&#8221;. I ima
 
 Ownership again lives with the Scrum Master, not to solve them, but to try and isolate the team from them. I find a great exercise to help with this is [Circles and Soups retrospective][4].
 
-## Summary
+### Summary
 
 Not all impediments are the scrum masters to solve, sometimes it can be really beneficial to pass ownership to a team member.
 

@@ -14,7 +14,7 @@ To combat this, my current team tried a technique which worked really well. Not 
 
 I&#8217;m sure this has an official name, but I&#8217;m going to call it &#8220;group comparison&#8221; until I find out what that is. Thankfully it&#8217;s really simple.
 
-## Step 0 &#8211; Prepare
+### Step 0 &#8211; Prepare
 
 Hopefully you&#8217;re performing some sort of [backlog grooming][1] so this is relatively quick. If you&#8217;re not, this planning technique might help, but I strongly encourage you to schedule a regular grooming session. We do 1 hour every 2 week sprint and it seems to be enough. YMMV.
 
@@ -22,15 +22,15 @@ Print out (or create on Post-It notes) the PBIs that you think the team will be 
 
 From your planning poke decks, place the cards on the table that match the size of PBI your team can normally deliver in a sprint in a line. For us, this was 1, 2, 3, 5, 8.
 
-## Step 1 &#8211; Introduce the PBIs
+### Step 1 &#8211; Introduce the PBIs
 
 This is simply refreshing the minds of all the team members so they know what all the PBIs are.
 
-## Step 2 &#8211; Split the team into groups.
+### Step 2 &#8211; Split the team into groups.
 
 We split into two groups, but I guess you could do more. Basically, each group is invited to come up to the table one group at a time and sort the PBIs under the poker card they think that PBI is.
 
-## Step 3 &#8211; Invite the other teams
+### Step 3 &#8211; Invite the other teams
 
 Once the first team has finished, invite the next team up. Second and subsequent teams should check the previous grouping. If they disagree with a position of the card, move it to where they think it should be. The team should mark each card with a dot to show that it&#8217;s changed.
 
@@ -38,15 +38,15 @@ Repeat this step for each group and &#8211; excuse the hideous use of paint &#82
 
 ![Fig 1 – Table after grouping PBIs into story point buckets](../../../images/2014/10/planning_endofstep3.png "Fig 1 – Table after grouping PBIs into story point buckets")
 
-## Step 4 &#8211; Discuss any significant changes
+### Step 4 &#8211; Discuss any significant changes
 
 Once all the teams have finished, invite everyone back to discuss any cards that have moved twice, i.e. have two dots. It doesn&#8217;t matter if they&#8217;ve moved from 3 to 5 and back to 3, just discuss them so the group can have a consensus.
 
-## Step 5 &#8211; Write the story points on each card
+### Step 5 &#8211; Write the story points on each card
 
 Once that&#8217;s finished, there should be some sort of agreement to the size of the PBIs, so write the story points on the cards. This step is really important as we&#8217;re about to move them all around!
 
-## Step 6 &#8211; Order by dependencies
+### Step 6 &#8211; Order by dependencies
 
 Ask the whole team (or a subset if you&#8217;re a really large team) to order these by dependencies . We used a column for each chain of dependencies and staggered them if there was some overlap, i.e. shared parents.
 
@@ -60,11 +60,11 @@ As you can see in the above image:
 - PBI 3 has a dependency on PBI 2;
 - PBI 2 has a dependency on both PBI 1 and PBI 6.
 
-## Step 7 &#8211; Mark Dependencies
+### Step 7 &#8211; Mark Dependencies
 
 By now, the PBIs should be sorted not only by size, but it should also be clear which are dependent on another PBI and which are standalone. Simply write this information on each card ready to transfer to your tool of choice.
 
-## Final Step &#8211; Task Breakdown
+### Final Step &#8211; Task Breakdown
 
 Perform you&#8217;re task breakdown as normal and you&#8217;re done.
 

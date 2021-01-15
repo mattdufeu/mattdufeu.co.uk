@@ -16,7 +16,7 @@ This is the first of a two part guide to getting started with ESLint using grunt
 
 Once we&#8217;ve finished, you should be able to type &#8220;grunt&#8221; from a command prompt and ESLint will analyse your JavaScript, so let&#8217;s get started.
 
-## Step 1 &#8211; Install Node.js
+### Step 1 &#8211; Install Node.js
 
 Installing Node.js, which includes npm (node package manager &#8211; think nuget for node), is as simple as going to the [Node.js homepage][4], clicking the &#8220;Install&#8221; button and executing the .msi file that downloads.
 
@@ -49,7 +49,7 @@ or on the command line via: npm <command> --key value
 Config info can be viewed via: npm help config
 ```
 
-## Step 2 &#8211; Install the Grunt Command Line tools (grunt-cli) globally
+### Step 2 &#8211; Install the Grunt Command Line tools (grunt-cli) globally
 
 ![Getting Started with ESLint using Grunt](../../../images/2015/01/grunt.png "Getting Started with ESLint using Grunt")
 
@@ -59,7 +59,7 @@ The next step is to install the Grunt Command Line tools globally using npm. Tha
 npm install -g grunt-cli
 ```
 
-## Step 3 &#8211; Prepare your project for Grunt
+### Step 3 &#8211; Prepare your project for Grunt
 
 For grunt to run on our project, you need a &#8220;package.json&#8221; file and a &#8220;gruntfile.js&#8221; file.
 
@@ -97,14 +97,14 @@ Gruntfile.js is similar to a makefile (showing my age) and is used by grunt to s
 module.exports = function (grunt) {
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON("package.json"),
+    pkg: grunt.file.readJSON("package.json")
   });
 };
 ```
 
 Don&#8217;t worry about what this means at the moment, we&#8217;ll be modifying this later.
 
-## Step 4 &#8211; Install Grunt locally
+### Step 4 &#8211; Install Grunt locally
 
 The final setup step is to install Grunt locally. Again, npm comes to the rescue, but this time we specify &#8220;&#8211;save-dev&#8221;.
 
@@ -126,7 +126,7 @@ Secondly, it will install Grunt as a dependency to your project. Take a look at 
 
 &#8220;devDependencies&#8221; simply lists the packages the project is dependent upon and their version number. It gives you the option of moving the project to a different location _without_ the node_modules folder and typing &#8220;npm install&#8221; to get npm to download the required dependencies.
 
-## Step 5 &#8211; Verify it&#8217;s working
+### Step 5 &#8211; Verify it&#8217;s working
 
 To check that&#8217;s working as expected, simply execute grunt, and you should see the below. It&#8217;s basically saying &#8220;there&#8217;s nothing to do&#8221;, but at this stage that&#8217;s expected.
 
@@ -138,7 +138,7 @@ Aborted due to warnings.
 PS C:\myproject>
 ```
 
-## Summary
+### Summary
 
 We&#8217;ve installed node.js, npm, the Grunt command line tools and setup our project.json and Gruntfile.js files. We&#8217;re now ready to start adding ESLint to our project, so next time, I&#8217;ll be adding ESLint, showing you how to enable/disable ESLint rules and finally exclude certain files from analysis.
 

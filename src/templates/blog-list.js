@@ -35,7 +35,7 @@ export default class BlogIndex extends React.Component {
                     color: inherit;
                   `}
                 >
-                  <h1>{node.frontmatter.title}</h1>
+                  <h2>{node.frontmatter.title}</h2>
                 </Link>
                 <div dangerouslySetInnerHTML={{ __html: content }} />
                 <p className="byline">Posted on {node.frontmatter.date}</p>
@@ -53,7 +53,7 @@ export default class BlogIndex extends React.Component {
             justifyContent: "space-between",
             alignItems: "center",
             listStyle: "none",
-            padding: 0,
+            padding: 0
           }}
         >
           {!isFirst && (
@@ -79,6 +79,7 @@ export const query = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
+      filter: { fields: { slug: { regex: "/blog/" } } }
     ) {
       nodes {
         id

@@ -48,12 +48,14 @@ exports.createPages = ({ graphql, actions }) => {
 
         createPage({
           path: post.node.frontmatter.url,
-          component: path.resolve(`./src/templates/blog-post.js`),
+          component: post.node.fields.slug.startsWith("/newsletter")
+            ? path.resolve(`./src/templates/newsletter.js`)
+            : path.resolve(`./src/templates/blog-post.js`),
           context: {
             slug: post.node.fields.slug,
             previous,
-            next,
-          },
+            next
+          }
         });
       });
 
@@ -74,8 +76,8 @@ exports.createPages = ({ graphql, actions }) => {
           path: `/blog/tags/${_.kebabCase(tag)}/`,
           component: path.resolve("src/templates/tags.js"),
           context: {
-            tag,
-          },
+            tag
+          }
         });
       });
 
@@ -96,8 +98,8 @@ exports.createPages = ({ graphql, actions }) => {
           path: `/blog/categories/${_.kebabCase(category)}/`,
           component: path.resolve("src/templates/categories.js"),
           context: {
-            category,
-          },
+            category
+          }
         });
       });
 
@@ -111,8 +113,8 @@ exports.createPages = ({ graphql, actions }) => {
             limit: postsPerPage,
             skip: i * postsPerPage,
             numPages,
-            currentPage: i + 1,
-          },
+            currentPage: i + 1
+          }
         });
       });
 

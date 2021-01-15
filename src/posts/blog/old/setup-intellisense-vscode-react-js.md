@@ -14,13 +14,13 @@ I thought I had something working as Ctrl+Space opened intellisense with a sensi
 
 ![No Intellisense](../../../images/2016/05/01_before.png "No Intellisense")
 
-## Dead Ends
+### Dead Ends
 
 Unfortunately I couldn&#8217;t find a simple &#8220;how to&#8221; guide and the stuff I did get from various github issues and stackoverflow didn&#8217;t really help.
 
 After several dead ends and lots of hair pulling I eventually got intellisense working using these steps.
 
-## How To Setup Intellisense in VSCode for React.js
+### How To Setup Intellisense in VSCode for React.js
 
 ### Step 1 &#8211; Create a jsconfig.json file
 
@@ -80,7 +80,7 @@ Now you should be able to see some intellisense for react.js.
 
 ![VSCode With Intellisense](../../../images/2016/05/04_Working.png "VSCode With Intellisense")
 
-## Conclusion
+### Conclusion
 
 While attempting to get this working I found some what appears to be old and obsolete advice.
 
