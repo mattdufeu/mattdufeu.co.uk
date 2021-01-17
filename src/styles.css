@@ -89,7 +89,7 @@ a:hover {
   margin: 2em auto 1em auto;
   max-width: 1080px;
 }
-#site-header h1 {
+#site-header .main-header {
   float: left;
   font-family: "Droid Sans", sans-serif;
   font-size: 2.8em;
@@ -99,16 +99,16 @@ a:hover {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   margin: 0 0 0 2%;
 }
-#site-header h1 a {
+#site-header .main-header a {
   color: #000;
 }
-#site-header h1 a:hover {
+#site-header .main-header a:hover {
   text-decoration: none;
 }
-#site-header h1 a span {
+#site-header .main-header a span {
   color: #d90000;
 }
-#site-header h1 a small {
+#site-header .main-header a small {
   font-size: 65%;
 }
 #site-header .tag-line {
@@ -155,15 +155,15 @@ h1.widget-title {
   font-weight: bold;
 }
 h1 {
-  font-size: 2.4em;
+  font-size: 2.4em !important;
   margin: 1em 0 0.3em;
 }
 h2 {
-  font-size: 1.8em;
+  font-size: 1.8em !important;
   margin: 1em 0 0.3em;
 }
 h3 {
-  font-size: 1.3em;
+  font-size: 1.3em !important;
   margin: 1em 0 0.3em;
 }
 h4 {
@@ -542,7 +542,7 @@ ol.commentlist .comment-reply-link:hover {
     max-width: 100%;
   }
 }
-.rtl #site-header h1 {
+.rtl #site-header .main-header {
   float: right;
   margin: 0 2% 0 0;
 }
@@ -632,4 +632,8 @@ article {
 
 p {
   margin-bottom: 0.85em !important;
+}
+
+.page-header {
+  padding-top: 16px;
 }

@@ -14,30 +14,30 @@ For this retrospective, I was struggling to pick an appropriate technique. The t
 
 Clearly that sounded perfect, and after a little more digging I found a fantastic video by Lyssa Adkins called [The High Performance Tree][2] which demonstrates the technique perfectly.
 
-### Gather Data, Generate Insights and Decide What To Do
+## Gather Data, Generate Insights and Decide What To Do
 
 I was a little nervous about using the metaphor as it&#8217;s not something we&#8217;ve done before and I&#8217;d read that the team can get a little uncomfortable. Thankfully that didn&#8217;t happen at all.
 
 I won&#8217;t re-iterate the steps, or embarrass myself by including a photo of the &#8220;tree&#8221; I drew, but I will say that each root, leaf and fruit led to really interesting discussions. Having a visual representation of our target worked really well. It helped guide the conversation towards parts we are missing, but also towards part we are doing well.
 
-### Summary
+## Summary
 
 I can&#8217;t list all the outcomes, but I&#8217;m particular pleased we realised we don&#8217;t currently have a &#8220;can do anything&#8221; attitude but perhaps should. I&#8217;m really hoping we can turn that around in coming sprints.
 
 Overall, this was a great technique and we had an excellent retrospective. If you&#8217;re a ScrumMaster of a mature team and are looking for inspiration to become high performing, I&#8217;d definitely recommend this technique.
 
-### Personal Retrospective
+## Personal Retrospective
 
-### What went well?
+## What went well?
 
 - My drawing of the tree!
 - The team responded well and it was good to go back to first principles
 
-### What could I have done better?
+## What could I have done better?
 
 - When writing up the meeting, I noticed a few points that we said we&#8217;d get back to, but didn&#8217;t. I need to come up with a better way of tracking these points.
 
-### What should I not do again?
+## What should I not do again?
 
 I don&#8217;t think anything went so badly that I can put in this category.
 

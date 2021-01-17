@@ -14,15 +14,15 @@ I thought I had something working as Ctrl+Space opened intellisense with a sensi
 
 ![No Intellisense](../../../images/2016/05/01_before.png "No Intellisense")
 
-### Dead Ends
+## Dead Ends
 
 Unfortunately I couldn&#8217;t find a simple &#8220;how to&#8221; guide and the stuff I did get from various github issues and stackoverflow didn&#8217;t really help.
 
 After several dead ends and lots of hair pulling I eventually got intellisense working using these steps.
 
-### How To Setup Intellisense in VSCode for React.js
+## How To Setup Intellisense in VSCode for React.js
 
-### Step 1 &#8211; Create a jsconfig.json file
+## Step 1 &#8211; Create a jsconfig.json file
 
 With a project folder open, look in the bottom right and you should see a lightbulb:
 
@@ -34,7 +34,7 @@ Click the lightbulb, and you should get a popup at the top of the IDE asking if 
 
 Click &#8220;Create jsconfig.json&#8221; and vscode should do the rest.
 
-### Step 2 &#8211; Install Typings
+## Step 2 &#8211; Install Typings
 
 The Typescript Definition Manager [typings][1] should be installed globally with
 
@@ -44,7 +44,7 @@ The Typescript Definition Manager [typings][1] should be installed globally with
 
 This will allow you to install typescript definition files which is what we&#8217;ll do next.
 
-### Step 3 &#8211; Install React Typescript Definitions
+## Step 3 &#8211; Install React Typescript Definitions
 
 In the folder of the project enter the following commands:
 
@@ -64,7 +64,7 @@ You should end up with a new &#8220;typings&#8221; folder with the following con
             typings.json
 ```
 
-### Step 4 &#8211; Install typescript
+## Step 4 &#8211; Install typescript
 
 You can install typescript globally, but I prefer to put it in each project with the following command
 
@@ -74,13 +74,13 @@ You can install typescript globally, but I prefer to put it in each project with
 
 Which vscode detects automatically, so there&#8217;s nothing else to it.
 
-### Step 5 &#8211; Confirm it Works
+## Step 5 &#8211; Confirm it Works
 
 Now you should be able to see some intellisense for react.js.
 
 ![VSCode With Intellisense](../../../images/2016/05/04_Working.png "VSCode With Intellisense")
 
-### Conclusion
+## Conclusion
 
 While attempting to get this working I found some what appears to be old and obsolete advice.
 

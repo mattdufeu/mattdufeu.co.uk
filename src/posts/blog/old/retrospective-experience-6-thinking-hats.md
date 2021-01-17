@@ -18,7 +18,7 @@ I was a little nervous beforehand as the description warns about something I&#82
 
 I was also a little worried that I was flooding the team with lots of new techniques, so we used [ESVP][2] as a check-in exercise like we did [a few sprints ago][3]. This not only did the job of getting everyone off their feet, but we had a much better split of positive over negative categories this time, so it gave me a nice boost too.
 
-### Gather Data, Generate Insights and Decided What To Do
+## Gather Data, Generate Insights and Decided What To Do
 
 Things started slowly as we didn&#8217;t really know what we were doing (see Personal Retrospective below) and we&#8217;re not used to Blue hat thinking, but once we got onto topics we felt comfortable with the meeting progressed well.
 
@@ -26,7 +26,7 @@ I found facilitation to be quite hard to begin with, as it seemed like the team 
 
 Finally, I won&#8217;t go into the actual details, but the meeting ended on a really positive note and there seemed to be a real air of optimism for the next sprint. It will be interesting to see if that&#8217;s something this technique brings, or we just had a good retrospective. It was certainly more noticeable than previous retrospectives, _but_ that could be coincidence.
 
-### Summary
+## Summary
 
 The exercise started slowly with the team talking directly to me, but as things progressed and we got onto topics we&#8217;re more comfortable with &#8211; what went well, what went badly &#8211; time started to fly.
 
@@ -34,7 +34,7 @@ I&#8217;m lucky as I have several strong characters who are more than willing to
 
 Overall, I think it&#8217;s a good exercise to conduct and one I&#8217;ll certainly use again.
 
-### Personal Retrospective
+## Personal Retrospective
 
 #### What went well?
 

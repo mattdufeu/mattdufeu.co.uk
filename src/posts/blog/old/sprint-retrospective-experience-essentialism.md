@@ -14,7 +14,7 @@ _This post is all about the sprint retrospective experience I had using the tech
 
 I was more nervous about using this technique than the ones I&#8217;ve used previously as this was the first technique I had actually created, as opposed to read about. Previously I&#8217;d been using tried and tested methods. Although I felt comfortable with my ability to cope with problems, I had my pride on the line as I _really_ wanted this to be a success!
 
-### Result
+## Result
 
 I&#8217;m pleased to say that overall, the technique worked and would happily recommend it to other teams. As with everything, there were positives and negatives but with some further tweaking (see below) I&#8217;m confident it could be even better. Importantly, I believe it would work for both struggling and already successful teams as it really focuses on the slowest tasks **that can be improved**.
 
@@ -26,19 +26,19 @@ I&#8217;m pleased to say that overall, the technique worked and would happily re
 
 - It didn&#8217;t flow quite a nicely as some of the other techniques I&#8217;ve written about, for example [ESVP, Sailboat and Constellation][2].
 
-### Personal Retrospective
+## Personal Retrospective
 
-### What went well?
+## What went well?
 
 - Focusing on slow tasks that can be improved lead to great actions and resulting improvements;
 - Some painful tasks were highlighted that I never considered before;
 
-### What could I have done better?
+## What could I have done better?
 
 - Perhaps limit the groups to their 5 slowest tasks. We had a lot of post-it notes that it was clear we didn&#8217;t need.
 - Combine the lists differently. I&#8217;m not convinced that was clear until half way through so it either needs more explanation or an example.
 
-### What should I not do again?
+## What should I not do again?
 
 - Assume everyone on the team knows what I&#8217;m talking about!
 

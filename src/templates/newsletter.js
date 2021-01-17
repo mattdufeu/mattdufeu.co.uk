@@ -25,7 +25,7 @@ export default ({ data, pageContext }) => {
         className="post-638 post type-post status-publish format-standard hentry category-net"
       >
         <header className="entry-header">
-          <h2 className="entry-title">{post.frontmatter.title}</h2>
+          <h1 className="entry-title">{post.frontmatter.title}</h1>
         </header>
         <div className="entry-content">
           <MDXRenderer>{post.body}</MDXRenderer>

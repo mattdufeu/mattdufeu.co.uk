@@ -14,13 +14,13 @@ excerpt:
   For our first retrospective I wanted something simple to explain, but also simple to take part in. The <a href="http://www.funretrospectives.com/the-4-ls-liked-learned-lacked-longed-for/">4Ls technique</a> leapt out at me.
 ---
 
-### Background
+## Background
 
 I&#8217;ve just started working on a brand new project as a Scrum Master for a team of 7. There&#8217;s quite a mixed bag of experience, ranging from other scrum masters to agile first timers.
 
 For our first retrospective I wanted something simple to explain, but also simple to take part in. The [4Ls technique][1] leapt out at me.
 
-### Variation
+## Variation
 
 For me, &#8220;lacked&#8221; and &#8220;longed for&#8221; are too similar, so I always make a slight adjustment and use &#8220;Liked&#8221;, &#8220;Learned&#8221;, &#8220;Longed For&#8221; and &#8220;Loathed&#8221;. Loathed is a strong word, but I find it helps the team highlight things that _are_ slowing them down, whereas &#8220;lacked&#8221; is things that _might_ speed them up.
 
@@ -31,7 +31,7 @@ I also add a strict rule of &#8220;no more than 6 points each&#8221; and you &#8
 
 I find these two rules help me facilitate the meeting as I can control the duration and topics discussed more easily and prevent the retrospective becoming a moaning session.
 
-### Why you would use this technique
+## Why you would use this technique
 
 An awful lot of the internet nowadays seems to be _how_ to do something, but not the _why_. It&#8217;s become a bit of a pet peeve of mine, so I&#8217;m going to try and list a few of the reasons as to why you would use this technique:
 
@@ -41,7 +41,7 @@ An awful lot of the internet nowadays seems to be _how_ to do something, but not
 4. You&#8217;re the Scrum Master of an inexperienced team and you want to ease them into retrospectives
 5. You&#8217;re a Scrum Master who wants to freshen up your retrospectives without pushing the boat too far.
 
-### Results
+## Results
 
 I&#8217;m really pleased with the results of this technique.
 
@@ -51,20 +51,20 @@ As always, I&#8217;d love to hear of anyone else who has been in a similar situa
 
 Please leave a comment below or catch me on [twitter][2] if you have any questions.
 
-### Personal Retrospective
+## Personal Retrospective
 
 For my own future reference, I like to analyse my own performance.
 
-### What Worked Well
+## What Worked Well
 
 - Restricting the team to 6 points with at least 1 in each column
 
-### What Went Ok
+## What Went Ok
 
 - Giving an example of what I would chose for each column.
 - It was useful to explain the technique, but I&#8217;m slightly concerned it put words in peoples mouths. Perhaps next time use examples that are _not_ to do with the topic, for example my feelings on a TV show.
 
-### Change Next Time
+## Change Next Time
 
 - State explicitly that you can&#8217;t have a point that straddles a line between two of the Ls
 

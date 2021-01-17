@@ -13,9 +13,9 @@ const CategoriesPage = ({
   data: {
     allMdx: { group },
     site: {
-      siteMetadata: { title },
-    },
-  },
+      siteMetadata: { title }
+    }
+  }
 }) => (
   <Layout>
     <SEO
@@ -23,6 +23,9 @@ const CategoriesPage = ({
       pathname="/blog/categories"
       keywords={[]}
     />
+    <header className="entry-header page-header">
+      <h1 className="entry-title">Categories</h1>
+    </header>
     <div>
       Choose a category:
       <ul>

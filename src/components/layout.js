@@ -3,7 +3,6 @@ import { Link, StaticQuery, graphql } from "gatsby";
 
 import SEO from "./SEO";
 import "../styles.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import LayoutSideBar from "./layout_sidebar";
 
@@ -26,11 +25,11 @@ export default ({ children }) => (
           <SEO pathname="test" />
           <header id="site-header" role="banner">
             <div className="hgroup">
-              <h1>
+              <div className="main-header">
                 <Link to="/">
                   Matt <span>DuFeu</span>
                 </Link>
-              </h1>
+              </div>
               <div className="tag-line">.NET and striving to learn</div>
             </div>
           </header>

@@ -29,7 +29,7 @@ Removing intermediate container f5dcc2dd51c3
 The command '/bin/sh -c dotnet restore "Consumer/Consumer.csproj"' returned a non-zero code: 1
 ```
 
-### How to securely specify credentials?
+## How to securely specify credentials?
 
 If this was a personal project I would put my credentials in the Dockerfile or in the [packageSourceCredentials section of a Nuget.config file](https://github.com/NuGet/docs.microsoft.com-nuget/blob/master/docs/reference/nuget-config-file.md#packagesourcecredentials) and got on with my day.
 
@@ -38,7 +38,7 @@ However, I needed a solution that was scalable for more than 1 developer. That w
 1. Each team member updating the Dockerfile with their own credentials
 2. Anyone accidentally checking in their password to git
 
-### Solution
+## Solution
 
 [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) provides an elegant solution which uses [Docker arguments](https://docs.docker.com/engine/reference/builder/#arg) and [Azure Personal Access Tokens](https://docs.docker.com/engine/reference/builder/#arg).
 
@@ -51,7 +51,7 @@ bash : The term 'bash' is not recognized as the name of a cmdlet, function,
 script file, or operable program.
 ```
 
-### Azure Artifacts Credential Provider with Windows Containers
+## Azure Artifacts Credential Provider with Windows Containers
 
 Thankfully there's a PowerShell script as well, so I stole the PowerShell one liner from <https://chocolatey.org/install> and replaced:
 
@@ -67,11 +67,11 @@ with
 RUN Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/microsoft/artifacts-credprovider/master/helpers/installcredprovider.ps1'))
 ```
 
-### Conclusion
+## Conclusion
 
 By using [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) I'm able to create a container for my .NET Framework app without running the risk of leaking anyone's credentials because any developer specific data can be passed in via the command line.
 
-### The remote name could not be resolved: 'raw.githubusercontent.com'
+## The remote name could not be resolved: 'raw.githubusercontent.com'
 
 Update: On one of my machines I got an extra error:
 

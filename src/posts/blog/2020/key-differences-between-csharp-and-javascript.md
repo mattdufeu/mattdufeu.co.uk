@@ -27,7 +27,7 @@ In my previous post, I looked into how the [JavaScript equivalent of .NET's LINQ
 
 It got me thinking about the difference between the languages and how it's fairly easy to get caught out by them if you're not careful.
 
-### Difference 1 - String Interpolation
+## Difference 1 - String Interpolation
 
 I keep forgetting JavaScript has string interpolation. Introduced in C#6, [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated) is probably one of the most used language features.
 
@@ -66,7 +66,7 @@ console.log(
 
 All three of those examples write "Matt was born on a Wednesday. He is 21." (I wish).
 
-### Difference 2 - Type coercion
+## Difference 2 - Type coercion
 
 That's a fancy way of saying convert a value of one type into another..
 
@@ -107,7 +107,7 @@ It's a suprisingly deep topic. If you're really interested, check out <https://d
 
 In my exprience, stick to "strict equality" (===) enforced by something like [ESLint](https://eslint.org/) and you can't go too far wrong.
 
-### Difference 3 - Strongly Typed vs Loosely Typed
+## Difference 3 - Strongly Typed vs Loosely Typed
 
 C# is a strongly typed language. That means once a variable is declared to be of one type, you can't assign another type to it. The code literally won't compile. That's great for catching certain types of bugs early.
 
@@ -119,7 +119,7 @@ aNumber = "21";		// Compiler error - Cannot implicitly convert type 'string' to 
 
 JavaScript however is loosely typed. You can change the type at runtime, so there's no problem with the above code in JavaScript. That can be very powerful and very dangerous and is certainly something to consider.
 
-### Difference 4 - null and undefined
+## Difference 4 - null and undefined
 
 C# doesn't have the notion of undefined. Declaring variables without a value results in the variable having the default value for that type, see <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values>.
 
@@ -138,7 +138,7 @@ if (x === null) {
 // That was false
 ```
 
-### Difference 5 - Truthy and Falsy
+## Difference 5 - Truthy and Falsy
 
 "Type Coercion" and "null and undefined" lead nicely into "Truthy and Falsy". What we're talking about here are boolean checks. In C# it's as simple as true or false.
 
@@ -157,7 +157,7 @@ So far so good, but JavaScript has some different definitions of false to C#. In
 
 This took me a while to get my head around, and to be honest, I still forget sometimes.
 
-### Difference 6 - this
+## Difference 6 - this
 
 The `this` keyword in C# refers to the current instance of the class. (It's also a keyword in extension methods but ignore that for now).
 
@@ -169,7 +169,7 @@ I rarely write vanilla JavaScript, I'm always using some framework like React or
 
 It takes a lot of practice to get comfortable with `this` in JavaScript. I still get caught out. Many many articles have been written [explaining this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this). I highly recommend you read them if you're interested.
 
-### Conclusion
+## Conclusion
 
 Both languages have a lot of similarities, so the knowledge you have in C# will help you be productive in JavaScript. However, I've listed what I think are key differences between C# and JavaScript that will impact you everyday. There are a couple more like hoisting, scope and the fact that JavaScript it prototypal that I've not mentioned. Perhaps the frameworks I'm using hide those things or I'm just not paying attention, but they don't affect my day to day work. They are also quite big topics, so perhaps another post in the future is needed.
 
