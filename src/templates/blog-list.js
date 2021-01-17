@@ -6,6 +6,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/SEO";
 import MailChimp from "../components/MailChimp";
+import Img from "gatsby-image";
 
 export default class BlogIndex extends React.Component {
   render() {
@@ -26,6 +27,12 @@ export default class BlogIndex extends React.Component {
             const content = node.frontmatter.excerpt
               ? node.frontmatter.excerpt
               : node.html;
+            const featuredImage =
+              node.frontmatter.image &&
+              node.frontmatter.image.childImageSharp &&
+              node.frontmatter.image.childImageSharp.fluid
+                ? node.frontmatter.image.childImageSharp.fluid
+                : null;
             return (
               <article key={node.id} style={{ borderBottom: "1px solid #ddd" }}>
                 <Link
@@ -37,6 +44,16 @@ export default class BlogIndex extends React.Component {
                 >
                   <h2>{node.frontmatter.title}</h2>
                 </Link>
+                <div
+                  style={{
+                    margin: "auto",
+                    width: "400px",
+                    marginTop: "10px",
+                    marginBottom: "10px"
+                  }}
+                >
+                  <Img fluid={featuredImage} />
+                </div>
                 <div dangerouslySetInnerHTML={{ __html: content }} />
                 <p className="byline">Posted on {node.frontmatter.date}</p>
               </article>
@@ -92,6 +109,13 @@ export const query = graphql`
           title
           excerpt
           url
+          image: featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 630) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

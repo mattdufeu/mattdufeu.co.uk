@@ -10,7 +10,7 @@ function SEO({
   image: metaImage,
   title,
   pathname,
-  keywords,
+  keywords
 }) {
   const { site } = useStaticQuery(
     graphql`
@@ -40,7 +40,7 @@ function SEO({
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang
       }}
       title={finalTitle}
       titleTemplate={`%s | Matt DuFeu's blog`}
@@ -49,70 +49,70 @@ function SEO({
           ? [
               {
                 rel: "canonical",
-                href: canonical,
-              },
+                href: canonical
+              }
             ]
           : []
       }
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           name: "keywords",
-          content: metaKeywords.join(","),
+          content: metaKeywords.join(",")
         },
         {
           property: `og:title`,
-          content: finalTitle,
+          content: finalTitle
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `website`
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.author
         },
         {
           name: `twitter:title`,
-          content: finalTitle,
+          content: finalTitle
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
-        },
+          content: metaDescription
+        }
       ]
         .concat(
           metaImage
             ? [
                 {
                   property: "og:image",
-                  content: image,
+                  content: image
                 },
                 {
                   property: "og:image:width",
-                  content: metaImage.width,
+                  content: metaImage.width
                 },
                 {
                   property: "og:image:height",
-                  content: metaImage.height,
+                  content: metaImage.height
                 },
                 {
                   name: "twitter:card",
-                  content: "summary_large_image",
-                },
+                  content: "summary_large_image"
+                }
               ]
             : [
                 {
                   name: "twitter:card",
-                  content: "summary",
-                },
+                  content: "summary"
+                }
               ]
         )
         .concat(meta)}
@@ -123,7 +123,7 @@ function SEO({
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: ``
 };
 
 SEO.propTypes = {
@@ -134,9 +134,9 @@ SEO.propTypes = {
   image: PropTypes.shape({
     src: PropTypes.string.isRequired,
     height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired
   }),
-  pathname: PropTypes.string,
+  pathname: PropTypes.string
 };
 
 export default SEO;
