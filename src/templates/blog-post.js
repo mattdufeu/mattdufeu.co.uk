@@ -74,7 +74,7 @@ export const query = graphql`
         keywords
         image: featuredImage {
           childImageSharp {
-            resize(width: 1200) {
+            resize(width: 800) {
               src
               height
               width
