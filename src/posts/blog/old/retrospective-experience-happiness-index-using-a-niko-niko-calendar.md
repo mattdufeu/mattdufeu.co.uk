@@ -38,7 +38,7 @@ As a team, we then talked through all the events that caused big changes in happ
 
 This really helped the team focus on the major events and led to some really great discussions. One of our team even said afterwards &#8220;that may have been the best [retrospective] yet&#8221;.
 
-### Summary
+## Summary
 
 Using a Niko Niko Calendar to capture the teams emotional state at the end of each day is brilliant. The information is clear for everyone to see, which allows other team members to offer help if someone is clearly struggling. As a fellow Scrum Master commented:
 
@@ -46,17 +46,17 @@ Using a Niko Niko Calendar to capture the teams emotional state at the end of ea
 
 I would highly recommend any Scrum Master to try it out. If you do, I&#8217;d love to hear from you in the comments below or catch me on [twitter][3].
 
-### Personal Retrospective
+## Personal Retrospective
 
-### What went well
+## What went well
 
 - Changing the focus from engineering to people was fantastic
 
-### What could I have done better?
+## What could I have done better?
 
 - Considered the team as well as engineering a lot earlier, but at least I&#8217;ve started!
 
-### What should I not do again?
+## What should I not do again?
 
 - I tried to restrict the team to just 🙂 , 😐 and 🙁 in the hope that it would make analysis easier. I think that was a mistake because they didn&#8217;t and it didn&#8217;t affect analysis at all!
 

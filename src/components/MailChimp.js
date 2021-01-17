@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import addToMailchimp from "gatsby-plugin-mailchimp";
 
@@ -9,7 +10,7 @@ import {
   Container,
   Row,
   Col,
-  Form,
+  Form
 } from "react-bootstrap";
 
 const MailChimp = () => {
@@ -17,13 +18,13 @@ const MailChimp = () => {
     email: "",
     successfulSubscribe: false,
     networkError: false,
-    networkErrorMessage: "",
+    networkErrorMessage: ""
   });
 
   const handleEmailChange = (e) => {
     setState({
       ...state,
-      email: e.target.value,
+      email: e.target.value
     });
   };
 
@@ -35,14 +36,14 @@ const MailChimp = () => {
           ...state,
           successfulSubscribe: false,
           networkError: true,
-          networkErrorMessage: result.msg.split(". ")[0], // hack
+          networkErrorMessage: result.msg.split(". ")[0] // hack
         });
       } else {
         setState({
           ...state,
           successfulSubscribe: true,
           networkError: false,
-          networkErrorMessage: "",
+          networkErrorMessage: ""
         });
       }
     });

@@ -13,12 +13,15 @@ const TagsPage = ({
   data: {
     allMdx: { group },
     site: {
-      siteMetadata: { title },
-    },
-  },
+      siteMetadata: { title }
+    }
+  }
 }) => (
   <Layout>
     <SEO title="List of all tags" pathname="/blog/tags" keywords={[]} />
+    <header className="entry-header page-header">
+      <h1 className="entry-title">Tags</h1>
+    </header>
     <div>
       Choose a tag:
       <ul>

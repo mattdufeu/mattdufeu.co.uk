@@ -10,7 +10,7 @@ categories:
 
 I&#8217;ve been reading a _lot_ in the last couple of months about self-education and in particular how to overcome procrastination. I realised I was making great plans to &#8220;learn X&#8221; or &#8220;build Y&#8221;, spending ages planning it all out but not following through when it came time to actually do it. Sound familiar?
 
-### Research
+## Research
 
 One of the first things I read about was what Scott Hanselman calls [Analysis Paralysis][1] or basically over thinking. That label can be applied to the &#8220;build Y&#8221; things, but surely it can&#8217;t be the reason for failing to &#8220;learn X&#8221;?
 
@@ -20,15 +20,15 @@ David McRaney, and in particular his piece on [procrastination][2]. I recommend 
 
 > The trick is to accept the now you will not be the person facing those choices, it will be the future you – a person who can’t be trusted.
 
-### Extra Complication
+## Extra Complication
 
 Like most techie people, the list of interesting things I want to look into is huge. Lists upon lists upon lists. Some people say concentrate on one thing at a time, some say learn several things during the same period. I&#8217;m not going to add fuel to that debate, but I prefer a blend of that, i.e. focus on one topic but not for too long.
 
-### How?
+## How?
 
 I thought about this for a while and realised it was all about setting a sustainable pace. There&#8217;s no point in &#8220;now me&#8221; over committing &#8220;future me&#8221; and causing burn-out. Does that sound agile to anyone else?
 
-### Applying Scrum to self-education
+## Applying Scrum to self-education
 
 I currently &#8220;practice what you preach&#8221; by doing 2 week sprints, where each sprint alternates between my two main topics of focus. Each topic has a backlog and at the start of each sprint I commit to what I think I can do. I&#8217;m not having daily stand-ups with myself, but I certainly run planning sessions and retrospectives.
 

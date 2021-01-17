@@ -16,7 +16,7 @@ Over the Christmas break, I read the book &#8220;Essentialism: The Disciplined P
 
 As with all the techniques I use, this technique is made up of the 5 stages of a retrospective.
 
-### Stage 1 &#8211; Set the Stage
+## Stage 1 &#8211; Set the Stage
 
 This is paraphrased, but tell the following story of the &#8220;Herbie&#8221; metaphor:
 
@@ -28,7 +28,7 @@ This is paraphrased, but tell the following story of the &#8220;Herbie&#8221; me
 
 Explain that the aim for the retrospective is to find our slowest task(s) and come up with ideas of how to make them quicker.
 
-### Stage 2 &#8211; Gather Data
+## Stage 2 &#8211; Gather Data
 
 To encourage everyone in the team to contribute, break the team up into groups of 3. Ask each group to create a list of tasks that we do regularly and sort them based purely on speed, slowest first. Give the teams some time and then with everyone gathered around, combine these on a white board or table.
 
@@ -38,7 +38,7 @@ To get team consensus, ask for clarification from the whole team as to the order
 
 [N.B. I&#8217;m expecting some issues in this step, but can&#8217;t think of a way of making it smoother beyond getting the team to do it which seems lazy!]
 
-### Stage 3 &#8211; Generate Insights
+## Stage 3 &#8211; Generate Insights
 
 Now that the list is agreed, for the top 5 tasks, as a team answer the following questions:
 
@@ -48,15 +48,15 @@ Now that the list is agreed, for the top 5 tasks, as a team answer the following
 4. Yes/No answer to &#8220;Can we improve them&#8221;?
    1. If the answer is no, ask &#8220;is there an alternative way of doing it&#8221;. Again yes/no?
 
-### Stage 4 &#8211; Decide What to Do
+## Stage 4 &#8211; Decide What to Do
 
 Pick the top 1 or 2 tasks that answered yes to number 3 _and_ 4 above and come up with some suggestions to try for future iterations.
 
-### Stage 5 &#8211; Close the Retrospective
+## Stage 5 &#8211; Close the Retrospective
 
 Close the retrospective with a nice game, something like [AHA!][1] from Ret-O-Mat.
 
-### Conclusion
+## Conclusion
 
 If you&#8217;ve got this far, I&#8217;m hoping you can see the potential in the idea. I&#8217;m going to give it a go tomorrow, and will report back with how it went.
 

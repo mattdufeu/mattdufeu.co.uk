@@ -34,7 +34,7 @@ const CategoriesPage = ({
       className="post-638 post type-post status-publish format-standard hentry category-net"
     >
       <header className="entry-header">
-        <h2 className="entry-title">Monthly Newsletter</h2>
+        <h1 className="entry-title">Monthly Newsletter</h1>
       </header>
       <p>
         Each month I publish a small newsletter of links, with commentary, of

@@ -10,17 +10,17 @@ categories:
 
 This is a quick tip that I struggled with when I started as a Scrum Master and wish someone told me about.
 
-### Issue to Avoid
+## Issue to Avoid
 
 One person talking for the majority of the time during retrospectives, although this applies to all meetings.
 
-### Why is it a problem?
+## Why is it a problem?
 
 One voice is not only boring for the others, but you&#8217;re very unlikely to get the engagement required to improve.
 
 You&#8217;re also potentially missing out on a great idea that someone else hasn&#8217;t been able to say.
 
-### Potential Solutions
+## Potential Solutions
 
 Try not to stand at the front talking all the time.
 

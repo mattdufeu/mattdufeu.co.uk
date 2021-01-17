@@ -22,7 +22,7 @@ I've been using Docker for more development tasks recently. Pulling a new pre-co
 
 However, authenticating with `az login` every time got old quick. Here's how I managed to persist the azure cli docker container credentials between sessions.
 
-### What az login stores
+## What az login stores
 
 After logging in with `az login`, several files are created in `/root/.azure`:
 
@@ -30,7 +30,7 @@ After logging in with `az login`, several files are created in `/root/.azure`:
 
 These files aren't persisted when you stop the container. But they will be if we use [Docker Volumes](https://docs.docker.com/storage/volumes/).
 
-### Docker volumes
+## Docker volumes
 
 The documentation for [Docker Volumes](https://docs.docker.com/storage/volumes/) is good, if a little long. It seems the advice is to use --mount over -v, so I ended up with the following:
 
@@ -43,7 +43,7 @@ target=/root/.azure microsoft/azure-cli
 
 > New users should try --mount syntax which is simpler than --volume syntax.
 
-### Possible Negative
+## Possible Negative
 
 I'm not sure how up to date this information is. But there appears to be a preview feature of "Using credentials from Azure CLI Automatically". I found it <https://github.com/Azure/azure-libraries-for-java/blob/master/AUTH.md>, which allows you to initialize the Azure client in code with:
 
@@ -56,6 +56,6 @@ I currently don't see how that works with the Azure-Cli in the container, but th
 
 I don't think it's an issue for me, but I guess it could affect someone so thought I would point it out just in case.
 
-### Conclusion
+## Conclusion
 
 That's it, now I don't have to `az login` every time I start up the container.

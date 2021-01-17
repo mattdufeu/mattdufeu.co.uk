@@ -29,7 +29,7 @@ Console.WriteLine($"The time is {dateTime}");     // The time is 29/01/2016 06:4
 
 I can&#8217;t imagine it will make a massive difference to your application whichever way you choose, but I think it&#8217;s really good that little things like this are still being added to the framework after all this time.
 
-### Further Reading
+## Further Reading
 
 If you&#8217;re really interested, you can look at the [/source][1] and see it&#8217;s pretty much the same thing, but I imagine it&#8217;s slightly more efficient. I guess you could do some metrics, but if converting to and from unix time is the bottleneck in your application I envy you!
 

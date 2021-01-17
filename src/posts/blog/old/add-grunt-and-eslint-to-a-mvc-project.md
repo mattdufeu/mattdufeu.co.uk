@@ -28,7 +28,7 @@ C:\myproject\WebApplication1>
 
 Let&#8217;s get started.
 
-### Step 1 &#8211; Install ESLint and Grunt-ESLint
+## Step 1 &#8211; Install ESLint and Grunt-ESLint
 
 Like last time, npm makes installing things trivial. First, install ESLint:
 
@@ -51,9 +51,9 @@ npm install --save-dev load-grunt-tasks
 
 ```
 
-### Step 2 &#8211; Configure ESLint
+## Step 2 &#8211; Configure ESLint
 
-### eslint.json
+## eslint.json
 
 To make our lives easier to change the configuration of ESLint, we&#8217;re going to use an **eslint.json** file. As you can probably tell from the name, it&#8217;s a text file containing some json that ESLint parses. The [ESLint documentation](https://eslint.org/docs/user-guide/getting-started) is pretty good at explaining what all the options are, so I won&#8217;t do that here, but for now just create one containing the following:
 
@@ -75,7 +75,7 @@ This ensures the browser and jQuery (\$) variables are recognised by ESLint so t
 
 As you will see in a minute, I personally like to disable \*\*all \*\* the rules, only enabling the ones I explicitly want to use. That&#8217;s personal preference, as on legacy systems you can end up with a lot of issues to address which can seem overwhelming.
 
-### .eslintignore
+## .eslintignore
 
 The next file that we need to create is **.eslintignore**. As the name suggests, this is an easy way of telling ESLint to ignore certain files and directories. Again I refer you to the documentation for more details, but for now, create an .eslintignore file containing:
 
@@ -92,7 +92,7 @@ This tells ESLint to ignore all files inside the _packages_ directory, i.e. anyt
 
 Finally, all that&#8217;s left is to configure Grunt to run ESLint.
 
-### Step 3 &#8211; Configure Grunt to use ESLint
+## Step 3 &#8211; Configure Grunt to use ESLint
 
 Before explaining the syntax, please edit your **Gruntfile.js** file to contain:
 
@@ -177,6 +177,6 @@ WebApplication1/Scripts/respond.min.js
 And that's it! ESLint is now analysing the JavaScript files in my MVC project.
 ```
 
-### Step 4 &#8211; Next Steps
+## Step 4 &#8211; Next Steps
 
 If you&#8217;ve got this far, you&#8217;re set to go. You will definitely want to edit the [rules](https://eslint.org/docs/rules/) you&#8217;re using, but I&#8217;ll leave that up to you.

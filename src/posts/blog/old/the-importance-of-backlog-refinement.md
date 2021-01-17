@@ -20,7 +20,7 @@ Perhaps that&#8217;s why it&#8217;s not taken as seriously as the other scrum ev
 
 The team I&#8217;m currently working with have seen some real benefits from backlog refinement, so I thought I&#8217;d get my thoughts down for the next time someone asks &#8220;what are you doing?&#8221;.
 
-### What is Backlog Refinement?
+## What is Backlog Refinement?
 
 I won&#8217;t go into depth as to what backlog grooming is as there are [numerous][2] [guides][3] out there. Instead I&#8217;ll use the classic iceberg metaphor, i.e. the backlog has epics and the bottom, almost ready Product Backlog Items (PBIs or user stories) in the middle and some ready PBIs at the top:
 
@@ -30,7 +30,7 @@ Basically, the meeting is for the team to help the product owner move user stori
 
 As a rule (which isn&#8217;t always possible for whatever reason), I like my teams to have a &#8220;buffer&#8221; of at least 2 sprints worth of Ready PBIs. Any less makes the next sprint planning problematic and any more I find priorities change and/or the team forget the details.
 
-### How long is Backlog Refinement?
+## How long is Backlog Refinement?
 
 Again, there isn&#8217;t a hard and fast rule for how long this event should be. The Scrum Guide says (emphasis mine):
 
@@ -38,7 +38,7 @@ Again, there isn&#8217;t a hard and fast rule for how long this event should be.
 
 As with everything scrum, it&#8217;s about finding a number that is just enough for your team to get the most amount of benefit and no more.
 
-### When should we do Backlog Refinement?
+## When should we do Backlog Refinement?
 
 The current team I&#8217;m working with have tried lots of things. We&#8217;re currently have 2 regular events:
 
@@ -47,7 +47,7 @@ The current team I&#8217;m working with have tried lots of things. We&#8217;re c
 
 As long as it gets done, and the team are seeing the benefits, I prefer to let the team decide.
 
-### The importance of backlog refinement
+## The importance of backlog refinement
 
 There are many more reasons to perform backlog refinement than I&#8217;m going to list, but for me, the main benefits are:
 
