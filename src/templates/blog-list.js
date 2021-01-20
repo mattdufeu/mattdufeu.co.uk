@@ -47,12 +47,12 @@ export default class BlogIndex extends React.Component {
                 <div
                   style={{
                     margin: "auto",
-                    width: "400px",
+                    width: "300px",
                     marginTop: "10px",
                     marginBottom: "10px"
                   }}
                 >
-                  <Img fluid={featuredImage} />
+                  {featuredImage && <Img fluid={featuredImage} />}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: content }} />
                 <p className="byline">Posted on {node.frontmatter.date}</p>
