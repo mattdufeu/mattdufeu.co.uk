@@ -11,6 +11,9 @@ export default ({ data, pageContext }) => {
   const description = post.frontmatter.description
     ? post.frontmatter.description.substring(0, 320)
     : null;
+  const image = post.frontmatter.image
+    ? post.frontmatter.image.childImageSharp.resize
+    : null;
 
   return (
     <Layout>
@@ -19,6 +22,7 @@ export default ({ data, pageContext }) => {
         pathname={post.frontmatter.url}
         description={description}
         keywords={post.frontmatter.keywords}
+        image={image}
       />
       <article
         id="post-123"
@@ -68,6 +72,15 @@ export const query = graphql`
         url
         description
         keywords
+        image: featuredImage {
+          childImageSharp {
+            resize(width: 800) {
+              src
+              height
+              width
+            }
+          }
+        }
       }
     }
   }
