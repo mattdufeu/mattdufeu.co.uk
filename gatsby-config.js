@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://mattdufeu.co.uk`,
-    title: `Matt DuFeu - .NET and striving to learn`,
+    title: `Matt DuFeu - .NET, JavaScript and striving to learn`,
     description: `Hi, my name is Matt DuFeu. I share my experiences with all things .NET and various JavaScript front end frameworks.`,
     author: `Matt DuFeu`,
     keywords: [
