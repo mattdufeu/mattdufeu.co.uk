@@ -48,7 +48,7 @@ const CategoriesPage = ({
       </p>
       <MailChimp />
       <br />
-      {/* <h3>Past Issues</h3>
+      <h3>Past Issues</h3>
       <ul>
         {edges.map((edge) => (
           <li key={edge.node.fields.slug}>
@@ -64,7 +64,7 @@ const CategoriesPage = ({
             - {edge.node.frontmatter.description}
           </li>
         ))}
-      </ul> */}
+      </ul>
     </article>
   </Layout>
 );
