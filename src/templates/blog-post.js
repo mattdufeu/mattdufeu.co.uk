@@ -61,24 +61,24 @@ export default ({ data, pageContext }) => {
         <hr />
         <h3>Comments Section</h3>
         {data.allCommentsYaml &&
-          data.allCommentsYaml.edges.map((comment) => {
+          data.allCommentsYaml.edges.map((comment, index) => {
             return (
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="col-md-12 mb-6">
+              <div className="col-md-12" key={"comment-" + index}>
+                <div className="row">
+                  <div className="col-md-12 mb-6">
                     <strong>{comment.node.name}</strong>{" "}
                     <i>
                       (
-                      <span class="dbc-comment-date">
+                      <span className="dbc-comment-date">
                         {new Date(comment.node.date * 1000).toLocaleString()}
                       </span>
                       )
                     </i>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12 mb-6 font-weight-light">
-                    <div class="dbc-comment-content">
+                <div className="row">
+                  <div className="col-md-12 mb-6 font-weight-light">
+                    <div className="dbc-comment-content">
                       {comment.node.message}
                     </div>
                   </div>
@@ -102,24 +102,24 @@ export default ({ data, pageContext }) => {
             value={"/" + post.slug + "/"}
           />
           <div className="form-group">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label htmlFor="fields[name]" class="control-label">
+            <div className="row">
+              <div className="col-md-6 mb-3">
+                <label htmlFor="fields[name]" className="control-label">
                   Name
                 </label>
                 <input
                   id="fields[name]"
                   name="fields[name]"
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   required
                 />
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-md-12 mb-3">
-                <label htmlFor="Message" class="control-label">
+            <div className="row">
+              <div className="col-md-12 mb-3">
+                <label htmlFor="Message" className="control-label">
                   Message
                 </label>
                 <textarea
