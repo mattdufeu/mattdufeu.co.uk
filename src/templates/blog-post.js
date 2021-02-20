@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import PostFooter from "../components/PostFooter";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import SEO from "../components/SEO";
+import MailChimp from "../components/MailChimp";
 
 export default ({ data, pageContext }) => {
   const post = data.mdx;
@@ -41,7 +42,7 @@ export default ({ data, pageContext }) => {
           display: `flex`,
           flexWrap: `wrap`,
           justifyContent: `space-between`,
-          padding: 0
+          padding: 0,
         }}
       >
         {previous && (
@@ -55,15 +56,111 @@ export default ({ data, pageContext }) => {
           </Link>
         )}
       </div>
+      <MailChimp />
+      <div className="comments-section">
+        <hr />
+        <h3>Comments Section</h3>
+        {data.allCommentsYaml &&
+          data.allCommentsYaml.edges.map((comment) => {
+            return (
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12 mb-6">
+                    <strong>{comment.node.name}</strong>{" "}
+                    <i>
+                      (
+                      <span class="dbc-comment-date">
+                        {new Date(comment.node.date * 1000).toLocaleString()}
+                      </span>
+                      )
+                    </i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 mb-6 font-weight-light">
+                    <div class="dbc-comment-content">
+                      {comment.node.message}
+                    </div>
+                  </div>
+                </div>
+                <hr />
+              </div>
+            );
+          })}
+        <form
+          method="POST"
+          action="https://mattdufeustaticmaninstance.herokuapp.com/v3/entry/github/mattdufeu/mattdufeu.co.uk/master/comments"
+        >
+          <input
+            name="options[redirect]"
+            type="hidden"
+            value={"https://mattdufeu.co.uk" + post.frontmatter.url}
+          />
+          <input
+            name="fields[slug]"
+            type="hidden"
+            value={"/" + post.slug + "/"}
+          />
+          <div className="form-group">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label htmlFor="fields[name]" class="control-label">
+                  Name
+                </label>
+                <input
+                  id="fields[name]"
+                  name="fields[name]"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <label htmlFor="Message" class="control-label">
+                  Message
+                </label>
+                <textarea
+                  id="Message"
+                  rows="12"
+                  cols="40"
+                  className="form-control"
+                  name="fields[message]"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <button type="submit" className="btn btn-primary btn-block">
+              Save Comment
+            </button>
+          </div>
+        </form>
+      </div>
     </Layout>
   );
 };
 
 export const query = graphql`
   query BlogPostBySlug($slug: String!) {
+    allCommentsYaml(
+      sort: { fields: [date], order: DESC }
+      filter: { slug: { eq: $slug } }
+    ) {
+      edges {
+        node {
+          message
+          name
+          date
+        }
+      }
+    }
     mdx(fields: { slug: { eq: $slug } }) {
       id
       body
+      slug
       frontmatter {
         title
         tags

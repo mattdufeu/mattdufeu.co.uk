@@ -31,6 +31,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: { name: `images`, path: `${__dirname}/src/images` }
     },
+    'gatsby-transformer-yaml',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/_data/comments`,
+        name: 'comments',
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
