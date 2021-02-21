@@ -641,3 +641,7 @@ p {
 .comments-section {
   margin-top: 10px;
 }
+
+#comment-email {
+  display: none;
+}

@@ -42,7 +42,7 @@ export default ({ data, pageContext }) => {
           display: `flex`,
           flexWrap: `wrap`,
           justifyContent: `space-between`,
-          padding: 0,
+          padding: 0
         }}
       >
         {previous && (
@@ -101,7 +101,22 @@ export default ({ data, pageContext }) => {
             type="hidden"
             value={"/" + post.slug + "/"}
           />
+
           <div className="form-group">
+            <div className="row" id="comment-email">
+              <div className="col-md-6 mb-3">
+                <label htmlFor="fields[email]" className="control-label">
+                  Email
+                </label>
+                <input
+                  id="fields[email]"
+                  name="fields[email]"
+                  type="text"
+                  className="form-control"
+                />
+              </div>
+            </div>
+
             <div className="row">
               <div className="col-md-6 mb-3">
                 <label htmlFor="fields[name]" className="control-label">
