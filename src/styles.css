@@ -642,6 +642,10 @@ p {
   margin-top: 10px;
 }
 
+.comment-message {
+  white-space: pre-line;
+}
+
 #comment-email {
   display: none;
 }

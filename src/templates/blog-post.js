@@ -42,7 +42,7 @@ export default ({ data, pageContext }) => {
           display: `flex`,
           flexWrap: `wrap`,
           justifyContent: `space-between`,
-          padding: 0
+          padding: 0,
         }}
       >
         {previous && (
@@ -69,7 +69,7 @@ export default ({ data, pageContext }) => {
                     <strong>{comment.node.name}</strong>{" "}
                     <i>
                       (
-                      <span className="dbc-comment-date">
+                      <span className="comment-date">
                         {new Date(comment.node.date * 1000).toLocaleString()}
                       </span>
                       )
@@ -78,7 +78,7 @@ export default ({ data, pageContext }) => {
                 </div>
                 <div className="row">
                   <div className="col-md-12 mb-6 font-weight-light">
-                    <div className="dbc-comment-content">
+                    <div className="comment-message">
                       {comment.node.message}
                     </div>
                   </div>
