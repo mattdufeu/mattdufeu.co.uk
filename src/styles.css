@@ -580,6 +580,10 @@ ol.commentlist .comment-reply-link:hover {
   overflow: hidden;
 } */
 
+.gatsby-highlight {
+  font-size: 85%;
+}
+
 .gatsby-highlight pre[class*="language-"] {
   float: left;
   min-width: 100%;
@@ -621,6 +625,10 @@ ol.commentlist .comment-reply-link:hover {
   overflow: initial;
   float: left; /* 1 */
   min-width: 100%; /* 2 */
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 2.4em;
 }
 
 /*
