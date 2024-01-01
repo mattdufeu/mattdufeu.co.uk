@@ -15,7 +15,7 @@ const siteMetadata = {
   twitter: 'https://twitter.com/mattdufeu',
   linkedin: 'https://www.linkedin.com/in/mattdufeu',
   locale: 'en-GB',
-  // analytics: {
+  analytics: {
   //   // If you want to use an analytics provider you have to add it to the
   //   // content security policy in the `next.config.js` file.
   //   // supports Plausible, Simple Analytics, Umami, Posthog or Google Analytics.
@@ -33,11 +33,11 @@ const siteMetadata = {
   //   // googleAnalytics: {
   //   //   googleAnalyticsId: '', // e.g. G-XXXXXXX
   //   // },
-  // },
+  },
   // newsletter: {
-  //   // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
-  //   // Please add your .env file and modify it according to your selection
-  //   provider: 'buttondown',
+    // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
+    // Please add your .env file and modify it according to your selection
+    // provider: '',
   // },
   // comments: {
   //   // If you want to use an analytics provider you have to add it to the
