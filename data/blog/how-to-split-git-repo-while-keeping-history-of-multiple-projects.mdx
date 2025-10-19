@@ -22,6 +22,8 @@ At the end of this process you should have:
 - Full git history of the split off code
 - Any branches and tags you want to keep
 
+<TOCInline toc={props.toc} asDisclosure={true} />
+
 ## Background Info
 
 The tool we're going to use, [git filter-repo](https://github.com/newren/git-filter-repo), works by playing back every commit from the old repo into a new repo, keeping only the bits you tell it to. We're going to do this "filtering" on a "path" basis, i.e. if the commit contained a file that was changed in a path we're interested in, keep it, otherwise ignore it.
