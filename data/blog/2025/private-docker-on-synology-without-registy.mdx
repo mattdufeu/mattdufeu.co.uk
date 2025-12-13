@@ -1,0 +1,27 @@
+---
+title: Running a docker image on a Synology NAS without a registry
+date: 2025-12-13T12:00:00+00:00
+tags:
+  - docker
+summary: I wanted to run a docker image of a little app I made on my Synolgy NAS without the extra effort of publishing the image to a registry. Here's how I did it.
+---
+
+I've built a little web app that I want to run on my Synology NAS. I'm already running a couple of docker containers on it, so I thought I'd containerise my app and do the same.
+
+Normally I'd have to publish the image to a registry and then download it from there. I didn't want to do that. I was about to run my own registry on the NAS like https://dev.to/kedzior_io/setup-a-docker-registry-on-synolgy-aia when I noticed you can also import an image from a file:
+
+<div align="center">
+![screenshot of the synology docker image import option](/static/images/2025/synology-import-image.png)
+</div>
+
+You can import from a file on the local machine or the NAS. Perfect.
+
+So my workflow is:
+
+1. Build the docker image
+2. Save the docker image with `docker save -o my-app.tar my-app:latest`
+3. Synology Container Manager -> Image -> Action -> Import -> Add From File -> From local device
+
+That's it! Create the container and run it as any other image.
+
+Not automated, but I can live with that.
