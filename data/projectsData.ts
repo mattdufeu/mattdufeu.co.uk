@@ -7,10 +7,15 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'Exploring AI',
-    description: `I'm not going out on a limb by thinking that AI isn't going away. "Keep up or get left behind". From the underlying technology, to the latest AI news, I'm constantly researching how to get the most out of AI. (credit to https://image-generator.com/ for the image above)`,
+    title: 'Building an LLM',
+    description: `I'm working my way through 'Building a Large Language Model From Scratch' by Sebastian Raschka.`,
     imgSrc: '/static/images/researching-ai.png',
   },
+  {
+    title: 'Learning Godot',
+    description: `I'm learning to make games using Godot. Very early days, but it's a lot of fun!`,
+    imgSrc: '/static/images/godot_logo_16x9.png',
+  }
 ]
 
 export default projectsData
