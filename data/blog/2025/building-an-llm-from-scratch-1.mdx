@@ -1,0 +1,38 @@
+---
+title: 'Building an LLM from scratch part 1 - introduction and setup'
+date: 2016-02-21T17:22:34+00:00
+projects:
+  - building-an-llm-from-scratch
+summary: Some notes on reading the first chapter of the book 'Building a Large Language Model From Scratch' by Sebastian Raschka
+---
+
+I've started reading the book ['Building a Large Language Model From Scratch' by Sebastian Raschka](https://www.manning.com/books/build-a-large-language-model-from-scratch). I'm not a complete novice at artificial intelligence, machine learning and deep learning, but on the scale of novice to expert, I'm definitely closer to the former than the latter. 
+
+For context, in case anyone else is considering the book, up to now I:
+
+* Have completed [a few course by Andrew Ng](https://www.andrewng.org/courses/) - [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
+* Understand Loss Functions, Optimizers, Gradient Descent etc, e.g. Training loops
+* Have competed in about 10 of the beginner competitions on Kaggle scoring in the 300s on the leaderboards
+* Have tried to implement some of the older papers like word2vec from scratch
+
+So going through this book is definitely going to be a stretch, but so far so good.
+
+## Appendix A - introduction to PyTorch
+
+If you're unfamiliar with PyTorch this chapter prvoides a nice succinct guide on setting up. I confirmed I have access to a CUDA, the skipped over the intro into tensors, automatic differentiation, multilayer neural networks, data loaders, training loops etc.
+
+If you haven't used PyTorch before, the appendix would've given you a good overview, but seeing there's whole books on the subject, it's obviously not exhaustive.
+
+## Chapter 1 - Understanding Large Language Models
+
+After explaining what an LLM is and how it's a subset of deep learning, which is itself a subject of machine learning, which is itself a subset of artificial intelligence, we touch upon the stages of building a LLM. I'm presuming things like Reinforcement Learning from Human Feedback (RLHF) are skipped for simplicity reasons, but it sets the scene.
+
+Next is the transformer architecture, or a high level view, with some examples of the encoder and decoder. The self-attention system is skipped at this stage, which coincidentally is the part I'm most vague about, but we get a promise we'll cover that in chapter 3.
+
+After explaining the large training datasets, we then dig further into the architecture of GPT.
+
+I learned that GPT is just the decoder part. Apparently the original transformer repeated the encoder and decoder 6 times, whereas GPT-3 had 96 transformers. At this stage I have no idea what that looks like, or importantly why, but I'm guessing that's somewhere in the next couple hundred pages!
+
+## Summary
+
+Nice easy start. So far I like how the book is laid out and the writing style. Not a lot to write or think about at this stage, but I'm sure that's going to change quite quickly!

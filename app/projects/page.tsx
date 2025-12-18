@@ -1,6 +1,7 @@
 import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
+import { slug } from 'github-slugger'
 
 export const metadata = genPageMetadata({ title: 'Projects' })
 
@@ -21,7 +22,7 @@ export default function Projects() {
                 title={d.title}
                 description={d.description}
                 imgSrc={d.imgSrc}
-                href={d.href}
+                href={d.href ?? `/projects/${slug(d.title)}`}
               />
             ))}
           </div>

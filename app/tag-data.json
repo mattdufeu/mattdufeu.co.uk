@@ -1,7 +1,7 @@
 {
-  "net": 6,
-  "docker": 3,
   "azure": 1,
-  "scrum-master": 5,
-  "retrospective": 2
+  "docker": 4,
+  "net": 6,
+  "retrospective": 2,
+  "scrum-master": 5
 }

@@ -7,7 +7,7 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'Building an LLM',
+    title: 'Building an LLM from scratch',
     description: `I'm working my way through 'Building a Large Language Model From Scratch' by Sebastian Raschka.`,
     imgSrc: '/static/images/researching-ai.png',
   },

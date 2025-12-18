@@ -76,7 +76,13 @@ async function createTagCount(allBlogs) {
       })
     }
   })
-  const formatted = await prettier.format(JSON.stringify(tagCount, null, 2), { parser: 'json' })
+  const sortedTagCount = Object.keys(tagCount)
+    .sort()
+    .reduce((obj, key) => {
+      obj[key] = tagCount[key]
+      return obj
+    }, {} as Record<string, number>)
+  const formatted = await prettier.format(JSON.stringify(sortedTagCount, null, 2), { parser: 'json' })
   writeFileSync('./app/tag-data.json', formatted)
 }
 
@@ -101,6 +107,7 @@ export const Blog = defineDocumentType(() => ({
     title: { type: 'string', required: true },
     date: { type: 'date', required: true },
     tags: { type: 'list', of: { type: 'string' }, default: [] },
+    projects: { type: 'list', of: { type: 'string' }, default: [] },
     lastmod: { type: 'date' },
     draft: { type: 'boolean' },
     summary: { type: 'string' },
