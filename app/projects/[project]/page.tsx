@@ -8,7 +8,9 @@ import { Metadata } from 'next'
 
 const POSTS_PER_PAGE = 5
 
-export async function generateMetadata(props: { params: Promise<{ project: string }> }): Promise<Metadata> {
+export async function generateMetadata(props: {
+  params: Promise<{ project: string }>
+}): Promise<Metadata> {
   const params = await props.params
   const project = decodeURI(params.project)
   return genPageMetadata({
@@ -31,7 +33,11 @@ export default async function ProjectPage(props: { params: Promise<{ project: st
   const params = await props.params
   const project = decodeURI(params.project)
   const filteredPosts = allCoreContent(
-    sortPosts(allBlogs.filter((post) => post.projects && post.projects.map((p) => slug(p)).includes(project)))
+    sortPosts(
+      allBlogs.filter(
+        (post) => post.projects && post.projects.map((p) => slug(p)).includes(project)
+      )
+    )
   )
   const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE)
   const initialDisplayPosts = filteredPosts.slice(0, POSTS_PER_PAGE)
