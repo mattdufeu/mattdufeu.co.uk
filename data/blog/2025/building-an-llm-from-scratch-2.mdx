@@ -1,0 +1,45 @@
+---
+title: 'Building an LLM from scratch part 2 - working with text data'
+date: 2025-12-19T12:00:00+00:00
+projects:
+  - building-an-llm-from-scratch
+summary: The second chapter covers embedding and tokenisation.
+---
+
+Tensors (and therefore neural networks) are mathematical, in that they work on numbers. To create an LLM that works on test, we need a way of representing text in numbers. That's essentially what embedding is, converting a string of text (or video or audio) into numbers. (The book provides a more accurate description, but for the moment I'm thinking of it like this).
+
+I've come across word embedding before, but the book says we can do sentences, or paragraphs or even whole documents, e.g. in retrieval-augmented generation (RAG). The books sticks to one word at a time.
+
+As I mentioned in [part 1](/blog/2025/building-an-llm-from-scratch-1), I've learned about word2vec before so I knew by representing words as vectors, after training you can do things like:
+
+> vector(’King’) − vector(’Man’) + vector(’Woman’) ≈ vector(’Queen’)
+
+I also knew the vectors started off random, and through training this type of calculation is possible.
+
+## Tokenisation and converting to IDs
+
+The book walks us through a simple tokenizer and building up a volcabulary of a book in the public domain.
+
+Then introduces special tokens to handle out of volcabulary words, end of text, etc.
+
+## Encoding word positions
+
+I don't think I've encounted positional embedding (relative or absolute) before. The book explains and uses absolute encoding, for example the sequence "the boat went down the river":
+
+* "the" will have the same **token embedding** for position 1 and position 5
+* By **adding** absolute embedding to the token embedding we can distinguish which "the" we're talking about.
+
+## Summary
+
+Thanks to this chapter, I'm not thinkinf of the process from text to input embeddings as roughly:
+
+1. Create a vocabulary of all the words in the text, adding some extra for unknown, end of text etc
+2. Create a token for each of these vocabulary words
+3. Create a random tensor of whatever dimension you like to act as a lookup table for each token
+4. When reading text, the sequence length, this lookup becomes the embedding layer, but it can be improved by adding positional data (relative or absolute)
+
+Choosing the dimensionalitity of the embeddings is all about trade-offs (like everything). More dimensions might be more accurate, but take a lot more processing. The book states that different model sizes will have different size embeddings.
+
+## Review So Far
+
+I'm enjoying this so far. If you read the book, I highly recommend you type the code in yourself rather than cutting and pasting (or even running directly) the code on GitHub. I made a few typos and I'm convinced that fixing the code myself is making this sink in better.
