@@ -1,0 +1,64 @@
+---
+title: 'Building an LLM from scratch part 3 - coding attention mechanisms'
+date: 2026-01-10T12:00:00+00:00
+projects:
+  - building-an-llm-from-scratch
+summary: The third chapter teaches how to code attention mechanisms. The LLM breakthrough. We start with a simple version with non-trainable weights and make adjustments until we have multi-headed attention as used in GPT-2.
+---
+
+This was the biggest chapter so far at 40 pages. I took the advice of the author in his post on [Recommendations for Getting the Most Out of a Technical Book](https://sebastianraschka.com/blog/2025/reading-books.html) and read through it a couple of times. Avoiding the temptation to code on the first read-through definitely helped.
+
+The chapter starts off by introducing the problem of translation and how processing one word at a time doesn't work. For example, when translating German to English, the order of words is important. Attention, or self-attention, is the solution to this problem.
+
+> Self-attention is a mechanism that allows each position in the input sequence to consider the relevancy, or "attend to", all other positions in the same sequence when computing the representation of a sequence. (pg 55)
+
+We are introduced to and build four different types of attention mechanisms:
+
+1. Simple self-attention without trainable weights
+2. Simple self-attention with trainable weights
+3. Causal attention
+4. Multi-head attention
+
+With all of them, the goal is to calculate a "context vector" that contains information about all other inputs.
+
+## Simple Self-Attention
+
+In this version, we take the dot product between each token in the sequence and every other token to get an "attention score". We then normalize (using softmax) these values to get "attention weights". The final step is to compute the "context vector" by multiplying the input token with the attention weights and summing.
+
+We start slowly by considering just one token in the input sequence, before moving to all tokens at once. I clearly don't know enough matrix math, as I was surprised that the attention scores were `inputs @ inputs.T`. Turns out that's exactly the dot product.
+
+One question/confusion at this point: Dot product calculates the similarity of the tokens. How does that help? Does similarity somehow translate into how related they are? I presume once there are trainable weights involved, these are updated during training and that turns similarity into the relationship we want.
+
+## Self-Attention with Trainable Weights
+
+This mechanism builds on the previous one. Instead of taking dot products between input tokens, we use three new matrices called *query*, *key* and *value*. The input token is then multiplied with each of these new matrices to get query, key and value vectors specific to that input token.
+
+The "attention score" is then the dot product of the query vector with the key vector. Like last time, these are then normalized using softmax to get "attention weights". Finally, the weights are multiplied by the "values" to get the "context vector".
+
+NB. Query, Key and Value. Presumably this is part of the KV cache that I've seen mentioned sometimes? TBD hopefully.
+
+## Causal Attention
+
+This isn't much of a leap from the previous one. Here, we're making sure the attention mechanism only considers tokens found previously in the sequence. We do this by setting the values of the attention weights above the diagonal to zero.
+
+We get the attention weights, normalize, then mask (set to zero above the diagonal), then normalize again.
+
+More evidence my matrix math is lacking: I thought you didn't need the first normalize step. Why not just mask and then normalize? Turns out I was right, but for the wrong reasons. Instead of masking with 0, you mask with '-infinity'.
+
+We also add dropout during this section. It's the same as dropout in neural networks for the same reason. To prevent overfitting.
+
+NB. For a long time I read this as "casual attention" 🤦‍♂️
+
+## Multi-Headed Attention
+
+Before reading the chapter, I thought multi-headed meant that there were multiple attention heads with different ranges (the right word is probably context), i.e. one head would have 10 tokens before the current, whereas another would have 6.
+
+Turns out that's wrong. It's literally just multiple instances of the same thing, but using matrix mathematical "tricks" to do it efficiently.
+
+## Summary
+
+If I'm brutally honest with myself, I've been "avoiding" attention mechanisms for a long time. Having now gone through this chapter, as with everything, that was silly. I think I need to go back and read "The War of Art" by Steven Pressfield.
+
+Having now gone through it a couple of times, I think I have a reasonable understanding/intuition of how it works. I also searched around for other sources to confirm my thinking and found [Giles Thomas's series on following the same book](https://www.gilesthomas.com/llm-from-scratch). He spends 10 blog posts working through the chapter and his notes/points really helped me, especially when repeating how the author confirms this is the hardest part of the book!
+
+I really like his realisation that "attention heads are dumb" (part 13). I think I too was expecting there to be some magical algorithm that completely encapsulated attention. That's not the case. These things seem to work because of scale. The smallest GPT-2 model apparently has 12 attention heads. Who knows how many the latest models have.
