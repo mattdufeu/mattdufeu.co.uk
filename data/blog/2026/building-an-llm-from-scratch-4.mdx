@@ -1,0 +1,45 @@
+---
+title: 'Building an LLM from scratch part 4 - Build a GPT model to generate text'
+date: 2026-01-??T12:00:00+00:00
+projects:
+  - building-an-llm-from-scratch
+summary: In the fourth chapter, we combine everything we've learned so far and create a GPT model that is capable of generating text. The quality may be questionable, but it is definitely capable of generating more text!
+---
+
+This chapter covers the final part of the first stage of building an LLM, i.e. building the actual model that we'll later train. Excitingly, we also generate our first piece of text from the model.
+
+As usual, the chapter starts slowly and builds on previous knowledge. There are 7 steps:
+
+1. GPT Backbone
+2. Layer Normalization
+3. GELU activation
+4. Feed forward network
+5. Shortcut connections
+6. Transformer block
+7. Final GPT architecture
+
+I won't write about each section as I don't want to just steal stuff from the book. Instead, these are the notes I took while going through it.
+
+## Layer Normalization
+
+Training neural networks involves tweaking parameters via gradient descent. That's prone to errors and can make training difficult.
+
+I'm surprised I've not come across this technique before, or perhaps I have and I've forgotten it. But layer normalization adjusts the outputs of the network to have a mean of 0 and a variance of 1.
+
+Not sure how that works, but apparently this "speeds up the convergence to effective weights and ensures consistent, reliable training." I didn't feel the need to dig deeper, so left it at that.
+
+## Shortcut connections
+
+This technique is designed to help prevent vanishing gradients, i.e. gradients so small that making a change to the parameters doesn't result in much difference.
+
+Again, I'd not come across this before. Very simply, the values from the previous layer are added to a later layer. It doesn't have to be all layers, but the example in the book does this and clearly shows with just 5 layers how much of a difference it can make.
+
+## Generating text
+
+After putting all these things together, we finally have a GPT model. The book finishes the chapter by explaining that the output (logits) is a vector the same size as the model vocabulary. These logits represent a probability distribution of the likelihood that the next token is the corresponding token from the vocabulary.
+
+NB. The logits are actually unnormalized log-probabilities that go through a softmax function, but I won't be remembering that level of detail.
+
+We do exactly that with the phrase "Hello, I am" and we get.... utter gibberish! 
+
+Stage 2 will show us how to teach the model to (hopefully) do a bit better.
