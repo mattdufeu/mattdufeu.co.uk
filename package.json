@@ -72,6 +72,9 @@
     ],
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
       "prettier --write"
+    ],
+    "data/blog/**/*.mdx": [
+      "node ./scripts/validate-blog-dates.mjs"
     ]
   },
   "packageManager": "yarn@4.10.3"
