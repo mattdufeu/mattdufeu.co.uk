@@ -1,0 +1,82 @@
+---
+title: 'Building an LLM from scratch part 7 - Fine-tuning to Follow Instructions'
+date: 2026-01-30T12:00:00+00:00
+projects:
+  - building-an-llm-from-scratch
+summary: The final chapter teaches us how to fine-tune our LLM to follow instructions. We're also introduced to a technique of evaluating performance using a different, more powerful, LLM.
+---
+
+The final chapter teaches us how to fine-tune our LLM to follow instructions. There aren't any fundamental architectural changes needed for this. We don't replace any layers like we did when [fine-tuning for classification in part 6](/blog/2026/building-an-llm-from-scratch-6). Instead, this seems to be all about the data and the prompt.
+
+## Data for instruction following
+
+The book helps us download a small (1100 records) dataset that contains JSON data like the following:
+
+```JSON
+{
+    'instruction': 'Identify the correct spelling of the following word.',
+    'input': 'Ocassion',
+    'output': "The correct spelling is 'Occasion.'"
+}
+```
+
+You can see a clear "instruction", then a word (or sometimes sentence) to apply the instruction to called "input". And finally the expected result (output).
+
+Not all the records in the dataset are of this format. Sometimes there isn't an input, but that's because the "instruction" is a direct question (or similar):
+
+```JSON
+{
+    'instruction': "What is an antonym of 'complicated'?",
+    'input': '',
+    'output': "An antonym of 'complicated' is 'simple'."
+}
+```
+
+## Prompt
+
+Anyone who's spent anytime using an LLM knows that the prompt is critical in getting the response you want. Fine-tuning is no different. The original prompt template for instruction fine-tuning is called Alpaca-style (https://crfm.stanford.edu/2023/03/13/alpaca.html), which is:
+
+```
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+{{instruction}}
+
+### Input:
+{{input}}
+
+### Response:
+{{output}}
+```
+
+## DataLoaders and Loss Functions
+
+Like previous DataLoaders, we pad the inputs to be the same length. The difference this time is that we use a token of value -100. Why -100? Turns out (which you can see from the documentation https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html) -100 is the default value of `ignore_index` parameter of `cross_entropy`.
+
+By using -100 we're masking the padding tokens from the loss function. Apparently there's an ongoing debate as to whether also masking out the "instructions" part of the prompt is useful, but we don't do that in this instance.
+
+## Fine-Tuning
+
+I said at the start we don't do any architectural tricks. But we do need to use a larger model than 124M. Like I noted last time, the latter parameters in the model hold knowledge about more complex relationships. By using a larger model, we have more places to store "instruction following" abilities.
+
+The actual training run is pretty much what we've done several times by now. However, as we're asking our model to generate a lot more than just the next token, it takes a longer time and stresses our systems harder. My 3060 Ti took just over 4 minutes.
+
+## Assessment
+
+Once the training run has finished and we've got an LLM that's capable of following instructions, the book moves onto assessing how well our LLM performs.
+
+Rather than manually going through our results by hand, the book suggests we use another LLM to act as a judge.
+
+Maybe we could use the code we've got to run the largest GPT-2 model, but LLMs have progressed in capability quite a lot since then. So has the open source software that's out there to run them locally. So we use https://ollama.com/ to run Meta's Llama 3 model. It's ridiculously easy once it's installed - `ollama run llama3` - and it provides an API we can POST to.
+
+The book provides code on how to essentially ask Llama 3 how our model did on a scale of 0 to 100 (best). Llama 3 does exactly that and even justifies its response.
+
+Turns out, even a model as "simple" as GPT-2 is capable of following instructions. I'm guessing it doesn't generalise very well, but we can't ask too much of 335M parameters.
+
+## Summary
+
+That's the last chapter of the book. I've really enjoyed going through it and have learned a lot of things about LLMs, how they're built and how to use them.
+
+## The End
+
+It's the end of the book, but the beginning of more playing with LLMs. The [book's GitHub repository](https://github.com/rasbt/LLMs-from-scratch) associated with the book has a lot of extra resources to investigate.
